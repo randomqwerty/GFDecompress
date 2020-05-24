@@ -1,4 +1,5 @@
-﻿using Newtonsoft.Json.Linq;
+﻿using Newtonsoft.Json;
+using Newtonsoft.Json.Linq;
 using System;
 using System.Collections.Generic;
 using System.Configuration;
@@ -131,23 +132,23 @@ namespace GFDecompress
         }
     }
     //인형 데이터 클래스
-    class GunData {
-        int id;
-        int rank;
-        string type;
-        int buildTime;
-        JArray skins;
-        JObject stats;
-        JObject effect = new JObject()
+    public class GunData {
+        public int id;
+        public int rank;
+        public string type;
+        public int buildTime;
+        public JArray skins;
+        public JObject stats = new JObject();
+        public JObject effect = new JObject()
         {
             {"effectType", "all"},
             {"effectCenter",5},
             {"effectPos", new JArray()},
             {"gridEffect", new JObject()}
         };
-        int grow;
-        string codename;
-        JObject skill1 = new JObject()
+        public int grow;
+        public string codename;
+        public JObject skill1 = new JObject()
         {
             {"id",0},
             {"codename", ""},
@@ -156,11 +157,11 @@ namespace GFDecompress
             {"dataPool", new JArray()},
             {"consumption", 0},
         };
-        JArray obtain;
-        JArray equip1;
-        JArray equip2;
-        JArray equip3;
-        JArray mindupdata = new JArray() {
+        public JArray obtain = new JArray();
+        public JArray equip1 = new JArray();
+        public JArray equip2 = new JArray();
+        public JArray equip3 = new JArray();
+        public JArray mindupdata = new JArray() {
             new JObject(){
                 {"core",0},
                 {"mempiece",0}
@@ -200,19 +201,37 @@ namespace GFDecompress
                 stats.Add("armor", _obj["ratio_armor"]); //장갑
 
             //진형버프
-            effect["effectType"] = TypeData.getDollType(_obj["effect_guntype"].ToObject<int>());
+            try
+            {
+                effect["effectType"] = TypeData.getDollType(_obj["effect_guntype"].ToObject<int>());
+            }
+            catch {
+                //복수 버프시 배열로 저장
+                JArray typeArr = new JArray();
+                string[] typeTmp = _obj["effect_guntype"].ToString().Split(',');
+                foreach (string str in typeTmp) {
+                    typeArr.Add(TypeData.getDollType(int.Parse(str)));
+                }
+                effect["effectType"] = typeArr;
+            }
             effect["effectCenter"] = Grid.readPos(_obj["effect_grid_center"].ToObject<int>());
 
-            string[] effectPos = _obj["gridPos"].ToString().Split(',');
+            string[] effectPos = _obj["effect_grid_pos"].ToString().Split(',');
+            JArray tmpArr = new JArray();
             foreach (string str in effectPos) {
-                effect["effectPos"].ToObject<JArray>().Add(int.Parse(str)); //진형버프 위치
+                tmpArr.Add(Grid.readPos(int.Parse(str)));
+                //effect["effectPos"].ToObject<JArray>().Add(Grid.readPos(int.Parse(str))); //진형버프 위치
             }
+            effect["effectPos"] = tmpArr;
 
             string[] gridEffect = _obj["effect_grid_effect"].ToString().Split(';');
+            JObject tmpObj = new JObject();
             foreach (string str in gridEffect) {
                 string[] statPair = str.Split(',');
-                effect["gridEffect"].ToObject<JObject>().Add(Grid.readEffectType(int.Parse(statPair[0])),int.Parse(statPair[1])); //진형버프 스탯 및 수치
+                tmpObj.Add(Grid.readEffectType(int.Parse(statPair[0])), int.Parse(statPair[1]));
+                //effect["gridEffect"].ToObject<JObject>().Add(Grid.readEffectType(int.Parse(statPair[0])),int.Parse(statPair[1])); //진형버프 스탯 및 수치
             }
+            effect["gridEffect"] = tmpObj;
 
             //성장계수
             grow = _obj["eat_ratio"].ToObject<int>();
@@ -235,18 +254,23 @@ namespace GFDecompress
             }
             //장비슬롯2
             string[] _equipt2 = _obj["type_equip2"].ToString().Split(';')[1].Split(',');
-            foreach (string str in _equipt1)
+            foreach (string str in _equipt2)
             {
                 equip2.Add(TypeData.getEquipType(int.Parse(str)));
             }
             //장비슬롯3
             string[] _equipt3 = _obj["type_equip3"].ToString().Split(';')[1].Split(',');
-            foreach (string str in _equipt1)
+            foreach (string str in _equipt3)
             {
                 equip3.Add(TypeData.getEquipType(int.Parse(str)));
             }
 
             //<todo> 개조 소모재료 데이터 추가
+        }
+
+        public override string ToString()
+        {
+            return JsonConvert.SerializeObject(this);
         }
     }
 }
