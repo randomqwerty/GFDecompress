@@ -223,10 +223,6 @@ namespace GFDecompress
                 JArray EquipList = ParseStc("5038.stc", 70);
                 File.WriteAllText("output_stc\\equip_list.json", EquipList.ToString());
 
-                //<test>
-                JsonUtil.getDollJson(GunList);
-                //</test>
-
                 // 전역 스킬 정보
                 JArray MissionSkillConfigList = ParseStc("5046.stc", 177);
                 File.WriteAllText("output_stc\\mission_skill_config_list.json", MissionSkillConfigList.ToString());
@@ -234,6 +230,13 @@ namespace GFDecompress
                 // 스킨 정보
                 JArray SkinList = ParseStc("5048.stc", 52);
                 File.WriteAllText("output_stc\\skin_list.json", SkinList.ToString());
+
+                //doll.json 생성
+                JArray skillList = new JArray();
+                skillList.Add(BattleSkillConfigList);
+                skillList.Add(MissionSkillConfigList);
+                JsonUtil.getDollJson(GunList, SkinList, skillList);
+                //</test>
 
                 // 폴더 열기
                 //Process.Start(Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location) + "\\output_stc");
