@@ -187,6 +187,9 @@ namespace GFDecompress
 
                 // 인형 정보
                 JArray GunList = ParseStc("5005.stc", 102);
+                //<test>
+                JsonUtil.getDollJson(GunList);
+                //</test>
                 File.WriteAllText("output_stc\\gun_list.txt", GunList.ToString());
 
                 // 중장비 정보 - 파싱 전 중장비 컬럼 순서 정렬 필요! (Squad.cs)
