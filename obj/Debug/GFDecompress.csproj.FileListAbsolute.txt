@@ -20,3 +20,13 @@ C:\Users\rldnj\Desktop\GFDecompress\obj\Debug\GFDecompress.csproj.CoreCompileInp
 C:\Users\rldnj\Desktop\GFDecompress\obj\Debug\GFDecompress.csproj.CopyComplete
 C:\Users\rldnj\Desktop\GFDecompress\obj\Debug\GFDecompress.exe
 C:\Users\rldnj\Desktop\GFDecompress\obj\Debug\GFDecompress.pdb
+C:\Users\Klaus\GFDecompress\obj\Debug\GFDecompress.csprojAssemblyReference.cache
+C:\Users\Klaus\GFDecompress\obj\Debug\GFDecompress.csproj.CoreCompileInputs.cache
+C:\Users\Klaus\GFDecompress\obj\Debug\GFDecompress.exe
+C:\Users\Klaus\GFDecompress\obj\Debug\GFDecompress.pdb
+C:\Users\Klaus\GFDecompress\bin\Debug\GFDecompress.exe.config
+C:\Users\Klaus\GFDecompress\bin\Debug\GFDecompress.exe
+C:\Users\Klaus\GFDecompress\bin\Debug\GFDecompress.pdb
+C:\Users\Klaus\GFDecompress\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Klaus\GFDecompress\bin\Debug\NLog.xml
+C:\Users\Klaus\GFDecompress\obj\Debug\GFDecompress.csproj.CopyComplete

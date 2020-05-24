@@ -78,14 +78,20 @@ namespace GFDecompress
                     int size = reader.ReadByte();
                     switch (size)
                     {
+                        case 1:
+                            colSizes.Add(i + ":" + "SByte");
+                            break;
                         case 5:
                             colSizes.Add(i + ":" + "Integer");
+                            break;
+                        case 9:
+                            colSizes.Add(i + ":" + "Double");
                             break;
                         case 11:
                             colSizes.Add(i + ":" + "String");
                             break;
                         default:
-                            colSizes.Add(i + ":" + "Unknown");
+                            colSizes.Add(i + ":" + "Unknown(" + size + ")");
                             break;
                     }
                 }
@@ -100,6 +106,10 @@ namespace GFDecompress
                     {
                         switch (stcFile)
                         {
+                            // BattleSkillConfigList
+                            case "5001.stc":
+                                output.Add(JObject.FromObject(new BattleSkillConfig(reader)));
+                                break;
                             // GunList
                             case "5005.stc":
                                 output.Add(JObject.FromObject(new Gun(reader)));
@@ -107,6 +117,18 @@ namespace GFDecompress
                             // SquadList
                             case "5006.stc":
                                 output.Add(JObject.FromObject(new Squad(reader)));
+                                break;
+                            // EquipList
+                            case "5038.stc":
+                                output.Add(JObject.FromObject(new Equip(reader)));
+                                break;
+                            // MissionSkillConfigList
+                            case "5046.stc":
+                                output.Add(JObject.FromObject(new MissionSkillConfig(reader)));
+                                break;
+                            // SkinList
+                            case "5048.stc":
+                                output.Add(JObject.FromObject(new Skin(reader)));
                                 break;
                         }
                     }
@@ -162,7 +184,7 @@ namespace GFDecompress
                         string jKey = json.Properties().Select(p => p.Name).FirstOrDefault();
 
                         log.Debug(".dat export >> " + jKey);
-                        File.WriteAllText("output_catchdata\\" + jKey + ".txt", json.ToString());
+                        File.WriteAllText("output_catchdata\\" + jKey + ".json", json.ToString());
                     }
                     catch (Exception ex)
                     {
@@ -171,7 +193,7 @@ namespace GFDecompress
                 }
 
                 // 폴더 열기
-                Process.Start(Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location) + "\\output_catchdata");
+                //Process.Start(Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location) + "\\output_catchdata");
             }
             catch (Exception ex)
             {
@@ -185,21 +207,39 @@ namespace GFDecompress
                 if (!Directory.Exists("output_stc"))
                     Directory.CreateDirectory("output_stc");
 
+                // 스킬 정보
+                JArray BattleSkillConfigList = ParseStc("5001.stc", 783);
+                File.WriteAllText("output_stc\\battle_skill_config_list.json", BattleSkillConfigList.ToString());
+
                 // 인형 정보
                 JArray GunList = ParseStc("5005.stc", 102);
-                File.WriteAllText("output_stc\\gun_list.txt", GunList.ToString());
+                File.WriteAllText("output_stc\\gun_list.json", GunList.ToString());
 
-                // 중장비 정보 - 파싱 전 중장비 컬럼 순서 정렬 필요! (Squad.cs)
-                //JArray SquadList = ParseStc("input\\5006.stc", 73);   
-                //File.WriteAllText("output_stc\\squad_list.txt", SquadList.ToString());
+                // 중장비 정보
+                JArray SquadList = ParseStc("5006.stc", 73);
+                File.WriteAllText("output_stc\\squad_list.json", SquadList.ToString());
+
+                // 장비 정보
+                JArray EquipList = ParseStc("5038.stc", 70);
+                File.WriteAllText("output_stc\\equip_list.json", EquipList.ToString());
+
+                // 전역 스킬 정보
+                JArray MissionSkillConfigList = ParseStc("5046.stc", 177);
+                File.WriteAllText("output_stc\\mission_skill_config_list.json", MissionSkillConfigList.ToString());
+
+                // 스킨 정보
+                JArray SkinList = ParseStc("5048.stc", 52);
+                File.WriteAllText("output_stc\\skin_list.json", SkinList.ToString());
 
                 // 폴더 열기
-                Process.Start(Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location) + "\\output_stc");
+                //Process.Start(Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location) + "\\output_stc");
             }
             catch (Exception ex)
             {
                 log.Error(ex);
             }
+
+            Process.Start(Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location));
         }
     }
 }

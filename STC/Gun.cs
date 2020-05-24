@@ -65,7 +65,7 @@ namespace GFDecompress.STC
         public int rank_display;
         public int prize_id;
         public string mindupdate_consume;
-        public string unknown1;                 
+        public string __1;                 
         public string nation;                   
 
         public Gun(StcBinaryReader reader)
@@ -123,8 +123,8 @@ namespace GFDecompress.STC
             rank_display = reader.ReadInt();
             prize_id = reader.ReadInt();
             mindupdate_consume = reader.ReadString();
-            unknown1 = reader.ReadString();                     // 추가된 컬럼
-            nation = reader.ReadString();                       // 추가된 컬럼
+            __1 = reader.ReadString();
+            nation = reader.ReadString();
         }
 
         public override string ToString()

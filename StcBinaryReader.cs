@@ -73,6 +73,26 @@ namespace GFDecompress
             return output;
         }
 
+        public double ReadSingle()
+        {
+            float output = BitConverter.ToSingle(_buf, _offset);
+            log.Trace("offset: {0} | single: {1}", _offset, output);
+
+            _offset += 4;
+
+            return output;
+        }
+
+        public double ReadDouble()
+        {
+            double output = BitConverter.ToDouble(_buf, _offset);
+            log.Trace("offset: {0} | double: {1}", _offset, output);
+
+            _offset += 8;
+
+            return output;
+        }
+
         public string ReadString()
         {
             _offset += 1;   // 오프셋 +1 해야 위치 맞음
