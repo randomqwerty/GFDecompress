@@ -223,6 +223,10 @@ namespace GFDecompress
                 JArray EquipList = ParseStc("5038.stc", 70);
                 File.WriteAllText("output_stc\\equip_list.json", EquipList.ToString());
 
+                //<test>
+                JsonUtil.getDollJson(GunList);
+                //</test>
+
                 // 전역 스킬 정보
                 JArray MissionSkillConfigList = ParseStc("5046.stc", 177);
                 File.WriteAllText("output_stc\\mission_skill_config_list.json", MissionSkillConfigList.ToString());
