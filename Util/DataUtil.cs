@@ -219,7 +219,7 @@ namespace GFDecompress
             string[] effectPos = _obj["effect_grid_pos"].ToString().Split(',');
             JArray tmpArr = new JArray();
             foreach (string str in effectPos) {
-                tmpArr.Add(Grid.readPos(int.Parse(str)));
+                tmpArr.Add(Grid.readPos(int.Parse(str) + 13 - _obj["effect_grid_center"].ToObject<int>()));
                 //effect["effectPos"].ToObject<JArray>().Add(Grid.readPos(int.Parse(str))); //진형버프 위치
             }
             effect["effectPos"] = tmpArr;
