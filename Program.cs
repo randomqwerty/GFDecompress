@@ -235,11 +235,9 @@ namespace GFDecompress
                 File.WriteAllText("output_stc\\skin_list.json", SkinList.ToString());
 
                 //doll.json 생성
-                /*JArray skillList = new JArray();
-                skillList.Add(BattleSkillConfigList);
-                skillList.Add(MissionSkillConfigList);*/
                 JsonUtil.getDollJson(GunList, SkinList, BattleSkillConfigList);
-
+                //fairy.json 생성
+                JsonUtil.getFairyJson(BattleSkillConfigList);
                 //equip.json 생성
                 JsonUtil.getEquipJson(EquipList);
                 

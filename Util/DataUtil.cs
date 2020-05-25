@@ -93,6 +93,17 @@ namespace GFDecompress
 
             }
         }
+
+        public static string getFairyCatetory(int _code) {
+            switch (_code) {
+                case 1:
+                    return "battle";
+                case 2:
+                    return "strategy";
+                default:
+                    return "dummy";
+            }
+        }
     }
 
     class Grid {
@@ -211,7 +222,7 @@ namespace GFDecompress
             //제조시간
             buildTime = _gunList["develop_duration"].ToObject<int>();
 
-            Console.WriteLine(id.ToString() + "번 인형 데이터 변환 중...");
+            Console.WriteLine(id.ToString() + "번 인형데이터 변환 중...");
 
             //스킨정보
             foreach (JToken element in _skinList) {
@@ -371,7 +382,9 @@ namespace GFDecompress
 
         public override string ToString()
         {
-            return JsonConvert.SerializeObject(this);
+            return JsonConvert.SerializeObject(this,Formatting.None,new JsonSerializerSettings { 
+                NullValueHandling = NullValueHandling.Ignore
+            });
         }
     }
 
@@ -380,7 +393,15 @@ namespace GFDecompress
         public int id;
         public string category;
         public JObject stats =new JObject();
-        public JObject skill = new JObject();
+        public JObject skill = new JObject()
+        {
+            {"id",0},
+            {"codename", ""},
+            {"cooldownType",""},
+            {"initialCooldown",0},
+            {"dataPool", new JArray()},
+            {"consumption", 0},
+        };
         public int grow;
         public int buildTime;
         public string codename;
@@ -388,6 +409,99 @@ namespace GFDecompress
         public int retireExp;
         public JArray qualityExp = new JArray();
         public JArray skins = new JArray();
+
+        //생성자
+        public FairyData(JObject _fairyList, JArray _skillLIst, JObject _skinList)
+        {
+            string[,] statList = {
+                {
+                    "pow",
+                    "hit",
+                    "dodge",
+                    "armor",
+                    "critical_harm_rate",
+                    "armor_piercing"
+                },
+                {
+                    "pow",
+                    "hit",
+                    "dodge",
+                    "armor",
+                    "criticalHarmRate",
+                    "armorPiercing"
+                }
+            };
+
+            id = _fairyList["id"].ToObject<int>();
+            category = TypeData.getFairyCatetory(_fairyList["category"].ToObject<int>());
+            Console.WriteLine(id.ToString() + "번 요정데이터 변환 중...");
+            //스탯
+            try
+            {
+                for (int i = 0; i < 6; ++i)
+                {
+                    if (_fairyList[statList[0,i]].ToString().Equals("0"))
+                        continue;
+                    string[] value = _fairyList[statList[0,i]].ToString().Split(',');
+                    stats.Add(statList[1,i], _fairyList[statList[0,i]]);
+                }
+            }
+            catch { }
+            //스킬
+            skill["id"] = _fairyList["skill_id"].ToString();
+            try
+            {
+                JArray datapool = new JArray();
+                foreach (JToken element in _skillLIst)
+                {
+                    if (element.ToObject<JObject>()["skill_group_id"].ToString().Equals(this.skill["id"].ToString()))
+                    {
+                        //Console.WriteLine(element.ToObject<JObject>()["id"].ToString());
+                        skill["codename"] = element.ToObject<JObject>()["code"].ToString();
+                        skill["initialCooldown"] = element.ToObject<JObject>()["start_cd_time"].ToObject<int>();
+                        if (element.ToObject<JObject>()["cd_type"].ToObject<int>() == 1)
+                            skill["cooldownType"] = "frame";
+                        else
+                            skill["cooldownType"] = "turn";
+
+                        JObject tmpSkill = new JObject();
+                        tmpSkill.Add("level", element.ToObject<JObject>()["level"].ToObject<int>());
+                        tmpSkill.Add("cooldown", element.ToObject<JObject>()["cd_time"].ToObject<int>());
+                        datapool.Add(tmpSkill);
+                    }
+                }
+                skill["dataPool"] = datapool;
+            }
+            catch {
+                Console.WriteLine(id.ToString() + "번 요정 스킬 누락");
+            }
+
+            grow = _fairyList["grow"].ToObject<int>();
+            buildTime = _fairyList["develop_duration"].ToObject<int>();
+            codename = _fairyList["code"].ToString();
+            //powerup
+            powerup.Add("mp", _fairyList["powerup_mp"]);
+            powerup.Add("ammo", _fairyList["powerup_ammo"]);
+            powerup.Add("mre", _fairyList["powerup_mre"]);
+            powerup.Add("part", _fairyList["powerup_part"]);
+
+            retireExp = _fairyList["quality_exp"].ToObject<int>();
+
+            foreach (string str in _fairyList["quality_need_number"].ToString().Split(',')) {
+                qualityExp.Add(int.Parse(str.Split(':')[1]));
+            }
+            //스킨 추가
+            foreach (JToken element in _skinList["fairy_skin_info"].ToObject<JArray>()) {
+                if (element.ToObject<JObject>()["gift_fairy"].ToString().Equals(id.ToString())) {
+                    JObject skin = new JObject() 
+                    {
+                        {"id",element["id"]},
+                        {"codename",element["pic_id"] }
+                    };
+                    this.skins.Add(skin);
+                }
+            }
+        }
 
         public override string ToString()
         {
@@ -436,7 +550,7 @@ namespace GFDecompress
             type = TypeData.getEquipType(_obj["type"].ToObject<int>());
             company = _obj["company"].ToString();
 
-            Console.WriteLine(id.ToString() + "번 장비 데이터 변환 중");
+            Console.WriteLine(id.ToString() + "번 장비데이터 변환 중");
             try
             {
                 if (_obj["fit_guns"].ToString().Equals(""))
