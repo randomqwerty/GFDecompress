@@ -59,7 +59,7 @@ namespace GFDecompress
             JArray output = new JArray();
 
             // stc 읽기
-            byte[] stcStream = File.ReadAllBytes(stcFile);
+            byte[] stcStream = File.ReadAllBytes("stc\\" + stcFile);
             StcBinaryReader reader = new StcBinaryReader(stcStream);
 
             int code = reader.ReadUShort();         // 예: 5005
@@ -166,7 +166,7 @@ namespace GFDecompress
             {
                 // 복호화
                 log.Info(".dat decrypt >> {0}", "catchdata.dat");
-                byte[] data = File.ReadAllBytes("catchdata.dat");
+                byte[] data = File.ReadAllBytes("stc\\catchdata.dat");
                 byte[] key = Encoding.ASCII.GetBytes("c88d016d261eb80ce4d6e41a510d4048");
                 string output = DatFileDecompress(data, key);
 
@@ -234,6 +234,9 @@ namespace GFDecompress
                 JArray SkinList = ParseStc("5048.stc", 52);
                 File.WriteAllText("output_stc\\skin_list.json", SkinList.ToString());
 
+                //폴더생성
+                if (!Directory.Exists("results"))
+                    Directory.CreateDirectory("results");
                 //doll.json 생성
                 JsonUtil.getDollJson(GunList, SkinList, BattleSkillConfigList);
                 //fairy.json 생성
