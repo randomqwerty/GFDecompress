@@ -146,6 +146,9 @@ namespace GFDecompress
 
         static void Main(string[] args)
         {
+            Stopwatch swh = new Stopwatch();
+            swh.Start();
+
             #region NLog Configuration
             var config = new LoggingConfiguration();
 
@@ -232,11 +235,14 @@ namespace GFDecompress
                 File.WriteAllText("output_stc\\skin_list.json", SkinList.ToString());
 
                 //doll.json 생성
-                JArray skillList = new JArray();
+                /*JArray skillList = new JArray();
                 skillList.Add(BattleSkillConfigList);
-                skillList.Add(MissionSkillConfigList);
-                JsonUtil.getDollJson(GunList, SkinList, skillList);
-                //</test>
+                skillList.Add(MissionSkillConfigList);*/
+                JsonUtil.getDollJson(GunList, SkinList, BattleSkillConfigList);
+
+                //equip.json 생성
+                JsonUtil.getEquipJson(EquipList);
+                
 
                 // 폴더 열기
                 //Process.Start(Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location) + "\\output_stc");
@@ -245,7 +251,8 @@ namespace GFDecompress
             {
                 log.Error(ex);
             }
-
+            swh.Stop();
+            Console.WriteLine("소요시간: " + swh.Elapsed.ToString());
             Process.Start(Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location));
         }
     }
