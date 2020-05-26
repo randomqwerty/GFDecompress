@@ -59,6 +59,7 @@
     <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.IO.Compression" />
+    <Reference Include="System.IO.Compression.FileSystem" />
     <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.ServiceModel" />
     <Reference Include="System.Transactions" />
@@ -73,6 +74,7 @@
     <Compile Include="StcBinaryReader.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="StcDownloader.cs" />
     <Compile Include="STC\BattleSkillConfig.cs" />
     <Compile Include="STC\Equip.cs" />
     <Compile Include="STC\Gun.cs" />
