@@ -24,7 +24,7 @@ namespace GFDecompress
                 json.Add(JObject.Parse(data.ToString()));
             }
             //Console.WriteLine(json.ToString());
-            File.WriteAllText("output_stc\\doll.json",json.ToString());
+            File.WriteAllText("results\\doll.json",json.ToString());
         }
 
         public static void getEquipJson(JArray _arr) {
@@ -34,7 +34,7 @@ namespace GFDecompress
                 EquipData data = new EquipData(value.ToObject<JObject>());
                 json.Add(JObject.Parse(data.ToString()));
             }
-            File.WriteAllText("output_stc\\equip.json", json.ToString());
+            File.WriteAllText("results\\equip.json", json.ToString());
         }
 
         public static void getFairyJson(JArray _skillList) {
@@ -47,7 +47,7 @@ namespace GFDecompress
                 fairyData = JObject.Parse(System.IO.File.ReadAllText("output_catchdata\\fairy_info.json"));
                 fairySkinData = JObject.Parse(System.IO.File.ReadAllText("output_catchdata\\fairy_skin_info.json"));
             }
-            catch(Exception e) {
+            catch{
                 Console.WriteLine("ERROR: 파일이 존재하지 않음");
                 return;
             }
@@ -57,7 +57,7 @@ namespace GFDecompress
                 FairyData data = new FairyData(value.ToObject<JObject>(), _skillList, fairySkinData);
                 json.Add(JObject.Parse(data.ToString()));
             }
-            File.WriteAllText("output_stc\\fairy.json", json.ToString());
+            File.WriteAllText("results\\fairy.json", json.ToString());
         }
     }
 
