@@ -37,10 +37,14 @@ namespace GFDecompress
             File.WriteAllText("results\\equip.json", json.ToString());
         }
 
-        public static void getFairyJson(JArray _skillList) {
+        public static void getFairyJson(JArray _skillList, JArray _subSkillList) {
             JArray json = new JArray();
             JObject fairyData;
             JObject fairySkinData;
+            JArray skills = new JArray() {
+                _skillList,
+                _subSkillList
+            };
 
             try
             {
@@ -54,7 +58,7 @@ namespace GFDecompress
 
             foreach (var value in fairyData["fairy_info"].ToObject<JArray>())
             {
-                FairyData data = new FairyData(value.ToObject<JObject>(), _skillList, fairySkinData);
+                FairyData data = new FairyData(value.ToObject<JObject>(), skills, fairySkinData);
                 json.Add(JObject.Parse(data.ToString()));
             }
             File.WriteAllText("results\\fairy.json", json.ToString());

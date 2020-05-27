@@ -243,7 +243,7 @@ namespace GFDecompress
                 //doll.json 생성
                 JsonUtil.getDollJson(GunList, SkinList, BattleSkillConfigList);
                 //fairy.json 생성
-                JsonUtil.getFairyJson(BattleSkillConfigList);
+                JsonUtil.getFairyJson(BattleSkillConfigList, MissionSkillConfigList);
                 //equip.json 생성
                 JsonUtil.getEquipJson(EquipList);
                 

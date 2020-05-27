@@ -299,6 +299,8 @@ namespace GFDecompress
                     skill.Add("level", element.ToObject<JObject>()["level"].ToObject<int>());
                     skill.Add("cooldown", element.ToObject<JObject>()["cd_time"].ToObject<int>());
                     datapool.Add(skill);
+
+                    skill["consumption"] = element.ToObject<JObject>()["consumption"].ToObject<int>();
                 }
 
                 /*foreach (JToken element in _skillList)
@@ -345,6 +347,8 @@ namespace GFDecompress
                         skill.Add("level", element.ToObject<JObject>()["level"].ToObject<int>());
                         skill.Add("cooldown", element.ToObject<JObject>()["cd_time"].ToObject<int>());
                         datapool.Add(skill);
+
+                        skill["consumption"] = element.ToObject<JObject>()["consumption"].ToObject<int>();
                     }
                     /*foreach (JToken element in _skillList)
                     {
@@ -431,7 +435,6 @@ namespace GFDecompress
             {"codename", ""},
             {"cooldownType",""},
             {"initialCooldown",0},
-            {"dataPool", new JArray()},
             {"consumption", 0},
         };
         public int grow;
@@ -484,22 +487,40 @@ namespace GFDecompress
             try
             {
                 JArray datapool = new JArray();
-                var items = _skillLIst.SelectTokens($"$[?(@.skill_group_id== {skill["id"].ToString()})]");
-
-                foreach (var element in items)
-                {
-                    skill["codename"] = element.ToObject<JObject>()["code"].ToString();
-                    skill["initialCooldown"] = element.ToObject<JObject>()["start_cd_time"].ToObject<int>();
-                    if (element.ToObject<JObject>()["cd_type"].ToObject<int>() == 1)
-                        skill["cooldownType"] = "frame";
-                    else
+                if (skill["id"].ToString().StartsWith("*")) {
+                    var items = _skillLIst[1].SelectTokens($"$[?(@.skill_group_id== {skill["id"].ToString().Substring(1)})]");
+                    skill.Add("dataPool", new JArray());
+                    foreach (var element in items)
+                    {
+                        skill["codename"] = element.ToObject<JObject>()["code"].ToString();
+                        skill["initialCooldown"] = 0;
                         skill["cooldownType"] = "turn";
 
-                    JObject tmpSkill = new JObject();
-                    tmpSkill.Add("level", element.ToObject<JObject>()["level"].ToObject<int>());
-                    tmpSkill.Add("cooldown", element.ToObject<JObject>()["cd_time"].ToObject<int>());
-                    datapool.Add(tmpSkill);
+                        JObject tmpSkill = new JObject();
+                        tmpSkill.Add("level", element.ToObject<JObject>()["level"].ToObject<int>());
+                        tmpSkill.Add("cooldown", element.ToObject<JObject>()["cd_time"].ToObject<int>());
+                        datapool.Add(tmpSkill);
+                        skill["dataPool"] = datapool;
+
+                        skill["consumption"] = element.ToObject<JObject>()["consumption"].ToObject<int>();
+                    }
                 }
+                else {
+                    var items = _skillLIst[0].SelectTokens($"$[?(@.skill_group_id== {skill["id"].ToString()})]");
+
+                    foreach (var element in items)
+                    {
+                        skill["codename"] = element.ToObject<JObject>()["code"].ToString();
+                        skill["initialCooldown"] = element.ToObject<JObject>()["start_cd_time"].ToObject<int>();
+                        if (element.ToObject<JObject>()["cd_type"].ToObject<int>() == 1)
+                            skill["cooldownType"] = "frame";
+                        else
+                            skill["cooldownType"] = "turn";
+
+                        skill["consumption"] = element.ToObject<JObject>()["consumption"].ToObject<int>();
+                    }
+                }
+                
 
                 /*foreach (JToken element in _skillLIst)
                 {
@@ -519,7 +540,6 @@ namespace GFDecompress
                         datapool.Add(tmpSkill);
                     }
                 }*/
-                skill["dataPool"] = datapool;
             }
             catch {
                 Console.WriteLine(id.ToString() + "번 요정 스킬 누락");
@@ -554,7 +574,10 @@ namespace GFDecompress
 
         public override string ToString()
         {
-            return JsonConvert.SerializeObject(this);
+            return JsonConvert.SerializeObject(this, Formatting.None, new JsonSerializerSettings
+            {
+                NullValueHandling = NullValueHandling.Ignore
+            });
         }
     }
 
