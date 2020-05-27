@@ -9,4 +9,6 @@
   * Gun.cs : 5005.stc 변환 클래스 (인형데이터)
   * Squad.cs: 5006.stc 변환 클래스 (화력지원소대 데이터)
 * StcBinaryReader.cs : 복호화 클래스
+* StcDownloader.cs : 데이터 다운로드 클래스
 * Program.cs : 최초실행 클래스
+
