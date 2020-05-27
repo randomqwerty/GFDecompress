@@ -2,6 +2,7 @@
 using NLog.Fluent;
 using System;
 using System.Collections.Generic;
+using System.Dynamic;
 using System.IO;
 using System.Linq;
 using System.Text;
@@ -62,6 +63,34 @@ namespace GFDecompress
                 json.Add(JObject.Parse(data.ToString()));
             }
             File.WriteAllText("results\\fairy.json", json.ToString());
+        }
+
+        //이하 text asset to json
+
+        public static void getTextAsset(string _location) {
+            string dir = $"./Assets/{_location}";
+            string data;
+            JObject json = new JObject();
+
+            if (!File.Exists("results\\text"))
+                Directory.CreateDirectory("results\\text");
+            
+            foreach (var item in new DirectoryInfo(dir).GetFiles()) {
+                Console.WriteLine(item.Name + "변환 중");
+                StreamReader file = new StreamReader(dir + "\\" + item.Name);
+                try
+                {
+                    while ((data = file.ReadLine()) != null)
+                    {
+                        string[] str = { "", "" };
+                        str = data.Split(',');
+                        json.Add(str[0], str[1]);
+                    }
+                }
+                catch { }
+
+                File.WriteAllText($"results\\text\\{item.Name.Split('.')[0]}.json", json.ToString());
+            }
         }
     }
 
