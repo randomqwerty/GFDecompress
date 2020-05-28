@@ -75,6 +75,8 @@ namespace GFDecompress
                 Directory.CreateDirectory("results\\text");
             
             foreach (var item in new DirectoryInfo(dir).GetFiles()) {
+                if (item.Name == "desktop.ini")
+                    continue;
                 Console.WriteLine(item.Name + "변환 중");
                 JObject json = new JObject();
                 StreamReader file = new StreamReader(dir + "\\" + item.Name);
