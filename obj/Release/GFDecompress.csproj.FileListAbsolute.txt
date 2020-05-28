@@ -1,0 +1,12 @@
+C:\Users\rldnj\Workspace\GFDecompress\bin\Release\GFDecompress.exe.config
+C:\Users\rldnj\Workspace\GFDecompress\bin\Release\GFDecompress.exe
+C:\Users\rldnj\Workspace\GFDecompress\bin\Release\GFDecompress.pdb
+C:\Users\rldnj\Workspace\GFDecompress\bin\Release\Newtonsoft.Json.dll
+C:\Users\rldnj\Workspace\GFDecompress\bin\Release\NLog.dll
+C:\Users\rldnj\Workspace\GFDecompress\bin\Release\Newtonsoft.Json.xml
+C:\Users\rldnj\Workspace\GFDecompress\bin\Release\NLog.xml
+C:\Users\rldnj\Workspace\GFDecompress\obj\Release\GFDecompress.csprojAssemblyReference.cache
+C:\Users\rldnj\Workspace\GFDecompress\obj\Release\GFDecompress.csproj.CoreCompileInputs.cache
+C:\Users\rldnj\Workspace\GFDecompress\obj\Release\GFDecompress.csproj.CopyComplete
+C:\Users\rldnj\Workspace\GFDecompress\obj\Release\GFDecompress.exe
+C:\Users\rldnj\Workspace\GFDecompress\obj\Release\GFDecompress.pdb
