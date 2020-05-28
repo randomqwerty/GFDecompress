@@ -70,13 +70,13 @@ namespace GFDecompress
         public static void getTextAsset(string _location) {
             string dir = $"./Assets/{_location}";
             string data;
-            JObject json = new JObject();
 
             if (!File.Exists("results\\text"))
                 Directory.CreateDirectory("results\\text");
             
             foreach (var item in new DirectoryInfo(dir).GetFiles()) {
                 Console.WriteLine(item.Name + "변환 중");
+                JObject json = new JObject();
                 StreamReader file = new StreamReader(dir + "\\" + item.Name);
                 try
                 {
@@ -88,8 +88,8 @@ namespace GFDecompress
                     }
                 }
                 catch { }
-
-                File.WriteAllText($"results\\text\\{item.Name.Split('.')[0]}.json", json.ToString());
+                Encoding utf8 = new UTF8Encoding(false);
+                File.WriteAllText($"results\\text\\{item.Name.Split('.')[0]}.json", json.ToString(),utf8);
             }
         }
     }
