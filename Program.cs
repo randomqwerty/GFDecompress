@@ -246,6 +246,9 @@ namespace GFDecompress
                 JsonUtil.getFairyJson(BattleSkillConfigList, MissionSkillConfigList);
                 //equip.json 생성
                 JsonUtil.getEquipJson(EquipList);
+
+                //textAsset2json
+                JsonUtil.getTextAsset("kr");
                 
 
                 // 폴더 열기

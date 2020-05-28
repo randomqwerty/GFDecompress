@@ -104,6 +104,19 @@ namespace GFDecompress
                     return "dummy";
             }
         }
+
+        public static string getSquadType(int _code) {
+            switch (_code) {
+                case 1:
+                    return "ATW";
+                case 2:
+                    return "MTR";
+                case 3:
+                    return "AGL";
+                default:
+                    return "undefined";
+            }
+        }
     }
 
     class Grid {
@@ -127,6 +140,32 @@ namespace GFDecompress
                     return 6;
                 case 19:
                     return 9;
+                default:
+                    return -1; //에러코드임 아무튼 에러코드임
+            }
+        }
+
+        public static int gridCenter(int _dataValue) {
+            switch (_dataValue)
+            {
+                case 7:
+                    return 9;
+                case 8:
+                    return 6;
+                case 9:
+                    return 3;
+                case 12:
+                    return 8;
+                case 13:
+                    return 5;
+                case 14:
+                    return 2;
+                case 17:
+                    return 7;
+                case 18:
+                    return 4;
+                case 19:
+                    return 1;
                 default:
                     return -1; //에러코드임 아무튼 에러코드임
             }
@@ -256,7 +295,7 @@ namespace GFDecompress
                 }
                 effect["effectType"] = typeArr;
             }
-            effect["effectCenter"] = Grid.readPos(_gunList["effect_grid_center"].ToObject<int>());
+            effect["effectCenter"] = Grid.gridCenter(_gunList["effect_grid_center"].ToObject<int>());
 
             string[] effectPos = _gunList["effect_grid_pos"].ToString().Split(',');
             JArray tmpArr = new JArray();
@@ -407,7 +446,7 @@ namespace GFDecompress
                 foreach (string str in consume)
                 {
                     string[] tmp = str.Split(',');
-                    mindupdate[cnt]["core"] = int.Parse(tmp[0].Split(':')[1]) ;
+                    mindupdate[cnt]["core"] = int.Parse(tmp[0].Split(':')[1]);
                     mindupdate[cnt]["mempiece"] = int.Parse(tmp[1].Split(':')[1]);
                     cnt++;
                 }
@@ -418,7 +457,7 @@ namespace GFDecompress
 
         public override string ToString()
         {
-            return JsonConvert.SerializeObject(this,Formatting.None,new JsonSerializerSettings { 
+            return JsonConvert.SerializeObject(this, Formatting.None, new JsonSerializerSettings {
                 NullValueHandling = NullValueHandling.Ignore
             });
         }
@@ -428,7 +467,7 @@ namespace GFDecompress
     public class FairyData {
         public int id;
         public string category;
-        public JObject stats =new JObject();
+        public JObject stats = new JObject();
         public JObject skill = new JObject()
         {
             {"id",0},
@@ -475,10 +514,10 @@ namespace GFDecompress
             {
                 for (int i = 0; i < 6; ++i)
                 {
-                    if (_fairyList[statList[0,i]].ToString().Equals("0"))
+                    if (_fairyList[statList[0, i]].ToString().Equals("0"))
                         continue;
-                    string[] value = _fairyList[statList[0,i]].ToString().Split(',');
-                    stats.Add(statList[1,i], _fairyList[statList[0,i]]);
+                    string[] value = _fairyList[statList[0, i]].ToString().Split(',');
+                    stats.Add(statList[1, i], _fairyList[statList[0, i]]);
                 }
             }
             catch { }
@@ -520,7 +559,7 @@ namespace GFDecompress
                         skill["consumption"] = element.ToObject<JObject>()["consumption"].ToObject<int>();
                     }
                 }
-                
+
 
                 /*foreach (JToken element in _skillLIst)
                 {
@@ -562,7 +601,7 @@ namespace GFDecompress
             //스킨 추가
             foreach (JToken element in _skinList["fairy_skin_info"].ToObject<JArray>()) {
                 if (element.ToObject<JObject>()["gift_fairy"].ToString().Equals(id.ToString())) {
-                    JObject skin = new JObject() 
+                    JObject skin = new JObject()
                     {
                         {"id",element["id"]},
                         {"codename",element["pic_id"] }
@@ -653,7 +692,7 @@ namespace GFDecompress
                     JObject stat = new JObject();
                     stat.Add("min", value[0]);
                     stat.Add("max", value[1]);
-                    if(!(_obj["bonus_type"].ToString().Equals("")))
+                    if (!(_obj["bonus_type"].ToString().Equals("")))
                         foreach (string bonus in _obj["bonus_type"].ToString().Split(',')) {
                             if (bonus.StartsWith(statName)) {
                                 stat.Add("upgrade", int.Parse(bonus.Split(':')[1]));
@@ -662,7 +701,7 @@ namespace GFDecompress
                     stats.Add(statName, stat);
                 }
             }
-            catch {}
+            catch { }
             powerup.Add("mp", _obj["powerup_mp"]);
             powerup.Add("ammo", _obj["powerup_ammo"]);
             powerup.Add("mre", _obj["powerup_mre"]);
@@ -673,5 +712,27 @@ namespace GFDecompress
         {
             return JsonConvert.SerializeObject(this);
         }
+    }
+
+    public class SquadData {
+        public int id;
+        public string codename;
+        public string type;
+        public int assistType;
+        public JArray assistRange;
+        public JObject stats = new JObject() {
+            {"hp", 0},
+            {"damage", 0},
+            {"reload", 0},
+            {"hit", 0},
+            {"defBreak", 0},
+            {"armorPiercing", 0}
+        };
+        public JObject skill1 = new JObject {
+            {"id", 0},
+            //{""}
+        };
+        public JObject skill2;
+        public JObject skill3;
     }
 }

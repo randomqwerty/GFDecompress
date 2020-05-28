@@ -13,4 +13,6 @@
   * BattleSkillConfig.cs 5001.stc 변환 클래스 (스킬 데이터)
   * MissionSkillConfig.cs 5046.stc 변환 클래스 (스킬 데이터)
 * StcBinaryReader.cs : 복호화 클래스
+* StcDownloader.cs : 데이터 다운로드 클래스
 * Program.cs : 최초실행 클래스
+

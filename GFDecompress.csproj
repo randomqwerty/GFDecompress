@@ -74,7 +74,7 @@
     <Compile Include="StcBinaryReader.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="StcDownloader.cs" />
+    <Compile Include="Downloader.cs" />
     <Compile Include="STC\BattleSkillConfig.cs" />
     <Compile Include="STC\Equip.cs" />
     <Compile Include="STC\Gun.cs" />
@@ -99,6 +99,9 @@
       <ProductName>.NET Framework 3.5 SP1</ProductName>
       <Install>false</Install>
     </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Assets\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
