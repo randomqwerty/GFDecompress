@@ -41,8 +41,10 @@ namespace GFDecompress
         public void downloadStc() {
             string url = getStcUrl();
 
-            if (!Directory.Exists("stc"))
-                Directory.CreateDirectory("stc");
+            // 삭제 후 폴더 생성
+            if (Directory.Exists("stc"))
+                Directory.Delete("stc", true);
+            Directory.CreateDirectory("stc");
 
             Console.WriteLine("최신 데이터 다운로드 중...");
             Console.WriteLine("Url: " + url);

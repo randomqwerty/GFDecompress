@@ -1,0 +1,312 @@
+[
+  {
+    "__0": 100,
+    "__1": "unit_character-10000100",
+    "__2": "unit_character-20000100"
+  },
+  {
+    "__0": 101,
+    "__1": "unit_character-10000101",
+    "__2": "unit_character-20000101"
+  },
+  {
+    "__0": 102,
+    "__1": "unit_character-10000102",
+    "__2": "unit_character-20000102"
+  },
+  {
+    "__0": 103,
+    "__1": "unit_character-10000103",
+    "__2": "unit_character-20000103"
+  },
+  {
+    "__0": 104,
+    "__1": "unit_character-10000104",
+    "__2": "unit_character-20000104"
+  },
+  {
+    "__0": 105,
+    "__1": "unit_character-10000105",
+    "__2": "unit_character-20000105"
+  },
+  {
+    "__0": 200,
+    "__1": "unit_character-10000200",
+    "__2": "unit_character-20000200"
+  },
+  {
+    "__0": 201,
+    "__1": "unit_character-10000201",
+    "__2": "unit_character-20000201"
+  },
+  {
+    "__0": 202,
+    "__1": "unit_character-10000202",
+    "__2": "unit_character-20000202"
+  },
+  {
+    "__0": 203,
+    "__1": "unit_character-10000203",
+    "__2": "unit_character-20000203"
+  },
+  {
+    "__0": 204,
+    "__1": "unit_character-10000204",
+    "__2": "unit_character-20000204"
+  },
+  {
+    "__0": 205,
+    "__1": "unit_character-10000205",
+    "__2": "unit_character-20000205"
+  },
+  {
+    "__0": 206,
+    "__1": "unit_character-10000206",
+    "__2": "unit_character-20000206"
+  },
+  {
+    "__0": 207,
+    "__1": "unit_character-10000207",
+    "__2": "unit_character-20000207"
+  },
+  {
+    "__0": 208,
+    "__1": "unit_character-10000208",
+    "__2": "unit_character-20000208"
+  },
+  {
+    "__0": 209,
+    "__1": "unit_character-10000209",
+    "__2": "unit_character-20000209"
+  },
+  {
+    "__0": 210,
+    "__1": "unit_character-10000210",
+    "__2": "unit_character-20000210"
+  },
+  {
+    "__0": 211,
+    "__1": "unit_character-10000211",
+    "__2": "unit_character-20000211"
+  },
+  {
+    "__0": 212,
+    "__1": "unit_character-10000212",
+    "__2": "unit_character-20000212"
+  },
+  {
+    "__0": 213,
+    "__1": "unit_character-10000213",
+    "__2": "unit_character-20000213"
+  },
+  {
+    "__0": 214,
+    "__1": "unit_character-10000214",
+    "__2": "unit_character-20000214"
+  },
+  {
+    "__0": 215,
+    "__1": "unit_character-10000215",
+    "__2": "unit_character-20000215"
+  },
+  {
+    "__0": 216,
+    "__1": "unit_character-10000216",
+    "__2": "unit_character-20000216"
+  },
+  {
+    "__0": 300,
+    "__1": "unit_character-10000300",
+    "__2": "unit_character-20000300"
+  },
+  {
+    "__0": 301,
+    "__1": "unit_character-10000301",
+    "__2": "unit_character-20000301"
+  },
+  {
+    "__0": 302,
+    "__1": "unit_character-10000302",
+    "__2": "unit_character-20000302"
+  },
+  {
+    "__0": 303,
+    "__1": "unit_character-10000303",
+    "__2": "unit_character-20000303"
+  },
+  {
+    "__0": 304,
+    "__1": "unit_character-10000304",
+    "__2": "unit_character-20000304"
+  },
+  {
+    "__0": 305,
+    "__1": "unit_character-10000305",
+    "__2": "unit_character-20000305"
+  },
+  {
+    "__0": 306,
+    "__1": "unit_character-10000306",
+    "__2": "unit_character-20000306"
+  },
+  {
+    "__0": 307,
+    "__1": "unit_character-10000307",
+    "__2": "unit_character-20000307"
+  },
+  {
+    "__0": 308,
+    "__1": "unit_character-10000308",
+    "__2": "unit_character-20000308"
+  },
+  {
+    "__0": 309,
+    "__1": "unit_character-10000309",
+    "__2": "unit_character-20000309"
+  },
+  {
+    "__0": 310,
+    "__1": "unit_character-10000310",
+    "__2": "unit_character-20000310"
+  },
+  {
+    "__0": 311,
+    "__1": "unit_character-10000311",
+    "__2": "unit_character-20000311"
+  },
+  {
+    "__0": 312,
+    "__1": "unit_character-10000312",
+    "__2": "unit_character-20000312"
+  },
+  {
+    "__0": 313,
+    "__1": "unit_character-10000313",
+    "__2": "unit_character-20000313"
+  },
+  {
+    "__0": 314,
+    "__1": "unit_character-10000314",
+    "__2": "unit_character-20000314"
+  },
+  {
+    "__0": 315,
+    "__1": "unit_character-10000315",
+    "__2": "unit_character-20000315"
+  },
+  {
+    "__0": 316,
+    "__1": "unit_character-10000316",
+    "__2": "unit_character-20000316"
+  },
+  {
+    "__0": 317,
+    "__1": "unit_character-10000317",
+    "__2": "unit_character-20000317"
+  },
+  {
+    "__0": 318,
+    "__1": "unit_character-10000318",
+    "__2": "unit_character-20000318"
+  },
+  {
+    "__0": 319,
+    "__1": "unit_character-10000319",
+    "__2": "unit_character-20000319"
+  },
+  {
+    "__0": 320,
+    "__1": "unit_character-10000320",
+    "__2": "unit_character-20000320"
+  },
+  {
+    "__0": 321,
+    "__1": "unit_character-10000321",
+    "__2": "unit_character-20000321"
+  },
+  {
+    "__0": 322,
+    "__1": "unit_character-10000322",
+    "__2": "unit_character-20000322"
+  },
+  {
+    "__0": 323,
+    "__1": "unit_character-10000323",
+    "__2": "unit_character-20000323"
+  },
+  {
+    "__0": 324,
+    "__1": "unit_character-10000324",
+    "__2": "unit_character-20000324"
+  },
+  {
+    "__0": 325,
+    "__1": "unit_character-10000325",
+    "__2": "unit_character-20000325"
+  },
+  {
+    "__0": 326,
+    "__1": "unit_character-10000326",
+    "__2": "unit_character-20000326"
+  },
+  {
+    "__0": 900,
+    "__1": "unit_character-10000900",
+    "__2": "unit_character-20000900"
+  },
+  {
+    "__0": 901,
+    "__1": "unit_character-10000901",
+    "__2": "unit_character-20000901"
+  },
+  {
+    "__0": 902,
+    "__1": "unit_character-10000902",
+    "__2": "unit_character-20000902"
+  },
+  {
+    "__0": 903,
+    "__1": "unit_character-10000903",
+    "__2": "unit_character-20000903"
+  },
+  {
+    "__0": 904,
+    "__1": "unit_character-10000904",
+    "__2": "unit_character-20000904"
+  },
+  {
+    "__0": 905,
+    "__1": "unit_character-10000905",
+    "__2": "unit_character-20000905"
+  },
+  {
+    "__0": 906,
+    "__1": "unit_character-10000906",
+    "__2": "unit_character-20000906"
+  },
+  {
+    "__0": 907,
+    "__1": "unit_character-10000907",
+    "__2": "unit_character-20000907"
+  },
+  {
+    "__0": 908,
+    "__1": "unit_character-10000908",
+    "__2": "unit_character-20000908"
+  },
+  {
+    "__0": 909,
+    "__1": "unit_character-10000909",
+    "__2": "unit_character-20000909"
+  },
+  {
+    "__0": 910,
+    "__1": "unit_character-10000910",
+    "__2": "unit_character-20000910"
+  },
+  {
+    "__0": 911,
+    "__1": "unit_character-10000911",
+    "__2": "unit_character-20000911"
+  }
+]
