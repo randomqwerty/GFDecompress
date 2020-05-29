@@ -49,8 +49,8 @@ namespace GFDecompress
 
             try
             {
-                fairyData = JObject.Parse(System.IO.File.ReadAllText("output_catchdata\\fairy_info.json"));
-                fairySkinData = JObject.Parse(System.IO.File.ReadAllText("output_catchdata\\fairy_skin_info.json"));
+                fairyData = JObject.Parse(System.IO.File.ReadAllText("output\\catchdata\\fairy_info.json"));
+                fairySkinData = JObject.Parse(System.IO.File.ReadAllText("output\\catchdata\\fairy_skin_info.json"));
             }
             catch{
                 Console.WriteLine("ERROR: 파일이 존재하지 않음");
