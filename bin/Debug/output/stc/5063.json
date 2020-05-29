@@ -1,0 +1,2498 @@
+[
+  {
+    "__0": 1000101,
+    "__1": "Rock",
+    "__2": "manual_ui-11000101",
+    "__3": "manual_ui-21000101",
+    "__4": "manual_ui-31000101",
+    "__5": "Squad_Icon"
+  },
+  {
+    "__0": 1000102,
+    "__1": "Rock",
+    "__2": "manual_ui-11000102",
+    "__3": "manual_ui-21000102",
+    "__4": "manual_ui-31000102",
+    "__5": "Squad_Icon"
+  },
+  {
+    "__0": 1000105,
+    "__1": "Rock",
+    "__2": "manual_ui-11000105",
+    "__3": "manual_ui-21000105",
+    "__4": "manual_ui-31000105",
+    "__5": "Squad_Icon"
+  },
+  {
+    "__0": 1000108,
+    "__1": "Birdge_Left",
+    "__2": "manual_ui-11000108",
+    "__3": "manual_ui-21000108",
+    "__4": "manual_ui-31000108",
+    "__5": "Squad_Icon"
+  },
+  {
+    "__0": 1000112,
+    "__1": "Birdge_Left",
+    "__2": "manual_ui-11000112",
+    "__3": "manual_ui-21000112",
+    "__4": "manual_ui-31000112",
+    "__5": "Squad_Icon"
+  },
+  {
+    "__0": 1000115,
+    "__1": "Birdge_Left",
+    "__2": "manual_ui-11000115",
+    "__3": "manual_ui-21000115",
+    "__4": "manual_ui-31000115",
+    "__5": "Squad_Icon"
+  },
+  {
+    "__0": 1000201,
+    "__1": "Rock",
+    "__2": "manual_ui-11000201",
+    "__3": "manual_ui-21000201",
+    "__4": "manual_ui-31000201",
+    "__5": "Squad_Icon"
+  },
+  {
+    "__0": 1000301,
+    "__1": "Rock",
+    "__2": "manual_ui-11000301",
+    "__3": "manual_ui-21000301",
+    "__4": "manual_ui-31000301",
+    "__5": "Squad_Icon"
+  },
+  {
+    "__0": 1000401,
+    "__1": "Rock",
+    "__2": "manual_ui-11000401",
+    "__3": "manual_ui-21000401",
+    "__4": "manual_ui-31000401",
+    "__5": "Squad_Icon"
+  },
+  {
+    "__0": 1000501,
+    "__1": "Rock",
+    "__2": "manual_ui-11000501",
+    "__3": "manual_ui-21000501",
+    "__4": "manual_ui-31000501",
+    "__5": "Squad_Icon"
+  },
+  {
+    "__0": 1000601,
+    "__1": "Rock",
+    "__2": "manual_ui-11000601",
+    "__3": "manual_ui-21000601",
+    "__4": "manual_ui-31000601",
+    "__5": "Squad_Icon"
+  },
+  {
+    "__0": 1010104,
+    "__1": "Console",
+    "__2": "manual_ui-11010104",
+    "__3": "manual_ui-21010104",
+    "__4": "manual_ui-31010104",
+    "__5": "Squad_Icon"
+  },
+  {
+    "__0": 1010105,
+    "__1": "Console",
+    "__2": "manual_ui-11010105",
+    "__3": "manual_ui-21010105",
+    "__4": "manual_ui-31010105",
+    "__5": "Squad_Icon"
+  },
+  {
+    "__0": 1010106,
+    "__1": "Console",
+    "__2": "manual_ui-11010106",
+    "__3": "manual_ui-21010106",
+    "__4": "manual_ui-31010106",
+    "__5": "Squad_Icon"
+  },
+  {
+    "__0": 1010107,
+    "__1": "Console",
+    "__2": "manual_ui-11010107",
+    "__3": "manual_ui-21010107",
+    "__4": "manual_ui-31010107",
+    "__5": "Squad_Icon"
+  },
+  {
+    "__0": 1010110,
+    "__1": "Console",
+    "__2": "manual_ui-11010110",
+    "__3": "manual_ui-21010110",
+    "__4": "manual_ui-31010110",
+    "__5": "Squad_Icon"
+  },
+  {
+    "__0": 1010111,
+    "__1": "Console",
+    "__2": "manual_ui-11010111",
+    "__3": "manual_ui-21010111",
+    "__4": "manual_ui-31010111",
+    "__5": "Squad_Icon"
+  },
+  {
+    "__0": 1010112,
+    "__1": "Console",
+    "__2": "manual_ui-11010112",
+    "__3": "manual_ui-21010112",
+    "__4": "manual_ui-31010112",
+    "__5": "Squad_Icon"
+  },
+  {
+    "__0": 1010113,
+    "__1": "Console",
+    "__2": "manual_ui-11010113",
+    "__3": "manual_ui-21010113",
+    "__4": "manual_ui-31010113",
+    "__5": "Squad_Icon"
+  },
+  {
+    "__0": 1010114,
+    "__1": "Console",
+    "__2": "manual_ui-11010114",
+    "__3": "manual_ui-21010114",
+    "__4": "manual_ui-31010114",
+    "__5": "Squad_Icon"
+  },
+  {
+    "__0": 1010204,
+    "__1": "Console",
+    "__2": "manual_ui-11010204",
+    "__3": "manual_ui-21010204",
+    "__4": "manual_ui-31010204",
+    "__5": "Squad_Icon"
+  },
+  {
+    "__0": 1010205,
+    "__1": "Console",
+    "__2": "manual_ui-11010205",
+    "__3": "manual_ui-21010205",
+    "__4": "manual_ui-31010205",
+    "__5": "Squad_Icon"
+  },
+  {
+    "__0": 1010206,
+    "__1": "Console",
+    "__2": "manual_ui-11010206",
+    "__3": "manual_ui-21010206",
+    "__4": "manual_ui-31010206",
+    "__5": "Squad_Icon"
+  },
+  {
+    "__0": 1010207,
+    "__1": "Console",
+    "__2": "manual_ui-11010207",
+    "__3": "manual_ui-21010207",
+    "__4": "manual_ui-31010207",
+    "__5": "Squad_Icon"
+  },
+  {
+    "__0": 1010208,
+    "__1": "Console",
+    "__2": "manual_ui-11010208",
+    "__3": "manual_ui-21010208",
+    "__4": "manual_ui-31010208",
+    "__5": "Squad_Icon"
+  },
+  {
+    "__0": 1010209,
+    "__1": "Console",
+    "__2": "manual_ui-11010209",
+    "__3": "manual_ui-21010209",
+    "__4": "manual_ui-31010209",
+    "__5": "Squad_Icon"
+  },
+  {
+    "__0": 1010210,
+    "__1": "Console",
+    "__2": "manual_ui-11010210",
+    "__3": "manual_ui-21010210",
+    "__4": "manual_ui-31010210",
+    "__5": "Squad_Icon"
+  },
+  {
+    "__0": 1010212,
+    "__1": "Console",
+    "__2": "manual_ui-11010212",
+    "__3": "manual_ui-21010212",
+    "__4": "manual_ui-31010212",
+    "__5": "Squad_Icon"
+  },
+  {
+    "__0": 1010213,
+    "__1": "Console",
+    "__2": "manual_ui-11010213",
+    "__3": "manual_ui-21010213",
+    "__4": "manual_ui-31010213",
+    "__5": "Squad_Icon"
+  },
+  {
+    "__0": 1010304,
+    "__1": "Console",
+    "__2": "manual_ui-11010304",
+    "__3": "manual_ui-21010304",
+    "__4": "manual_ui-31010304",
+    "__5": "Squad_Icon"
+  },
+  {
+    "__0": 1010305,
+    "__1": "Console",
+    "__2": "manual_ui-11010305",
+    "__3": "manual_ui-21010305",
+    "__4": "manual_ui-31010305",
+    "__5": "Squad_Icon"
+  },
+  {
+    "__0": 1010306,
+    "__1": "Console",
+    "__2": "manual_ui-11010306",
+    "__3": "manual_ui-21010306",
+    "__4": "manual_ui-31010306",
+    "__5": "Squad_Icon"
+  },
+  {
+    "__0": 1010307,
+    "__1": "Console",
+    "__2": "manual_ui-11010307",
+    "__3": "manual_ui-21010307",
+    "__4": "manual_ui-31010307",
+    "__5": "Squad_Icon"
+  },
+  {
+    "__0": 1010308,
+    "__1": "Console",
+    "__2": "manual_ui-11010308",
+    "__3": "manual_ui-21010308",
+    "__4": "manual_ui-31010308",
+    "__5": "Squad_Icon"
+  },
+  {
+    "__0": 1010309,
+    "__1": "Console",
+    "__2": "manual_ui-11010309",
+    "__3": "manual_ui-21010309",
+    "__4": "manual_ui-31010309",
+    "__5": "Squad_Icon"
+  },
+  {
+    "__0": 1010404,
+    "__1": "Console",
+    "__2": "manual_ui-11010404",
+    "__3": "manual_ui-21010404",
+    "__4": "manual_ui-31010404",
+    "__5": "Squad_Icon"
+  },
+  {
+    "__0": 1010405,
+    "__1": "Console",
+    "__2": "manual_ui-11010405",
+    "__3": "manual_ui-21010405",
+    "__4": "manual_ui-31010405",
+    "__5": "Squad_Icon"
+  },
+  {
+    "__0": 1010406,
+    "__1": "Console",
+    "__2": "manual_ui-11010406",
+    "__3": "manual_ui-21010406",
+    "__4": "manual_ui-31010406",
+    "__5": "Squad_Icon"
+  },
+  {
+    "__0": 1010407,
+    "__1": "Console",
+    "__2": "manual_ui-11010407",
+    "__3": "manual_ui-21010407",
+    "__4": "manual_ui-31010407",
+    "__5": "Squad_Icon"
+  },
+  {
+    "__0": 1010410,
+    "__1": "Console",
+    "__2": "manual_ui-11010410",
+    "__3": "manual_ui-21010410",
+    "__4": "manual_ui-31010410",
+    "__5": "Squad_Icon"
+  },
+  {
+    "__0": 1010411,
+    "__1": "Console",
+    "__2": "manual_ui-11010411",
+    "__3": "manual_ui-21010411",
+    "__4": "manual_ui-31010411",
+    "__5": "Squad_Icon"
+  },
+  {
+    "__0": 1010412,
+    "__1": "Console",
+    "__2": "manual_ui-11010412",
+    "__3": "manual_ui-21010412",
+    "__4": "manual_ui-31010412",
+    "__5": "Squad_Icon"
+  },
+  {
+    "__0": 1010413,
+    "__1": "Console",
+    "__2": "manual_ui-11010413",
+    "__3": "manual_ui-21010413",
+    "__4": "manual_ui-31010413",
+    "__5": "Squad_Icon"
+  },
+  {
+    "__0": 1010414,
+    "__1": "Console",
+    "__2": "manual_ui-11010414",
+    "__3": "manual_ui-21010414",
+    "__4": "manual_ui-31010414",
+    "__5": "Squad_Icon"
+  },
+  {
+    "__0": 1010415,
+    "__1": "Console",
+    "__2": "manual_ui-11010415",
+    "__3": "manual_ui-21010415",
+    "__4": "manual_ui-31010415",
+    "__5": "Squad_Icon"
+  },
+  {
+    "__0": 1010504,
+    "__1": "Console",
+    "__2": "manual_ui-11010504",
+    "__3": "manual_ui-21010504",
+    "__4": "manual_ui-31010504",
+    "__5": "Squad_Icon"
+  },
+  {
+    "__0": 1010505,
+    "__1": "Console",
+    "__2": "manual_ui-11010505",
+    "__3": "manual_ui-21010505",
+    "__4": "manual_ui-31010505",
+    "__5": "Squad_Icon"
+  },
+  {
+    "__0": 1010506,
+    "__1": "Console",
+    "__2": "manual_ui-11010506",
+    "__3": "manual_ui-21010506",
+    "__4": "manual_ui-31010506",
+    "__5": "Squad_Icon"
+  },
+  {
+    "__0": 1010507,
+    "__1": "Console",
+    "__2": "manual_ui-11010507",
+    "__3": "manual_ui-21010507",
+    "__4": "manual_ui-31010507",
+    "__5": "Squad_Icon"
+  },
+  {
+    "__0": 1010508,
+    "__1": "Console",
+    "__2": "manual_ui-11010508",
+    "__3": "manual_ui-21010508",
+    "__4": "manual_ui-31010508",
+    "__5": "Squad_Icon"
+  },
+  {
+    "__0": 1010509,
+    "__1": "Console",
+    "__2": "manual_ui-11010509",
+    "__3": "manual_ui-21010509",
+    "__4": "manual_ui-31010509",
+    "__5": "Squad_Icon"
+  },
+  {
+    "__0": 1010604,
+    "__1": "Console",
+    "__2": "manual_ui-11010604",
+    "__3": "manual_ui-21010604",
+    "__4": "manual_ui-31010604",
+    "__5": "Squad_Icon"
+  },
+  {
+    "__0": 1010605,
+    "__1": "Console",
+    "__2": "manual_ui-11010605",
+    "__3": "manual_ui-21010605",
+    "__4": "manual_ui-31010605",
+    "__5": "Squad_Icon"
+  },
+  {
+    "__0": 1010606,
+    "__1": "Console",
+    "__2": "manual_ui-11010606",
+    "__3": "manual_ui-21010606",
+    "__4": "manual_ui-31010606",
+    "__5": "Squad_Icon"
+  },
+  {
+    "__0": 1010607,
+    "__1": "Console",
+    "__2": "manual_ui-11010607",
+    "__3": "manual_ui-21010607",
+    "__4": "manual_ui-31010607",
+    "__5": "Squad_Icon"
+  },
+  {
+    "__0": 1010608,
+    "__1": "Console",
+    "__2": "manual_ui-11010608",
+    "__3": "manual_ui-21010608",
+    "__4": "manual_ui-31010608",
+    "__5": "Squad_Icon"
+  },
+  {
+    "__0": 1010609,
+    "__1": "Console",
+    "__2": "manual_ui-11010609",
+    "__3": "manual_ui-21010609",
+    "__4": "manual_ui-31010609",
+    "__5": "Squad_Icon"
+  },
+  {
+    "__0": 1010704,
+    "__1": "Console",
+    "__2": "manual_ui-11010704",
+    "__3": "manual_ui-21010704",
+    "__4": "manual_ui-31010704",
+    "__5": "Squad_Icon"
+  },
+  {
+    "__0": 1010705,
+    "__1": "Console",
+    "__2": "manual_ui-11010705",
+    "__3": "manual_ui-21010705",
+    "__4": "manual_ui-31010705",
+    "__5": "Squad_Icon"
+  },
+  {
+    "__0": 1010706,
+    "__1": "Console",
+    "__2": "manual_ui-11010706",
+    "__3": "manual_ui-21010706",
+    "__4": "manual_ui-31010706",
+    "__5": "Squad_Icon"
+  },
+  {
+    "__0": 1010707,
+    "__1": "Console",
+    "__2": "manual_ui-11010707",
+    "__3": "manual_ui-21010707",
+    "__4": "manual_ui-31010707",
+    "__5": "Squad_Icon"
+  },
+  {
+    "__0": 1010804,
+    "__1": "Console",
+    "__2": "manual_ui-11010804",
+    "__3": "manual_ui-21010804",
+    "__4": "manual_ui-31010804",
+    "__5": "Squad_Icon"
+  },
+  {
+    "__0": 1010805,
+    "__1": "Console",
+    "__2": "manual_ui-11010805",
+    "__3": "manual_ui-21010805",
+    "__4": "manual_ui-31010805",
+    "__5": "Squad_Icon"
+  },
+  {
+    "__0": 1010806,
+    "__1": "Console",
+    "__2": "manual_ui-11010806",
+    "__3": "manual_ui-21010806",
+    "__4": "manual_ui-31010806",
+    "__5": "Squad_Icon"
+  },
+  {
+    "__0": 1010807,
+    "__1": "Console",
+    "__2": "manual_ui-11010807",
+    "__3": "manual_ui-21010807",
+    "__4": "manual_ui-31010807",
+    "__5": "Squad_Icon"
+  },
+  {
+    "__0": 1020106,
+    "__1": "Door_Left",
+    "__2": "manual_ui-11020106",
+    "__3": "manual_ui-21020106",
+    "__4": "manual_ui-31020106",
+    "__5": "Console_Icon"
+  },
+  {
+    "__0": 1020107,
+    "__1": "Door_Left",
+    "__2": "manual_ui-11020107",
+    "__3": "manual_ui-21020107",
+    "__4": "manual_ui-31020107",
+    "__5": "Console_Icon"
+  },
+  {
+    "__0": 1020108,
+    "__1": "Door_Left",
+    "__2": "manual_ui-11020108",
+    "__3": "manual_ui-21020108",
+    "__4": "manual_ui-31020108",
+    "__5": "Console_Icon"
+  },
+  {
+    "__0": 1020109,
+    "__1": "Door_Left",
+    "__2": "manual_ui-11020109",
+    "__3": "manual_ui-21020109",
+    "__4": "manual_ui-31020109",
+    "__5": "Console_Icon"
+  },
+  {
+    "__0": 1020110,
+    "__1": "Door_Left",
+    "__2": "manual_ui-11020110",
+    "__3": "manual_ui-21020110",
+    "__4": "manual_ui-31020110",
+    "__5": "Console_Icon"
+  },
+  {
+    "__0": 1020111,
+    "__1": "Door_Left",
+    "__2": "manual_ui-11020111",
+    "__3": "manual_ui-21020111",
+    "__4": "manual_ui-31020111",
+    "__5": "Console_Icon"
+  },
+  {
+    "__0": 1020112,
+    "__1": "Door_Left",
+    "__2": "manual_ui-11020112",
+    "__3": "manual_ui-21020112",
+    "__4": "manual_ui-31020112",
+    "__5": "Console_Icon"
+  },
+  {
+    "__0": 1020113,
+    "__1": "Door_Left",
+    "__2": "manual_ui-11020113",
+    "__3": "manual_ui-21020113",
+    "__4": "manual_ui-31020113",
+    "__5": "Console_Icon"
+  },
+  {
+    "__0": 1020114,
+    "__1": "Door_Left",
+    "__2": "manual_ui-11020114",
+    "__3": "manual_ui-21020114",
+    "__4": "manual_ui-31020114",
+    "__5": "Console_Icon"
+  },
+  {
+    "__0": 1020115,
+    "__1": "Door_Left",
+    "__2": "manual_ui-11020115",
+    "__3": "manual_ui-21020115",
+    "__4": "manual_ui-31020115",
+    "__5": "Console_Icon"
+  },
+  {
+    "__0": 1020116,
+    "__1": "Door_Left",
+    "__2": "manual_ui-11020116",
+    "__3": "manual_ui-21020116",
+    "__4": "manual_ui-31020116",
+    "__5": "Console_Icon"
+  },
+  {
+    "__0": 1020117,
+    "__1": "Door_Left",
+    "__2": "manual_ui-11020117",
+    "__3": "manual_ui-21020117",
+    "__4": "manual_ui-31020117",
+    "__5": "Console_Icon"
+  },
+  {
+    "__0": 1020118,
+    "__1": "Door_Left",
+    "__2": "manual_ui-11020118",
+    "__3": "manual_ui-21020118",
+    "__4": "manual_ui-31020118",
+    "__5": "Console_Icon"
+  },
+  {
+    "__0": 1020119,
+    "__1": "Door_Left",
+    "__2": "manual_ui-11020119",
+    "__3": "manual_ui-21020119",
+    "__4": "manual_ui-31020119",
+    "__5": "Console_Icon"
+  },
+  {
+    "__0": 1020120,
+    "__1": "Door_Left",
+    "__2": "manual_ui-11020120",
+    "__3": "manual_ui-21020120",
+    "__4": "manual_ui-31020120",
+    "__5": "Console_Icon"
+  },
+  {
+    "__0": 1020121,
+    "__1": "Door_Left",
+    "__2": "manual_ui-11020121",
+    "__3": "manual_ui-21020121",
+    "__4": "manual_ui-31020121",
+    "__5": "Console_Icon"
+  },
+  {
+    "__0": 1020122,
+    "__1": "Door_Left",
+    "__2": "manual_ui-11020122",
+    "__3": "manual_ui-21020122",
+    "__4": "manual_ui-31020122",
+    "__5": "Console_Icon"
+  },
+  {
+    "__0": 1020123,
+    "__1": "Door_Left",
+    "__2": "manual_ui-11020123",
+    "__3": "manual_ui-21020123",
+    "__4": "manual_ui-31020123",
+    "__5": "Console_Icon"
+  },
+  {
+    "__0": 1020126,
+    "__1": "Door_Left",
+    "__2": "manual_ui-11020126",
+    "__3": "manual_ui-21020126",
+    "__4": "manual_ui-31020126",
+    "__5": "Console_Icon"
+  },
+  {
+    "__0": 1020127,
+    "__1": "Door_Left",
+    "__2": "manual_ui-11020127",
+    "__3": "manual_ui-21020127",
+    "__4": "manual_ui-31020127",
+    "__5": "Console_Icon"
+  },
+  {
+    "__0": 1020206,
+    "__1": "Door_Left",
+    "__2": "manual_ui-11020206",
+    "__3": "manual_ui-21020206",
+    "__4": "manual_ui-31020206",
+    "__5": "Console_Icon"
+  },
+  {
+    "__0": 1020207,
+    "__1": "Door_Left",
+    "__2": "manual_ui-11020207",
+    "__3": "manual_ui-21020207",
+    "__4": "manual_ui-31020207",
+    "__5": "Console_Icon"
+  },
+  {
+    "__0": 1020208,
+    "__1": "Door_Left",
+    "__2": "manual_ui-11020208",
+    "__3": "manual_ui-21020208",
+    "__4": "manual_ui-31020208",
+    "__5": "Console_Icon"
+  },
+  {
+    "__0": 1020209,
+    "__1": "Door_Left",
+    "__2": "manual_ui-11020209",
+    "__3": "manual_ui-21020209",
+    "__4": "manual_ui-31020209",
+    "__5": "Console_Icon"
+  },
+  {
+    "__0": 1020210,
+    "__1": "Door_Left",
+    "__2": "manual_ui-11020210",
+    "__3": "manual_ui-21020210",
+    "__4": "manual_ui-31020210",
+    "__5": "Console_Icon"
+  },
+  {
+    "__0": 1020211,
+    "__1": "Door_Left",
+    "__2": "manual_ui-11020211",
+    "__3": "manual_ui-21020211",
+    "__4": "manual_ui-31020211",
+    "__5": "Console_Icon"
+  },
+  {
+    "__0": 1020212,
+    "__1": "Door_Left",
+    "__2": "manual_ui-11020212",
+    "__3": "manual_ui-21020212",
+    "__4": "manual_ui-31020212",
+    "__5": "Console_Icon"
+  },
+  {
+    "__0": 1020213,
+    "__1": "Door_Left",
+    "__2": "manual_ui-11020213",
+    "__3": "manual_ui-21020213",
+    "__4": "manual_ui-31020213",
+    "__5": "Console_Icon"
+  },
+  {
+    "__0": 1020214,
+    "__1": "Door_Left",
+    "__2": "manual_ui-11020214",
+    "__3": "manual_ui-21020214",
+    "__4": "manual_ui-31020214",
+    "__5": "Console_Icon"
+  },
+  {
+    "__0": 1020215,
+    "__1": "Door_Left",
+    "__2": "manual_ui-11020215",
+    "__3": "manual_ui-21020215",
+    "__4": "manual_ui-31020215",
+    "__5": "Console_Icon"
+  },
+  {
+    "__0": 1020216,
+    "__1": "Door_Left",
+    "__2": "manual_ui-11020216",
+    "__3": "manual_ui-21020216",
+    "__4": "manual_ui-31020216",
+    "__5": "Console_Icon"
+  },
+  {
+    "__0": 1020217,
+    "__1": "Door_Left",
+    "__2": "manual_ui-11020217",
+    "__3": "manual_ui-21020217",
+    "__4": "manual_ui-31020217",
+    "__5": "Console_Icon"
+  },
+  {
+    "__0": 1020218,
+    "__1": "Door_Left",
+    "__2": "manual_ui-11020218",
+    "__3": "manual_ui-21020218",
+    "__4": "manual_ui-31020218",
+    "__5": "Console_Icon"
+  },
+  {
+    "__0": 1020219,
+    "__1": "Door_Left",
+    "__2": "manual_ui-11020219",
+    "__3": "manual_ui-21020219",
+    "__4": "manual_ui-31020219",
+    "__5": "Console_Icon"
+  },
+  {
+    "__0": 1020306,
+    "__1": "Door_Left",
+    "__2": "manual_ui-11020306",
+    "__3": "manual_ui-21020306",
+    "__4": "manual_ui-31020306",
+    "__5": "Console_Icon"
+  },
+  {
+    "__0": 1020307,
+    "__1": "Door_Left",
+    "__2": "manual_ui-11020307",
+    "__3": "manual_ui-21020307",
+    "__4": "manual_ui-31020307",
+    "__5": "Console_Icon"
+  },
+  {
+    "__0": 1020308,
+    "__1": "Door_Left",
+    "__2": "manual_ui-11020308",
+    "__3": "manual_ui-21020308",
+    "__4": "manual_ui-31020308",
+    "__5": "Console_Icon"
+  },
+  {
+    "__0": 1020309,
+    "__1": "Door_Left",
+    "__2": "manual_ui-11020309",
+    "__3": "manual_ui-21020309",
+    "__4": "manual_ui-31020309",
+    "__5": "Console_Icon"
+  },
+  {
+    "__0": 1020310,
+    "__1": "Door_Left",
+    "__2": "manual_ui-11020310",
+    "__3": "manual_ui-21020310",
+    "__4": "manual_ui-31020310",
+    "__5": "Console_Icon"
+  },
+  {
+    "__0": 1020311,
+    "__1": "Door_Left",
+    "__2": "manual_ui-11020311",
+    "__3": "manual_ui-21020311",
+    "__4": "manual_ui-31020311",
+    "__5": "Console_Icon"
+  },
+  {
+    "__0": 1020312,
+    "__1": "Door_Left",
+    "__2": "manual_ui-11020312",
+    "__3": "manual_ui-21020312",
+    "__4": "manual_ui-31020312",
+    "__5": "Console_Icon"
+  },
+  {
+    "__0": 1020313,
+    "__1": "Door_Left",
+    "__2": "manual_ui-11020313",
+    "__3": "manual_ui-21020313",
+    "__4": "manual_ui-31020313",
+    "__5": "Console_Icon"
+  },
+  {
+    "__0": 1020314,
+    "__1": "Door_Left",
+    "__2": "manual_ui-11020314",
+    "__3": "manual_ui-21020314",
+    "__4": "manual_ui-31020314",
+    "__5": "Console_Icon"
+  },
+  {
+    "__0": 1020406,
+    "__1": "Door_Left",
+    "__2": "manual_ui-11020406",
+    "__3": "manual_ui-21020406",
+    "__4": "manual_ui-31020406",
+    "__5": "Console_Icon"
+  },
+  {
+    "__0": 1020407,
+    "__1": "Door_Left",
+    "__2": "manual_ui-11020407",
+    "__3": "manual_ui-21020407",
+    "__4": "manual_ui-31020407",
+    "__5": "Console_Icon"
+  },
+  {
+    "__0": 1020408,
+    "__1": "Door_Left",
+    "__2": "manual_ui-11020408",
+    "__3": "manual_ui-21020408",
+    "__4": "manual_ui-31020408",
+    "__5": "Console_Icon"
+  },
+  {
+    "__0": 1020409,
+    "__1": "Door_Left",
+    "__2": "manual_ui-11020409",
+    "__3": "manual_ui-21020409",
+    "__4": "manual_ui-31020409",
+    "__5": "Console_Icon"
+  },
+  {
+    "__0": 1020410,
+    "__1": "Door_Left",
+    "__2": "manual_ui-11020410",
+    "__3": "manual_ui-21020410",
+    "__4": "manual_ui-31020410",
+    "__5": "Console_Icon"
+  },
+  {
+    "__0": 1020411,
+    "__1": "Door_Left",
+    "__2": "manual_ui-11020411",
+    "__3": "manual_ui-21020411",
+    "__4": "manual_ui-31020411",
+    "__5": "Console_Icon"
+  },
+  {
+    "__0": 1020506,
+    "__1": "Door_Left",
+    "__2": "manual_ui-11020506",
+    "__3": "manual_ui-21020506",
+    "__4": "manual_ui-31020506",
+    "__5": "Console_Icon"
+  },
+  {
+    "__0": 1020507,
+    "__1": "Door_Left",
+    "__2": "manual_ui-11020507",
+    "__3": "manual_ui-21020507",
+    "__4": "manual_ui-31020507",
+    "__5": "Console_Icon"
+  },
+  {
+    "__0": 1020508,
+    "__1": "Door_Left",
+    "__2": "manual_ui-11020508",
+    "__3": "manual_ui-21020508",
+    "__4": "manual_ui-31020508",
+    "__5": "Console_Icon"
+  },
+  {
+    "__0": 1020509,
+    "__1": "Door_Left",
+    "__2": "manual_ui-11020509",
+    "__3": "manual_ui-21020509",
+    "__4": "manual_ui-31020509",
+    "__5": "Console_Icon"
+  },
+  {
+    "__0": 1020606,
+    "__1": "Door_Left",
+    "__2": "manual_ui-11020606",
+    "__3": "manual_ui-21020606",
+    "__4": "manual_ui-31020606",
+    "__5": "Console_Icon"
+  },
+  {
+    "__0": 1020607,
+    "__1": "Door_Left",
+    "__2": "manual_ui-11020607",
+    "__3": "manual_ui-21020607",
+    "__4": "manual_ui-31020607",
+    "__5": "Console_Icon"
+  },
+  {
+    "__0": 1020608,
+    "__1": "Door_Left",
+    "__2": "manual_ui-11020608",
+    "__3": "manual_ui-21020608",
+    "__4": "manual_ui-31020608",
+    "__5": "Console_Icon"
+  },
+  {
+    "__0": 1020609,
+    "__1": "Door_Left",
+    "__2": "manual_ui-11020609",
+    "__3": "manual_ui-21020609",
+    "__4": "manual_ui-31020609",
+    "__5": "Console_Icon"
+  },
+  {
+    "__0": 1020706,
+    "__1": "Door_Left",
+    "__2": "manual_ui-11020706",
+    "__3": "manual_ui-21020706",
+    "__4": "manual_ui-31020706",
+    "__5": "Console_Icon"
+  },
+  {
+    "__0": 1020707,
+    "__1": "Door_Left",
+    "__2": "manual_ui-11020707",
+    "__3": "manual_ui-21020707",
+    "__4": "manual_ui-31020707",
+    "__5": "Console_Icon"
+  },
+  {
+    "__0": 1020708,
+    "__1": "Door_Left",
+    "__2": "manual_ui-11020708",
+    "__3": "manual_ui-21020708",
+    "__4": "manual_ui-31020708",
+    "__5": "Console_Icon"
+  },
+  {
+    "__0": 1020709,
+    "__1": "Door_Left",
+    "__2": "manual_ui-11020709",
+    "__3": "manual_ui-21020709",
+    "__4": "manual_ui-31020709",
+    "__5": "Console_Icon"
+  },
+  {
+    "__0": 1020806,
+    "__1": "Door_Left",
+    "__2": "manual_ui-11020806",
+    "__3": "manual_ui-21020806",
+    "__4": "manual_ui-31020806",
+    "__5": "Console_Icon"
+  },
+  {
+    "__0": 1020807,
+    "__1": "Door_Left",
+    "__2": "manual_ui-11020807",
+    "__3": "manual_ui-21020807",
+    "__4": "manual_ui-31020807",
+    "__5": "Console_Icon"
+  },
+  {
+    "__0": 1020906,
+    "__1": "Door_Left",
+    "__2": "manual_ui-11020906",
+    "__3": "manual_ui-21020906",
+    "__4": "manual_ui-31020906",
+    "__5": "Console_Icon"
+  },
+  {
+    "__0": 1020907,
+    "__1": "Door_Left",
+    "__2": "manual_ui-11020907",
+    "__3": "manual_ui-21020907",
+    "__4": "manual_ui-31020907",
+    "__5": "Console_Icon"
+  },
+  {
+    "__0": 1021006,
+    "__1": "Door_Left",
+    "__2": "manual_ui-11021006",
+    "__3": "manual_ui-21021006",
+    "__4": "manual_ui-31021006",
+    "__5": "Console_Icon"
+  },
+  {
+    "__0": 1021007,
+    "__1": "Door_Left",
+    "__2": "manual_ui-11021007",
+    "__3": "manual_ui-21021007",
+    "__4": "manual_ui-31021007",
+    "__5": "Console_Icon"
+  },
+  {
+    "__0": 1021106,
+    "__1": "Door_Left",
+    "__2": "manual_ui-11021106",
+    "__3": "manual_ui-21021106",
+    "__4": "manual_ui-31021106",
+    "__5": "Console_Icon"
+  },
+  {
+    "__0": 1021107,
+    "__1": "Door_Left",
+    "__2": "manual_ui-11021107",
+    "__3": "manual_ui-21021107",
+    "__4": "manual_ui-31021107",
+    "__5": "Console_Icon"
+  },
+  {
+    "__0": 1021206,
+    "__1": "Door_Left",
+    "__2": "manual_ui-11021206",
+    "__3": "manual_ui-21021206",
+    "__4": "manual_ui-31021206",
+    "__5": "Console_Icon"
+  },
+  {
+    "__0": 1021207,
+    "__1": "Door_Left",
+    "__2": "manual_ui-11021207",
+    "__3": "manual_ui-21021207",
+    "__4": "manual_ui-31021207",
+    "__5": "Console_Icon"
+  },
+  {
+    "__0": 1021306,
+    "__1": "Door_Left",
+    "__2": "manual_ui-11021306",
+    "__3": "manual_ui-21021306",
+    "__4": "manual_ui-31021306",
+    "__5": "Console_Icon"
+  },
+  {
+    "__0": 1021307,
+    "__1": "Door_Left",
+    "__2": "manual_ui-11021307",
+    "__3": "manual_ui-21021307",
+    "__4": "manual_ui-31021307",
+    "__5": "Console_Icon"
+  },
+  {
+    "__0": 1030101,
+    "__1": "Boomer",
+    "__2": "manual_ui-11030101",
+    "__3": "manual_ui-21030101",
+    "__4": "manual_ui-31030101",
+    "__5": "Squad_Icon"
+  },
+  {
+    "__0": 1030201,
+    "__1": "Boomer",
+    "__2": "manual_ui-11030201",
+    "__3": "manual_ui-21030201",
+    "__4": "manual_ui-31030201",
+    "__5": "Squad_Icon"
+  },
+  {
+    "__0": 1030301,
+    "__1": "Boomer",
+    "__2": "manual_ui-11030301",
+    "__3": "manual_ui-21030301",
+    "__4": "manual_ui-31030301",
+    "__5": "Squad_Icon"
+  },
+  {
+    "__0": 1030401,
+    "__1": "Boomer",
+    "__2": "manual_ui-11030401",
+    "__3": "manual_ui-21030401",
+    "__4": "manual_ui-31030401",
+    "__5": "Squad_Icon"
+  },
+  {
+    "__0": 1030501,
+    "__1": "Boomer",
+    "__2": "manual_ui-11030501",
+    "__3": "manual_ui-21030501",
+    "__4": "manual_ui-31030501",
+    "__5": "Squad_Icon"
+  },
+  {
+    "__0": 1030601,
+    "__1": "Boomer",
+    "__2": "manual_ui-11030601",
+    "__3": "manual_ui-21030601",
+    "__4": "manual_ui-31030601",
+    "__5": "Squad_Icon"
+  },
+  {
+    "__0": 1060105,
+    "__1": "MissileLauncher",
+    "__2": "manual_ui-11060105",
+    "__3": "manual_ui-21060105",
+    "__4": "manual_ui-31060105",
+    "__5": "Console_Icon"
+  },
+  {
+    "__0": 1060106,
+    "__1": "MissileLauncher",
+    "__2": "manual_ui-11060106",
+    "__3": "manual_ui-21060106",
+    "__4": "manual_ui-31060106",
+    "__5": "Console_Icon"
+  },
+  {
+    "__0": 1060107,
+    "__1": "MissileLauncher",
+    "__2": "manual_ui-11060107",
+    "__3": "manual_ui-21060107",
+    "__4": "manual_ui-31060107",
+    "__5": "Console_Icon"
+  },
+  {
+    "__0": 1060108,
+    "__1": "MissileLauncher",
+    "__2": "manual_ui-11060108",
+    "__3": "manual_ui-21060108",
+    "__4": "manual_ui-31060108",
+    "__5": "Console_Icon"
+  },
+  {
+    "__0": 1060109,
+    "__1": "MissileLauncher",
+    "__2": "manual_ui-11060109",
+    "__3": "manual_ui-21060109",
+    "__4": "manual_ui-31060109",
+    "__5": "Console_Icon"
+  },
+  {
+    "__0": 1060110,
+    "__1": "MissileLauncher",
+    "__2": "manual_ui-11060110",
+    "__3": "manual_ui-21060110",
+    "__4": "manual_ui-31060110",
+    "__5": "Console_Icon"
+  },
+  {
+    "__0": 1060111,
+    "__1": "MissileLauncher",
+    "__2": "manual_ui-11060111",
+    "__3": "manual_ui-21060111",
+    "__4": "manual_ui-31060111",
+    "__5": "Console_Icon"
+  },
+  {
+    "__0": 1060112,
+    "__1": "MissileLauncher",
+    "__2": "manual_ui-11060112",
+    "__3": "manual_ui-21060112",
+    "__4": "manual_ui-31060112",
+    "__5": "Console_Icon"
+  },
+  {
+    "__0": 1060205,
+    "__1": "MissileLauncher",
+    "__2": "manual_ui-11060205",
+    "__3": "manual_ui-21060205",
+    "__4": "manual_ui-31060205",
+    "__5": "Console_Icon"
+  },
+  {
+    "__0": 1060206,
+    "__1": "MissileLauncher",
+    "__2": "manual_ui-11060206",
+    "__3": "manual_ui-21060206",
+    "__4": "manual_ui-31060206",
+    "__5": "Console_Icon"
+  },
+  {
+    "__0": 1060207,
+    "__1": "MissileLauncher",
+    "__2": "manual_ui-11060207",
+    "__3": "manual_ui-21060207",
+    "__4": "manual_ui-31060207",
+    "__5": "Console_Icon"
+  },
+  {
+    "__0": 1060208,
+    "__1": "MissileLauncher",
+    "__2": "manual_ui-11060208",
+    "__3": "manual_ui-21060208",
+    "__4": "manual_ui-31060208",
+    "__5": "Console_Icon"
+  },
+  {
+    "__0": 1060209,
+    "__1": "MissileLauncher",
+    "__2": "manual_ui-11060209",
+    "__3": "manual_ui-21060209",
+    "__4": "manual_ui-31060209",
+    "__5": "Console_Icon"
+  },
+  {
+    "__0": 1060210,
+    "__1": "MissileLauncher",
+    "__2": "manual_ui-11060210",
+    "__3": "manual_ui-21060210",
+    "__4": "manual_ui-31060210",
+    "__5": "Console_Icon"
+  },
+  {
+    "__0": 1060211,
+    "__1": "MissileLauncher",
+    "__2": "manual_ui-11060211",
+    "__3": "manual_ui-21060211",
+    "__4": "manual_ui-31060211",
+    "__5": "Console_Icon"
+  },
+  {
+    "__0": 1060213,
+    "__1": "MissileLauncher",
+    "__2": "manual_ui-11060213",
+    "__3": "manual_ui-21060213",
+    "__4": "manual_ui-31060213",
+    "__5": "Console_Icon"
+  },
+  {
+    "__0": 1060214,
+    "__1": "MissileLauncher",
+    "__2": "manual_ui-11060214",
+    "__3": "manual_ui-21060214",
+    "__4": "manual_ui-31060214",
+    "__5": "Console_Icon"
+  },
+  {
+    "__0": 1060215,
+    "__1": "MissileLauncher",
+    "__2": "manual_ui-11060215",
+    "__3": "manual_ui-21060215",
+    "__4": "manual_ui-31060215",
+    "__5": "Console_Icon"
+  },
+  {
+    "__0": 1060305,
+    "__1": "MissileLauncher",
+    "__2": "manual_ui-11060305",
+    "__3": "manual_ui-21060305",
+    "__4": "manual_ui-31060305",
+    "__5": "Console_Icon"
+  },
+  {
+    "__0": 1060306,
+    "__1": "MissileLauncher",
+    "__2": "manual_ui-11060306",
+    "__3": "manual_ui-21060306",
+    "__4": "manual_ui-31060306",
+    "__5": "Console_Icon"
+  },
+  {
+    "__0": 1060307,
+    "__1": "MissileLauncher",
+    "__2": "manual_ui-11060307",
+    "__3": "manual_ui-21060307",
+    "__4": "manual_ui-31060307",
+    "__5": "Console_Icon"
+  },
+  {
+    "__0": 1060308,
+    "__1": "MissileLauncher",
+    "__2": "manual_ui-11060308",
+    "__3": "manual_ui-21060308",
+    "__4": "manual_ui-31060308",
+    "__5": "Console_Icon"
+  },
+  {
+    "__0": 1060309,
+    "__1": "MissileLauncher",
+    "__2": "manual_ui-11060309",
+    "__3": "manual_ui-21060309",
+    "__4": "manual_ui-31060309",
+    "__5": "Console_Icon"
+  },
+  {
+    "__0": 1060310,
+    "__1": "MissileLauncher",
+    "__2": "manual_ui-11060310",
+    "__3": "manual_ui-21060310",
+    "__4": "manual_ui-31060310",
+    "__5": "Console_Icon"
+  },
+  {
+    "__0": 1060311,
+    "__1": "MissileLauncher",
+    "__2": "manual_ui-11060311",
+    "__3": "manual_ui-21060311",
+    "__4": "manual_ui-31060311",
+    "__5": "Console_Icon"
+  },
+  {
+    "__0": 1060313,
+    "__1": "MissileLauncher",
+    "__2": "manual_ui-11060313",
+    "__3": "manual_ui-21060313",
+    "__4": "manual_ui-31060313",
+    "__5": "Console_Icon"
+  },
+  {
+    "__0": 1060314,
+    "__1": "MissileLauncher",
+    "__2": "manual_ui-11060314",
+    "__3": "manual_ui-21060314",
+    "__4": "manual_ui-31060314",
+    "__5": "Console_Icon"
+  },
+  {
+    "__0": 1060315,
+    "__1": "MissileLauncher",
+    "__2": "manual_ui-11060315",
+    "__3": "manual_ui-21060315",
+    "__4": "manual_ui-31060315",
+    "__5": "Console_Icon"
+  },
+  {
+    "__0": 1060316,
+    "__1": "MissileLauncher",
+    "__2": "manual_ui-11060316",
+    "__3": "manual_ui-21060316",
+    "__4": "manual_ui-31060316",
+    "__5": "Console_Icon"
+  },
+  {
+    "__0": 1060405,
+    "__1": "MissileLauncher",
+    "__2": "manual_ui-11060405",
+    "__3": "manual_ui-21060405",
+    "__4": "manual_ui-31060405",
+    "__5": "Console_Icon"
+  },
+  {
+    "__0": 1060406,
+    "__1": "MissileLauncher",
+    "__2": "manual_ui-11060406",
+    "__3": "manual_ui-21060406",
+    "__4": "manual_ui-31060406",
+    "__5": "Console_Icon"
+  },
+  {
+    "__0": 1060407,
+    "__1": "MissileLauncher",
+    "__2": "manual_ui-11060407",
+    "__3": "manual_ui-21060407",
+    "__4": "manual_ui-31060407",
+    "__5": "Console_Icon"
+  },
+  {
+    "__0": 1060505,
+    "__1": "MissileLauncher",
+    "__2": "manual_ui-11060505",
+    "__3": "manual_ui-21060505",
+    "__4": "manual_ui-31060505",
+    "__5": "Console_Icon"
+  },
+  {
+    "__0": 1060506,
+    "__1": "MissileLauncher",
+    "__2": "manual_ui-11060506",
+    "__3": "manual_ui-21060506",
+    "__4": "manual_ui-31060506",
+    "__5": "Console_Icon"
+  },
+  {
+    "__0": 1060507,
+    "__1": "MissileLauncher",
+    "__2": "manual_ui-11060507",
+    "__3": "manual_ui-21060507",
+    "__4": "manual_ui-31060507",
+    "__5": "Console_Icon"
+  },
+  {
+    "__0": 1060605,
+    "__1": "MissileLauncher",
+    "__2": "manual_ui-11060605",
+    "__3": "manual_ui-21060605",
+    "__4": "manual_ui-31060605",
+    "__5": "Console_Icon"
+  },
+  {
+    "__0": 1060606,
+    "__1": "MissileLauncher",
+    "__2": "manual_ui-11060606",
+    "__3": "manual_ui-21060606",
+    "__4": "manual_ui-31060606",
+    "__5": "Console_Icon"
+  },
+  {
+    "__0": 1060607,
+    "__1": "MissileLauncher",
+    "__2": "manual_ui-11060607",
+    "__3": "manual_ui-21060607",
+    "__4": "manual_ui-31060607",
+    "__5": "Console_Icon"
+  },
+  {
+    "__0": 1070101,
+    "__1": "AirportTower",
+    "__2": "manual_ui-11070101",
+    "__3": "manual_ui-21070101",
+    "__4": "manual_ui-31070101",
+    "__5": "Console_Icon"
+  },
+  {
+    "__0": 1070102,
+    "__1": "AirportTower",
+    "__2": "manual_ui-11070102",
+    "__3": "manual_ui-21070102",
+    "__4": "manual_ui-31070102",
+    "__5": "Console_Icon"
+  },
+  {
+    "__0": 1070201,
+    "__1": "AirportTower",
+    "__2": "manual_ui-11070201",
+    "__3": "manual_ui-21070201",
+    "__4": "manual_ui-31070201",
+    "__5": "Console_Icon"
+  },
+  {
+    "__0": 1070202,
+    "__1": "AirportTower",
+    "__2": "manual_ui-11070202",
+    "__3": "manual_ui-21070202",
+    "__4": "manual_ui-31070202",
+    "__5": "Console_Icon"
+  },
+  {
+    "__0": 1140101,
+    "__1": "Build_PortableEMP",
+    "__2": "manual_ui-11140101",
+    "__3": "manual_ui-21140101",
+    "__4": "manual_ui-31140101",
+    "__5": "Squad_Icon"
+  },
+  {
+    "__0": 1140103,
+    "__1": "Build_PortableEMP",
+    "__2": "manual_ui-11140103",
+    "__3": "manual_ui-21140103",
+    "__4": "manual_ui-31140103",
+    "__5": "Squad_Icon"
+  },
+  {
+    "__0": 1150102,
+    "__1": "Build_Pump",
+    "__2": "manual_ui-11150102",
+    "__3": "manual_ui-21150102",
+    "__4": "manual_ui-31150102",
+    "__5": "Squad_Icon"
+  },
+  {
+    "__0": 1150202,
+    "__1": "Build_Pump",
+    "__2": "manual_ui-11150202",
+    "__3": "manual_ui-21150202",
+    "__4": "manual_ui-31150202",
+    "__5": "Squad_Icon"
+  },
+  {
+    "__0": 1150302,
+    "__1": "Build_Pump",
+    "__2": "manual_ui-11150302",
+    "__3": "manual_ui-21150302",
+    "__4": "manual_ui-31150302",
+    "__5": "Squad_Icon"
+  },
+  {
+    "__0": 1150402,
+    "__1": "Build_Pump",
+    "__2": "manual_ui-11150402",
+    "__3": "manual_ui-21150402",
+    "__4": "manual_ui-31150402",
+    "__5": "Squad_Icon"
+  },
+  {
+    "__0": 8120301,
+    "__1": "Door_Left",
+    "__2": "manual_ui-18120301",
+    "__3": "manual_ui-28120301",
+    "__4": "manual_ui-38120301",
+    "__5": "Console_Icon"
+  },
+  {
+    "__0": 8120302,
+    "__1": "Door_Left",
+    "__2": "manual_ui-18120302",
+    "__3": "manual_ui-28120302",
+    "__4": "manual_ui-38120302",
+    "__5": "Console_Icon"
+  },
+  {
+    "__0": 8120303,
+    "__1": "Door_Left",
+    "__2": "manual_ui-18120303",
+    "__3": "manual_ui-28120303",
+    "__4": "manual_ui-38120303",
+    "__5": "Console_Icon"
+  },
+  {
+    "__0": 8120304,
+    "__1": "Door_Left",
+    "__2": "manual_ui-18120304",
+    "__3": "manual_ui-28120304",
+    "__4": "manual_ui-38120304",
+    "__5": "Console_Icon"
+  },
+  {
+    "__0": 8120305,
+    "__1": "Door_Left",
+    "__2": "manual_ui-18120305",
+    "__3": "manual_ui-28120305",
+    "__4": "manual_ui-38120305",
+    "__5": "Console_Icon"
+  },
+  {
+    "__0": 8120701,
+    "__1": "RuinedBuilding",
+    "__2": "manual_ui-18120701",
+    "__3": "manual_ui-28120701",
+    "__4": "manual_ui-38120701",
+    "__5": "Squad_Icon"
+  },
+  {
+    "__0": 8120709,
+    "__1": "EMP",
+    "__2": "manual_ui-18120709",
+    "__3": "manual_ui-28120709",
+    "__4": "manual_ui-38120709",
+    "__5": "Squad_Icon"
+  },
+  {
+    "__0": 9130101,
+    "__1": "Build_FireStealer",
+    "__2": "manual_ui-19130101",
+    "__3": "manual_ui-29130101",
+    "__4": "manual_ui-39130101",
+    "__5": "Squad_Icon"
+  },
+  {
+    "__0": 9130114,
+    "__1": "Rock",
+    "__2": "manual_ui-19130114",
+    "__3": "manual_ui-29130114",
+    "__4": "manual_ui-39130114",
+    "__5": "Squad_Icon"
+  },
+  {
+    "__0": 9130201,
+    "__1": "ADK",
+    "__2": "manual_ui-19130201",
+    "__3": "manual_ui-29130201",
+    "__4": "manual_ui-39130201",
+    "__5": "Squad_Icon"
+  },
+  {
+    "__0": 9130506,
+    "__1": "Door_Left",
+    "__2": "manual_ui-19130506",
+    "__3": "manual_ui-29130506",
+    "__4": "manual_ui-39130506",
+    "__5": "Squad_Icon"
+  },
+  {
+    "__0": 9130507,
+    "__1": "Door_Left",
+    "__2": "manual_ui-19130507",
+    "__3": "manual_ui-29130507",
+    "__4": "manual_ui-39130507",
+    "__5": "Squad_Icon"
+  },
+  {
+    "__0": 9321201,
+    "__1": "Door_Left",
+    "__2": "manual_ui-19321201",
+    "__3": "manual_ui-29321201",
+    "__4": "manual_ui-39321201",
+    "__5": "Console_Icon"
+  },
+  {
+    "__0": 9321202,
+    "__1": "Door_Left",
+    "__2": "manual_ui-19321202",
+    "__3": "manual_ui-29321202",
+    "__4": "manual_ui-39321202",
+    "__5": "Console_Icon"
+  },
+  {
+    "__0": 9321203,
+    "__1": "Door_Left",
+    "__2": "manual_ui-19321203",
+    "__3": "manual_ui-29321203",
+    "__4": "manual_ui-39321203",
+    "__5": "Console_Icon"
+  },
+  {
+    "__0": 9321206,
+    "__1": "Door_Left",
+    "__2": "manual_ui-19321206",
+    "__3": "manual_ui-29321206",
+    "__4": "manual_ui-39321206",
+    "__5": "Console_Icon"
+  },
+  {
+    "__0": 9321208,
+    "__1": "Door_Left",
+    "__2": "manual_ui-19321208",
+    "__3": "manual_ui-29321208",
+    "__4": "manual_ui-39321208",
+    "__5": "Console_Icon"
+  },
+  {
+    "__0": 9321210,
+    "__1": "Door_Left",
+    "__2": "manual_ui-19321210",
+    "__3": "manual_ui-29321210",
+    "__4": "manual_ui-39321210",
+    "__5": "Console_Icon"
+  },
+  {
+    "__0": 9321212,
+    "__1": "Door_Left",
+    "__2": "manual_ui-19321212",
+    "__3": "manual_ui-29321212",
+    "__4": "manual_ui-39321212",
+    "__5": "Console_Icon"
+  },
+  {
+    "__0": 9321214,
+    "__1": "Door_Left",
+    "__2": "manual_ui-19321214",
+    "__3": "manual_ui-29321214",
+    "__4": "manual_ui-39321214",
+    "__5": "Console_Icon"
+  },
+  {
+    "__0": 9321215,
+    "__1": "Door_Left",
+    "__2": "manual_ui-19321215",
+    "__3": "manual_ui-29321215",
+    "__4": "manual_ui-39321215",
+    "__5": "Console_Icon"
+  },
+  {
+    "__0": 9321216,
+    "__1": "Door_Left",
+    "__2": "manual_ui-19321216",
+    "__3": "manual_ui-29321216",
+    "__4": "manual_ui-39321216",
+    "__5": "Console_Icon"
+  },
+  {
+    "__0": 9321217,
+    "__1": "Console",
+    "__2": "manual_ui-19321217",
+    "__3": "manual_ui-29321217",
+    "__4": "manual_ui-39321217",
+    "__5": "Squad_Icon"
+  },
+  {
+    "__0": 9321218,
+    "__1": "Console",
+    "__2": "manual_ui-19321218",
+    "__3": "manual_ui-29321218",
+    "__4": "manual_ui-39321218",
+    "__5": "Squad_Icon"
+  },
+  {
+    "__0": 9321223,
+    "__1": "Door_Left",
+    "__2": "manual_ui-19321223",
+    "__3": "manual_ui-29321223",
+    "__4": "manual_ui-39321223",
+    "__5": "Console_Icon"
+  },
+  {
+    "__0": 9321225,
+    "__1": "Door_Left",
+    "__2": "manual_ui-19321225",
+    "__3": "manual_ui-29321225",
+    "__4": "manual_ui-39321225",
+    "__5": "Console_Icon"
+  },
+  {
+    "__0": 9321503,
+    "__1": "Boomer",
+    "__2": "manual_ui-19321503",
+    "__3": "manual_ui-29321503",
+    "__4": "manual_ui-39321503",
+    "__5": "Squad_Icon"
+  },
+  {
+    "__0": 9332102,
+    "__1": "Substation",
+    "__2": "manual_ui-19332102",
+    "__3": "manual_ui-29332102",
+    "__4": "manual_ui-39332102",
+    "__5": "Console_Icon"
+  },
+  {
+    "__0": 9332103,
+    "__1": "Substation",
+    "__2": "manual_ui-19332103",
+    "__3": "manual_ui-29332103",
+    "__4": "manual_ui-39332103",
+    "__5": "Console_Icon"
+  },
+  {
+    "__0": 9332106,
+    "__1": "EMP",
+    "__2": "manual_ui-19332106",
+    "__3": "manual_ui-29332106",
+    "__4": "manual_ui-39332106",
+    "__5": "Squad_Icon"
+  },
+  {
+    "__0": 9332110,
+    "__1": "Detonator",
+    "__2": "manual_ui-19332110",
+    "__3": "manual_ui-29332110",
+    "__4": "manual_ui-39332110",
+    "__5": "Squad_Icon"
+  },
+  {
+    "__0": 9332114,
+    "__1": "Boomer",
+    "__2": "manual_ui-19332114",
+    "__3": "manual_ui-29332114",
+    "__4": "manual_ui-39332114",
+    "__5": "Squad_Icon"
+  },
+  {
+    "__0": 9333021,
+    "__1": "Boomer",
+    "__2": "manual_ui-19333021",
+    "__3": "manual_ui-29333021",
+    "__4": "manual_ui-39333021",
+    "__5": "Squad_Icon"
+  },
+  {
+    "__0": 9333210,
+    "__1": "Door_Left",
+    "__2": "manual_ui-19333210",
+    "__3": "manual_ui-29333210",
+    "__4": "manual_ui-39333210",
+    "__5": "Console_Icon"
+  },
+  {
+    "__0": 9333211,
+    "__1": "Door_Left",
+    "__2": "manual_ui-19333211",
+    "__3": "manual_ui-29333211",
+    "__4": "manual_ui-39333211",
+    "__5": "Console_Icon"
+  },
+  {
+    "__0": 9333212,
+    "__1": "Door_Left",
+    "__2": "manual_ui-19333212",
+    "__3": "manual_ui-29333212",
+    "__4": "manual_ui-39333212",
+    "__5": "Console_Icon"
+  },
+  {
+    "__0": 9333213,
+    "__1": "Door_Left",
+    "__2": "manual_ui-19333213",
+    "__3": "manual_ui-29333213",
+    "__4": "manual_ui-39333213",
+    "__5": "Console_Icon"
+  },
+  {
+    "__0": 9333214,
+    "__1": "Door_Left",
+    "__2": "manual_ui-19333214",
+    "__3": "manual_ui-29333214",
+    "__4": "manual_ui-39333214",
+    "__5": "Console_Icon"
+  },
+  {
+    "__0": 9333215,
+    "__1": "Door_Left",
+    "__2": "manual_ui-19333215",
+    "__3": "manual_ui-29333215",
+    "__4": "manual_ui-39333215",
+    "__5": "Console_Icon"
+  },
+  {
+    "__0": 9333216,
+    "__1": "Door_Left",
+    "__2": "manual_ui-19333216",
+    "__3": "manual_ui-29333216",
+    "__4": "manual_ui-39333216",
+    "__5": "Console_Icon"
+  },
+  {
+    "__0": 9333217,
+    "__1": "Door_Left",
+    "__2": "manual_ui-19333217",
+    "__3": "manual_ui-29333217",
+    "__4": "manual_ui-39333217",
+    "__5": "Console_Icon"
+  },
+  {
+    "__0": 9333218,
+    "__1": "Door_Left",
+    "__2": "manual_ui-19333218",
+    "__3": "manual_ui-29333218",
+    "__4": "manual_ui-39333218",
+    "__5": "Console_Icon"
+  },
+  {
+    "__0": 9333230,
+    "__1": "Door_Left",
+    "__2": "manual_ui-19333230",
+    "__3": "manual_ui-29333230",
+    "__4": "manual_ui-39333230",
+    "__5": "Console_Icon"
+  },
+  {
+    "__0": 9333604,
+    "__1": "Console",
+    "__2": "manual_ui-19333604",
+    "__3": "manual_ui-29333604",
+    "__4": "manual_ui-39333604",
+    "__5": "Squad_Icon"
+  },
+  {
+    "__0": 9335202,
+    "__1": "Console",
+    "__2": "manual_ui-19335202",
+    "__3": "manual_ui-29335202",
+    "__4": "manual_ui-39335202",
+    "__5": "Squad_Icon"
+  },
+  {
+    "__0": 9335203,
+    "__1": "Console",
+    "__2": "manual_ui-19335203",
+    "__3": "manual_ui-29335203",
+    "__4": "manual_ui-39335203",
+    "__5": "Squad_Icon"
+  },
+  {
+    "__0": 9335204,
+    "__1": "Console",
+    "__2": "manual_ui-19335204",
+    "__3": "manual_ui-29335204",
+    "__4": "manual_ui-39335204",
+    "__5": "Squad_Icon"
+  },
+  {
+    "__0": 9335205,
+    "__1": "Console",
+    "__2": "manual_ui-19335205",
+    "__3": "manual_ui-29335205",
+    "__4": "manual_ui-39335205",
+    "__5": "Squad_Icon"
+  },
+  {
+    "__0": 9335206,
+    "__1": "Console",
+    "__2": "manual_ui-19335206",
+    "__3": "manual_ui-29335206",
+    "__4": "manual_ui-39335206",
+    "__5": "Squad_Icon"
+  },
+  {
+    "__0": 9335303,
+    "__1": "Boomer",
+    "__2": "manual_ui-19335303",
+    "__3": "manual_ui-29335303",
+    "__4": "manual_ui-39335303",
+    "__5": "Squad_Icon"
+  },
+  {
+    "__0": 9336101,
+    "__1": "Boomer",
+    "__2": "manual_ui-19336101",
+    "__3": "manual_ui-29336101",
+    "__4": "manual_ui-39336101",
+    "__5": "Squad_Icon"
+  },
+  {
+    "__0": 9336103,
+    "__1": "Door_Left",
+    "__2": "manual_ui-19336103",
+    "__3": "manual_ui-29336103",
+    "__4": "manual_ui-39336103",
+    "__5": "Squad_Icon"
+  },
+  {
+    "__0": 9336306,
+    "__1": "Door_Left",
+    "__2": "manual_ui-19336306",
+    "__3": "manual_ui-29336306",
+    "__4": "manual_ui-39336306",
+    "__5": "Squad_Icon"
+  },
+  {
+    "__0": 9336401,
+    "__1": "Console",
+    "__2": "manual_ui-19336401",
+    "__3": "manual_ui-29336401",
+    "__4": "manual_ui-39336401",
+    "__5": "Squad_Icon"
+  },
+  {
+    "__0": 9361731,
+    "__1": "Console",
+    "__2": "manual_ui-19361731",
+    "__3": "manual_ui-29361731",
+    "__4": "manual_ui-39361731",
+    "__5": "Console_Icon"
+  },
+  {
+    "__0": 9361732,
+    "__1": "Console",
+    "__2": "manual_ui-19361732",
+    "__3": "manual_ui-29361732",
+    "__4": "manual_ui-39361732",
+    "__5": "Console_Icon"
+  },
+  {
+    "__0": 9361733,
+    "__1": "Console",
+    "__2": "manual_ui-19361733",
+    "__3": "manual_ui-29361733",
+    "__4": "manual_ui-39361733",
+    "__5": "Console_Icon"
+  },
+  {
+    "__0": 9361734,
+    "__1": "Console",
+    "__2": "manual_ui-19361734",
+    "__3": "manual_ui-29361734",
+    "__4": "manual_ui-39361734",
+    "__5": "Console_Icon"
+  },
+  {
+    "__0": 9361735,
+    "__1": "Console",
+    "__2": "manual_ui-19361735",
+    "__3": "manual_ui-29361735",
+    "__4": "manual_ui-39361735",
+    "__5": "Console_Icon"
+  },
+  {
+    "__0": 9361736,
+    "__1": "Console",
+    "__2": "manual_ui-19361736",
+    "__3": "manual_ui-29361736",
+    "__4": "manual_ui-39361736",
+    "__5": "Console_Icon"
+  },
+  {
+    "__0": 9361737,
+    "__1": "Console",
+    "__2": "manual_ui-19361737",
+    "__3": "manual_ui-29361737",
+    "__4": "manual_ui-39361737",
+    "__5": "Console_Icon"
+  },
+  {
+    "__0": 9361738,
+    "__1": "Console",
+    "__2": "manual_ui-19361738",
+    "__3": "manual_ui-29361738",
+    "__4": "manual_ui-39361738",
+    "__5": "Console_Icon"
+  },
+  {
+    "__0": 9361741,
+    "__1": "Console",
+    "__2": "manual_ui-19361741",
+    "__3": "manual_ui-29361741",
+    "__4": "manual_ui-39361741",
+    "__5": "Console_Icon"
+  },
+  {
+    "__0": 9361742,
+    "__1": "Console",
+    "__2": "manual_ui-19361742",
+    "__3": "manual_ui-29361742",
+    "__4": "manual_ui-39361742",
+    "__5": "Console_Icon"
+  },
+  {
+    "__0": 9361743,
+    "__1": "Console",
+    "__2": "manual_ui-19361743",
+    "__3": "manual_ui-29361743",
+    "__4": "manual_ui-39361743",
+    "__5": "Console_Icon"
+  },
+  {
+    "__0": 9361744,
+    "__1": "Console",
+    "__2": "manual_ui-19361744",
+    "__3": "manual_ui-29361744",
+    "__4": "manual_ui-39361744",
+    "__5": "Console_Icon"
+  },
+  {
+    "__0": 9361745,
+    "__1": "Console",
+    "__2": "manual_ui-19361745",
+    "__3": "manual_ui-29361745",
+    "__4": "manual_ui-39361745",
+    "__5": "Console_Icon"
+  },
+  {
+    "__0": 9361746,
+    "__1": "Console",
+    "__2": "manual_ui-19361746",
+    "__3": "manual_ui-29361746",
+    "__4": "manual_ui-39361746",
+    "__5": "Console_Icon"
+  },
+  {
+    "__0": 9361747,
+    "__1": "Console",
+    "__2": "manual_ui-19361747",
+    "__3": "manual_ui-29361747",
+    "__4": "manual_ui-39361747",
+    "__5": "Console_Icon"
+  },
+  {
+    "__0": 9361748,
+    "__1": "Console",
+    "__2": "manual_ui-19361748",
+    "__3": "manual_ui-29361748",
+    "__4": "manual_ui-39361748",
+    "__5": "Console_Icon"
+  },
+  {
+    "__0": 9361751,
+    "__1": "Console",
+    "__2": "manual_ui-19361751",
+    "__3": "manual_ui-29361751",
+    "__4": "manual_ui-39361751",
+    "__5": "Console_Icon"
+  },
+  {
+    "__0": 9361752,
+    "__1": "Console",
+    "__2": "manual_ui-19361752",
+    "__3": "manual_ui-29361752",
+    "__4": "manual_ui-39361752",
+    "__5": "Console_Icon"
+  },
+  {
+    "__0": 9361753,
+    "__1": "Console",
+    "__2": "manual_ui-19361753",
+    "__3": "manual_ui-29361753",
+    "__4": "manual_ui-39361753",
+    "__5": "Console_Icon"
+  },
+  {
+    "__0": 9361754,
+    "__1": "Console",
+    "__2": "manual_ui-19361754",
+    "__3": "manual_ui-29361754",
+    "__4": "manual_ui-39361754",
+    "__5": "Console_Icon"
+  },
+  {
+    "__0": 9361755,
+    "__1": "Console",
+    "__2": "manual_ui-19361755",
+    "__3": "manual_ui-29361755",
+    "__4": "manual_ui-39361755",
+    "__5": "Console_Icon"
+  },
+  {
+    "__0": 9361756,
+    "__1": "Console",
+    "__2": "manual_ui-19361756",
+    "__3": "manual_ui-29361756",
+    "__4": "manual_ui-39361756",
+    "__5": "Console_Icon"
+  },
+  {
+    "__0": 9361757,
+    "__1": "Console",
+    "__2": "manual_ui-19361757",
+    "__3": "manual_ui-29361757",
+    "__4": "manual_ui-39361757",
+    "__5": "Console_Icon"
+  },
+  {
+    "__0": 9361758,
+    "__1": "Console",
+    "__2": "manual_ui-19361758",
+    "__3": "manual_ui-29361758",
+    "__4": "manual_ui-39361758",
+    "__5": "Console_Icon"
+  },
+  {
+    "__0": 9361759,
+    "__1": "Console",
+    "__2": "manual_ui-19361759",
+    "__3": "manual_ui-29361759",
+    "__4": "manual_ui-39361759",
+    "__5": "Console_Icon"
+  },
+  {
+    "__0": 9361761,
+    "__1": "Console",
+    "__2": "manual_ui-19361761",
+    "__3": "manual_ui-29361761",
+    "__4": "manual_ui-39361761",
+    "__5": "Console_Icon"
+  },
+  {
+    "__0": 9361762,
+    "__1": "Console",
+    "__2": "manual_ui-19361762",
+    "__3": "manual_ui-29361762",
+    "__4": "manual_ui-39361762",
+    "__5": "Console_Icon"
+  },
+  {
+    "__0": 9361763,
+    "__1": "Console",
+    "__2": "manual_ui-19361763",
+    "__3": "manual_ui-29361763",
+    "__4": "manual_ui-39361763",
+    "__5": "Console_Icon"
+  },
+  {
+    "__0": 9361764,
+    "__1": "Console",
+    "__2": "manual_ui-19361764",
+    "__3": "manual_ui-29361764",
+    "__4": "manual_ui-39361764",
+    "__5": "Console_Icon"
+  },
+  {
+    "__0": 9361765,
+    "__1": "Console",
+    "__2": "manual_ui-19361765",
+    "__3": "manual_ui-29361765",
+    "__4": "manual_ui-39361765",
+    "__5": "Console_Icon"
+  },
+  {
+    "__0": 9361766,
+    "__1": "Console",
+    "__2": "manual_ui-19361766",
+    "__3": "manual_ui-29361766",
+    "__4": "manual_ui-39361766",
+    "__5": "Console_Icon"
+  },
+  {
+    "__0": 9361767,
+    "__1": "Console",
+    "__2": "manual_ui-19361767",
+    "__3": "manual_ui-29361767",
+    "__4": "manual_ui-39361767",
+    "__5": "Console_Icon"
+  },
+  {
+    "__0": 9361768,
+    "__1": "Console",
+    "__2": "manual_ui-19361768",
+    "__3": "manual_ui-29361768",
+    "__4": "manual_ui-39361768",
+    "__5": "Console_Icon"
+  },
+  {
+    "__0": 9361769,
+    "__1": "Console",
+    "__2": "manual_ui-19361769",
+    "__3": "manual_ui-29361769",
+    "__4": "manual_ui-39361769",
+    "__5": "Console_Icon"
+  },
+  {
+    "__0": 9361803,
+    "__1": "Build_PortableEMP",
+    "__2": "manual_ui-19361803",
+    "__3": "manual_ui-29361803",
+    "__4": "manual_ui-39361803",
+    "__5": "Squad_Icon"
+  },
+  {
+    "__0": 9361805,
+    "__1": "Build_PortableEMP",
+    "__2": "manual_ui-19361805",
+    "__3": "manual_ui-29361805",
+    "__4": "manual_ui-39361805",
+    "__5": "Squad_Icon"
+  },
+  {
+    "__0": 9362002,
+    "__1": "Boomer",
+    "__2": "manual_ui-19362002",
+    "__3": "manual_ui-29362002",
+    "__4": "manual_ui-39362002",
+    "__5": "Squad_Icon"
+  },
+  {
+    "__0": 9362003,
+    "__1": "Boomer",
+    "__2": "manual_ui-19362003",
+    "__3": "manual_ui-29362003",
+    "__4": "manual_ui-39362003",
+    "__5": "Squad_Icon"
+  },
+  {
+    "__0": 9362013,
+    "__1": "MissileLauncher",
+    "__2": "manual_ui-19362013",
+    "__3": "manual_ui-29362013",
+    "__4": "manual_ui-39362013",
+    "__5": "Squad_Icon"
+  },
+  {
+    "__0": 9362014,
+    "__1": "MissileLauncher",
+    "__2": "manual_ui-19362014",
+    "__3": "manual_ui-29362014",
+    "__4": "manual_ui-39362014",
+    "__5": "Squad_Icon"
+  },
+  {
+    "__0": 9363069,
+    "__1": "AirportTower",
+    "__2": "manual_ui-19363069",
+    "__3": "manual_ui-29363069",
+    "__4": "manual_ui-39363069",
+    "__5": "Squad_Icon"
+  },
+  {
+    "__0": 9363070,
+    "__1": "AirportTower",
+    "__2": "manual_ui-19363070",
+    "__3": "manual_ui-29363070",
+    "__4": "manual_ui-39363070",
+    "__5": "Squad_Icon"
+  },
+  {
+    "__0": 9363082,
+    "__1": "Boomer",
+    "__2": "manual_ui-19363082",
+    "__3": "manual_ui-29363082",
+    "__4": "manual_ui-39363082",
+    "__5": "Squad_Icon"
+  },
+  {
+    "__0": 9363403,
+    "__1": "Armstrongspiralgun",
+    "__2": "manual_ui-19363403",
+    "__3": "manual_ui-29363403",
+    "__4": "manual_ui-39363403",
+    "__5": "Squad_Icon"
+  },
+  {
+    "__0": 9363405,
+    "__1": "Armstrongspiralgun",
+    "__2": "manual_ui-19363405",
+    "__3": "manual_ui-29363405",
+    "__4": "manual_ui-39363405",
+    "__5": "Squad_Icon"
+  },
+  {
+    "__0": 9363802,
+    "__1": "PortableEMP_Nobase",
+    "__2": "manual_ui-19363802",
+    "__3": "manual_ui-29363802",
+    "__4": "manual_ui-39363802",
+    "__5": "Squad_Icon"
+  },
+  {
+    "__0": 9363901,
+    "__1": "PortableEMP_Nobase",
+    "__2": "manual_ui-19363901",
+    "__3": "manual_ui-29363901",
+    "__4": "manual_ui-39363901",
+    "__5": "Squad_Icon"
+  },
+  {
+    "__0": 9363902,
+    "__1": "PortableEMP_Nobase",
+    "__2": "manual_ui-19363902",
+    "__3": "manual_ui-29363902",
+    "__4": "manual_ui-39363902",
+    "__5": "Squad_Icon"
+  },
+  {
+    "__0": 9363903,
+    "__1": "PortableEMP_Nobase",
+    "__2": "manual_ui-19363903",
+    "__3": "manual_ui-29363903",
+    "__4": "manual_ui-39363903",
+    "__5": "Squad_Icon"
+  },
+  {
+    "__0": 9370211,
+    "__1": "Console",
+    "__2": "manual_ui-19370211",
+    "__3": "manual_ui-29370211",
+    "__4": "manual_ui-39370211",
+    "__5": "Console_Icon"
+  },
+  {
+    "__0": 9370212,
+    "__1": "Console",
+    "__2": "manual_ui-19370212",
+    "__3": "manual_ui-29370212",
+    "__4": "manual_ui-39370212",
+    "__5": "Console_Icon"
+  },
+  {
+    "__0": 9370411,
+    "__1": "Console",
+    "__2": "manual_ui-19370411",
+    "__3": "manual_ui-29370411",
+    "__4": "manual_ui-39370411",
+    "__5": "Console_Icon"
+  },
+  {
+    "__0": 9370412,
+    "__1": "Console",
+    "__2": "manual_ui-19370412",
+    "__3": "manual_ui-29370412",
+    "__4": "manual_ui-39370412",
+    "__5": "Console_Icon"
+  },
+  {
+    "__0": 9370511,
+    "__1": "Console",
+    "__2": "manual_ui-19370511",
+    "__3": "manual_ui-29370511",
+    "__4": "manual_ui-39370511",
+    "__5": "Console_Icon"
+  },
+  {
+    "__0": 9370512,
+    "__1": "Console",
+    "__2": "manual_ui-19370512",
+    "__3": "manual_ui-29370512",
+    "__4": "manual_ui-39370512",
+    "__5": "Console_Icon"
+  },
+  {
+    "__0": 9370513,
+    "__1": "Console",
+    "__2": "manual_ui-19370513",
+    "__3": "manual_ui-29370513",
+    "__4": "manual_ui-39370513",
+    "__5": "Console_Icon"
+  },
+  {
+    "__0": 9370514,
+    "__1": "Console",
+    "__2": "manual_ui-19370514",
+    "__3": "manual_ui-29370514",
+    "__4": "manual_ui-39370514",
+    "__5": "Console_Icon"
+  },
+  {
+    "__0": 9370515,
+    "__1": "Console",
+    "__2": "manual_ui-19370515",
+    "__3": "manual_ui-29370515",
+    "__4": "manual_ui-39370515",
+    "__5": "Console_Icon"
+  },
+  {
+    "__0": 9370516,
+    "__1": "Console",
+    "__2": "manual_ui-19370516",
+    "__3": "manual_ui-29370516",
+    "__4": "manual_ui-39370516",
+    "__5": "Console_Icon"
+  },
+  {
+    "__0": 9370517,
+    "__1": "Console",
+    "__2": "manual_ui-19370517",
+    "__3": "manual_ui-29370517",
+    "__4": "manual_ui-39370517",
+    "__5": "Console_Icon"
+  },
+  {
+    "__0": 9370518,
+    "__1": "Console",
+    "__2": "manual_ui-19370518",
+    "__3": "manual_ui-29370518",
+    "__4": "manual_ui-39370518",
+    "__5": "Console_Icon"
+  },
+  {
+    "__0": 9370611,
+    "__1": "Console",
+    "__2": "manual_ui-19370611",
+    "__3": "manual_ui-29370611",
+    "__4": "manual_ui-39370611",
+    "__5": "Console_Icon"
+  },
+  {
+    "__0": 9370612,
+    "__1": "Console",
+    "__2": "manual_ui-19370612",
+    "__3": "manual_ui-29370612",
+    "__4": "manual_ui-39370612",
+    "__5": "Console_Icon"
+  },
+  {
+    "__0": 9370613,
+    "__1": "Console",
+    "__2": "manual_ui-19370613",
+    "__3": "manual_ui-29370613",
+    "__4": "manual_ui-39370613",
+    "__5": "Console_Icon"
+  },
+  {
+    "__0": 9370614,
+    "__1": "Boomer",
+    "__2": "manual_ui-19370614",
+    "__3": "manual_ui-29370614",
+    "__4": "manual_ui-39370614",
+    "__5": "Squad_Icon"
+  },
+  {
+    "__0": 9370615,
+    "__1": "Boomer",
+    "__2": "manual_ui-19370615",
+    "__3": "manual_ui-29370615",
+    "__4": "manual_ui-39370615",
+    "__5": "Squad_Icon"
+  }
+]

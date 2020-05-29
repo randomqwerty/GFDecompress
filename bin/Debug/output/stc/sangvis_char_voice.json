@@ -1,0 +1,248 @@
+[
+  {
+    "__0": 1,
+    "__1": "sangvis_charavoice-10000001",
+    "__2": "_GAIN01_JP",
+    "__3": 0
+  },
+  {
+    "__0": 2,
+    "__1": "sangvis_charavoice-10000002",
+    "__2": "_GAIN02_JP",
+    "__3": 0
+  },
+  {
+    "__0": 3,
+    "__1": "sangvis_charavoice-10000003",
+    "__2": "_HELLO_JP",
+    "__3": 0
+  },
+  {
+    "__0": 4,
+    "__1": "sangvis_charavoice-10000004",
+    "__2": "_FORMATION01_JP",
+    "__3": 0
+  },
+  {
+    "__0": 5,
+    "__1": "sangvis_charavoice-10000005",
+    "__2": "_FORMATION02_JP",
+    "__3": 0
+  },
+  {
+    "__0": 6,
+    "__1": "sangvis_charavoice-10000006",
+    "__2": "_FORMATION03_JP",
+    "__3": 0
+  },
+  {
+    "__0": 7,
+    "__1": "sangvis_charavoice-10000007",
+    "__2": "_FEED01_JP",
+    "__3": 1
+  },
+  {
+    "__0": 8,
+    "__1": "sangvis_charavoice-10000008",
+    "__2": "_FEED02_JP",
+    "__3": 1
+  },
+  {
+    "__0": 9,
+    "__1": "sangvis_charavoice-10000009",
+    "__2": "_BREAKTHROUGH01_JP",
+    "__3": 0
+  },
+  {
+    "__0": 10,
+    "__1": "sangvis_charavoice-10000010",
+    "__2": "_BREAKTHROUGH02_JP",
+    "__3": 0
+  },
+  {
+    "__0": 11,
+    "__1": "sangvis_charavoice-10000011",
+    "__2": "_UPGRADE01_JP",
+    "__3": 0
+  },
+  {
+    "__0": 12,
+    "__1": "sangvis_charavoice-10000012",
+    "__2": "_UPGRADE02_JP",
+    "__3": 0
+  },
+  {
+    "__0": 13,
+    "__1": "sangvis_charavoice-10000013",
+    "__2": "_DIALOGUE01_JP",
+    "__3": 1
+  },
+  {
+    "__0": 14,
+    "__1": "sangvis_charavoice-10000014",
+    "__2": "_DIALOGUE02_JP",
+    "__3": 1
+  },
+  {
+    "__0": 15,
+    "__1": "sangvis_charavoice-10000015",
+    "__2": "_DIALOGUE03_JP",
+    "__3": 1
+  },
+  {
+    "__0": 16,
+    "__1": "sangvis_charavoice-10000016",
+    "__2": "_GOATTACK_JP",
+    "__3": 0
+  },
+  {
+    "__0": 17,
+    "__1": "sangvis_charavoice-10000017",
+    "__2": "_MEET_JP",
+    "__3": 0
+  },
+  {
+    "__0": 18,
+    "__1": "sangvis_charavoice-10000018",
+    "__2": "_ATTACK_JP",
+    "__3": 0
+  },
+  {
+    "__0": 19,
+    "__1": "sangvis_charavoice-10000019",
+    "__2": "_DEFENSE_JP",
+    "__3": 0
+  },
+  {
+    "__0": 20,
+    "__1": "sangvis_charavoice-10000020",
+    "__2": "_WIN_JP",
+    "__3": 0
+  },
+  {
+    "__0": 21,
+    "__1": "sangvis_charavoice-10000021",
+    "__2": "_RETREAT_JP",
+    "__3": 0
+  },
+  {
+    "__0": 22,
+    "__1": "sangvis_charavoice-10000022",
+    "__2": "_DEAD01_JP",
+    "__3": 0
+  },
+  {
+    "__0": 23,
+    "__1": "sangvis_charavoice-10000023",
+    "__2": "_DEAD02_JP",
+    "__3": 0
+  },
+  {
+    "__0": 24,
+    "__1": "sangvis_charavoice-10000024",
+    "__2": "_SKILL01_JP",
+    "__3": 0
+  },
+  {
+    "__0": 25,
+    "__1": "sangvis_charavoice-10000025",
+    "__2": "_SKILL02_JP",
+    "__3": 0
+  },
+  {
+    "__0": 26,
+    "__1": "sangvis_charavoice-10000026",
+    "__2": "_SKILL03_JP",
+    "__3": 0
+  },
+  {
+    "__0": 27,
+    "__1": "sangvis_charavoice-10000027",
+    "__2": "_FIX_JP",
+    "__3": 0
+  },
+  {
+    "__0": 28,
+    "__1": "sangvis_charavoice-10000028",
+    "__2": "_BLACKACTION_JP",
+    "__3": 1
+  },
+  {
+    "__0": 29,
+    "__1": "sangvis_charavoice-10000029",
+    "__2": "_SOULCONTRACT_JP",
+    "__3": 1
+  },
+  {
+    "__0": 30,
+    "__1": "sangvis_charavoice-10000030",
+    "__2": "_DIALOGUEWEDDING_JP",
+    "__3": 1
+  },
+  {
+    "__0": 31,
+    "__1": "sangvis_charavoice-10000031",
+    "__2": "_TITLECALL_JP",
+    "__3": 0
+  },
+  {
+    "__0": 32,
+    "__1": "sangvis_charavoice-10000032",
+    "__2": "_PHRASE_JP",
+    "__3": 0
+  },
+  {
+    "__0": 33,
+    "__1": "sangvis_charavoice-10000033",
+    "__2": "_MOOD1_JP",
+    "__3": 0
+  },
+  {
+    "__0": 34,
+    "__1": "sangvis_charavoice-10000034",
+    "__2": "_MOOD2_JP",
+    "__3": 0
+  },
+  {
+    "__0": 35,
+    "__1": "sangvis_charavoice-10000035",
+    "__2": "_LOWMOOD_JP",
+    "__3": 0
+  },
+  {
+    "__0": 36,
+    "__1": "sangvis_charavoice-10000036",
+    "__2": "_APPRECIATE_JP",
+    "__3": 0
+  },
+  {
+    "__0": 37,
+    "__1": "sangvis_charavoice-10000037",
+    "__2": "_AGREE_JP",
+    "__3": 0
+  },
+  {
+    "__0": 38,
+    "__1": "sangvis_charavoice-10000038",
+    "__2": "_ACCEPT_JP",
+    "__3": 0
+  },
+  {
+    "__0": 39,
+    "__1": "sangvis_charavoice-10000039",
+    "__2": "_FEELING_JP",
+    "__3": 0
+  },
+  {
+    "__0": 40,
+    "__1": "sangvis_charavoice-10000040",
+    "__2": "_TIP_JP",
+    "__3": 0
+  },
+  {
+    "__0": 41,
+    "__1": "sangvis_charavoice-10000041",
+    "__2": "_LOADING_JP",
+    "__3": 0
+  }
+]
