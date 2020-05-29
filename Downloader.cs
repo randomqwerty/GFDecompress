@@ -9,22 +9,27 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Security.Cryptography;
 using System.IO.Compression;
+using System.Dynamic;
+using System.Text.RegularExpressions;
 
 namespace GFDecompress
 {
-    class StcDownloader
+    class Downloader
     {
         string dataVersion;
+        string clientVersion;
+        double minversion;
+        string abVersion;
         string location;
 
         //생성자
-        public StcDownloader(string _location = "kr") {
+        public Downloader(string _location = "kr") {
 
             location = _location;
 
             HttpWebRequest req = (HttpWebRequest)WebRequest.Create(getGameHost(location) + "Index/version");
-            req.UserAgent = "Dalvik/1.6.0 (Linux; U; Android 4.4.2; SM-N935F Build/JLS36C)";
-            req.Headers.Add("X-Unity-Version", "5.2.5f1");
+            req.UserAgent = "Dalvik/2.1.0 (Linux; U; Android 9; SM-N935k Build/PPR1.180610.011)";
+            req.Headers.Add("X-Unity-Version", "2017.4.33f1");
             req.ContentType = @"application/x-www-form-urlencoded";
 
             HttpWebResponse wResp = (HttpWebResponse)req.GetResponse();
@@ -33,10 +38,14 @@ namespace GFDecompress
 
             JObject obj = JObject.Parse(readerpost.ReadToEnd());
             dataVersion = obj["data_version"].ToString();
+            clientVersion = obj["client_version"].ToString();
+            minversion = Math.Round(double.Parse(clientVersion) / 10);
+            abVersion = obj["ab_version"].ToString();
 
             Console.WriteLine("검색된 데이터 버전: " + dataVersion);
 
         }
+        //stc 다운
 
         public void downloadStc() {
             string url = getStcUrl();
@@ -46,6 +55,13 @@ namespace GFDecompress
 
             Console.WriteLine("최신 데이터 다운로드 중...");
             Console.WriteLine("Url: " + url);
+
+            foreach (var item in new DirectoryInfo("stc").GetFiles())
+            {
+                if (item.Name == "desktop.ini")
+                    continue;
+                File.Delete($"stc/{item.Name}");
+            }
 
             try
             {
@@ -63,12 +79,38 @@ namespace GFDecompress
                 Console.WriteLine(e);
             }
         }
+        //어셋  다운
+        public void downloadAsset() {
+            string key = "kxwL8X2+fgM=";
+            string iv = "M9lp+7j2Jdwqr+Yj1h+A";
+
+            byte[] bkey = Convert.FromBase64String(key);
+            byte[] biv = Convert.FromBase64String(iv);
+
+            string encryptedVersion = Crypto.GetDesEncryted($"{minversion}_{abVersion}_AndroidResConfigData", bkey, biv.Take(8).ToArray());
+
+            string filename = Regex.Replace(encryptedVersion, @"[^a-zA-Z0-9]", "") + ".txt";
+
+            if (!Directory.Exists("Assets_raw"))
+                Directory.CreateDirectory("Assets_raw");
+
+            if (!Directory.Exists($"Assets_raw\\{location}"))
+                Directory.CreateDirectory($"Assets_raw\\{location}");
+
+            WebClient client = new WebClient();
+            client.DownloadFile(getAssetUrl(filename), $"Assets_raw\\{location}\\{filename}");
+            
+        }
 
         public string getStcUrl() {
             var md5Hash = MD5.Create();
             string hash = Crypto.GetMd5Hash(md5Hash, dataVersion);
 
             return getCDNHost(location) + "data/stc_" + dataVersion + hash + ".zip";
+        }
+
+        public string getAssetUrl(string filename) {
+            return getUpdateHost(location) + filename;
         }
 
         public long getCurrentTime() {
@@ -102,6 +144,19 @@ namespace GFDecompress
                     return "http://oss-rescnf.gf.ppgame.com/";
             }
         }
+
+        public string getUpdateHost(string _location) {
+            switch (_location) {
+                case "kr":
+                    return "http://sn-list.girlfrontline.co.kr/";
+                case "jp":
+                    return "https://s3-ap-northeast-1.amazonaws.com/gf1-jpfile-server/";
+                case "en":
+                    return "http://gf-transit.sunborngame.com/";
+                default:
+                    return "http://oss-rescnf.gf.ppgame.com/cn_mica/";
+            }
+        }
     }
 
     public class Crypto {
@@ -124,6 +179,24 @@ namespace GFDecompress
 
             // Return the hexadecimal string.
             return sBuilder.ToString();
+        }
+
+        public static string GetDesEncryted(string _data, byte[] _key, byte[] _iv) {
+            DESCryptoServiceProvider des = new DESCryptoServiceProvider();
+
+            des.Key = _key;
+            des.IV = _iv;
+
+            MemoryStream ms = new MemoryStream();
+
+            CryptoStream stream = new CryptoStream(ms, des.CreateEncryptor(), CryptoStreamMode.Write);
+
+            byte[] data = Encoding.UTF8.GetBytes(_data.ToCharArray());
+
+            stream.Write(data, 0, data.Length);
+            stream.FlushFinalBlock();
+
+            return Convert.ToBase64String(ms.ToArray());
         }
     }
 }

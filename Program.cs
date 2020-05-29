@@ -149,8 +149,9 @@ namespace GFDecompress
             Stopwatch swh = new Stopwatch();
             swh.Start();
 
-            StcDownloader dl = new StcDownloader();
+            Downloader dl = new Downloader();
             dl.downloadStc();
+            dl.downloadAsset();
 
             #region NLog Configuration
             var config = new LoggingConfiguration();
