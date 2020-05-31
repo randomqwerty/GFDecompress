@@ -84,12 +84,19 @@ namespace GFDecompress
                 {
                     while ((data = file.ReadLine()) != null)
                     {
+                        if (data == "\n")
+                            continue;
+
                         string[] str = { "", "" };
                         str = data.Split(',');
-                        json.Add(str[0], str[1]);
+                        if (json.ContainsKey(str[0]))
+                            continue;
+                        json.Add(str[0], str[1].Replace("//c",","));
                     }
                 }
-                catch { }
+                catch {
+                    Console.WriteLine("error");
+                }
                 Encoding utf8 = new UTF8Encoding(false);
                 File.WriteAllText($"results\\text\\{item.Name.Split('.')[0]}.json", json.ToString(),utf8);
             }
