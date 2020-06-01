@@ -713,7 +713,7 @@ namespace GFDecompress
             return JsonConvert.SerializeObject(this);
         }
     }
-
+    // 화력소대 데이터
     public class SquadData {
         public int id;
         public string codename;

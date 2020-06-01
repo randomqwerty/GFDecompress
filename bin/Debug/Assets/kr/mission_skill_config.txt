@@ -808,6 +808,15 @@ mission_skill_config-31000067,
 mission_skill_config-11000068,【标记】清除禁止标记
 mission_skill_config-21000068,
 mission_skill_config-31000068,
+mission_skill_config-11000069,【标记】敌人标记ss_1回合
+mission_skill_config-21000069,
+mission_skill_config-31000069,
+mission_skill_config-11000070,【标记】敌人标记①buff_99回合
+mission_skill_config-21000070,
+mission_skill_config-31000070,
+mission_skill_config-11000071,【标记】敌人标记②buff_99回合
+mission_skill_config-21000071,
+mission_skill_config-31000071,
 mission_skill_config-11000100,透明设施1标记(标记=生效)
 mission_skill_config-21000100,透明设施1标记(标记=生效)
 mission_skill_config-31000100,
@@ -2461,6 +2470,42 @@ mission_skill_config-31150403,
 mission_skill_config-11150404,【标记】预设炸弹
 mission_skill_config-21150404,
 mission_skill_config-31150404,
+mission_skill_config-11200100,【标记】보호막 생성기标记1
+mission_skill_config-21200100,
+mission_skill_config-31200100,
+mission_skill_config-11200101,【标记】护盾1生效标记
+mission_skill_config-21200101,
+mission_skill_config-31200101,
+mission_skill_config-11200200,【标记】보호막 생성기标记2
+mission_skill_config-21200200,
+mission_skill_config-31200200,
+mission_skill_config-11200201,【标记】护盾2生效标记
+mission_skill_config-21200201,
+mission_skill_config-31200201,
+mission_skill_config-11200300,【标记】보호막 생성기标记3
+mission_skill_config-21200300,
+mission_skill_config-31200300,
+mission_skill_config-11200301,【标记】护盾3生效标记
+mission_skill_config-21200301,
+mission_skill_config-31200301,
+mission_skill_config-11200400,【标记】보호막 생성기标记4
+mission_skill_config-21200400,
+mission_skill_config-31200400,
+mission_skill_config-11200401,【标记】护盾4生效标记
+mission_skill_config-21200401,
+mission_skill_config-31200401,
+mission_skill_config-11200500,【标记】보호막 생성기标记5
+mission_skill_config-21200500,
+mission_skill_config-31200500,
+mission_skill_config-11200501,【标记】护盾5生效标记
+mission_skill_config-21200501,
+mission_skill_config-31200501,
+mission_skill_config-11200600,【标记】보호막 생성기标记6
+mission_skill_config-21200600,
+mission_skill_config-31200600,
+mission_skill_config-11200601,【标记】护盾6生效标记
+mission_skill_config-21200601,
+mission_skill_config-31200601,
 mission_skill_config-12000001,(일반형I)(距离1)污染源预置标记1(延迟1回合)
 mission_skill_config-22000001,(일반형I)(距离1)污染源预置标记1
 mission_skill_config-32000001,
@@ -2514,8 +2559,10 @@ mission_skill_config-22000017,던지기 전에 "Light out!"이라고 외치는 �
 mission_skill_config-32000017,
 mission_skill_config-12000018,【标记】大형水阀描述
 mission_skill_config-22000018,물은 답을 알고 있다. 다른 건 몰라도 이럴 땐 항상 효과적이죠.//n폭파 시 주변 지역을 점차 침수 시켜 불을 끄고 유닛 이동속도가 감소합니다.
-mission_skill_config-22000018,大형水阀描述，待设定
 mission_skill_config-32000018,
+mission_skill_config-12000019,【标记】护盾发生器描述
+mission_skill_config-22000019,"나는 지원을 멈추지 않는다//c 내가 멈추지 않는 이상 희생은 늘어나지 않는다."//n전투 중 주기적으로 아군에게 보호막을 생성합니다.
+mission_skill_config-32000019,
 mission_skill_config-12110100,【标记】起爆装置通用伤害【对建筑】
 mission_skill_config-22110100,
 mission_skill_config-32110100,
@@ -4323,7 +4370,7 @@ mission_skill_config-19362704,권한 개방
 mission_skill_config-29362704,제어콘솔 II의 최고권한을 개방해//c 해당 제어콘솔 번호와 일치한 시설의 제어판을 연다.
 mission_skill_config-39362704,
 mission_skill_config-19362705,열기: 차단문 II
-mission_skill_config-29362705,차단문 II을 연다.
+mission_skill_config-29362705,차단문 II를 연다.
 mission_skill_config-39362705,
 mission_skill_config-19362706,닫기: 차단문 II
 mission_skill_config-29362706,차단문 I을 닫는다.
@@ -4652,3 +4699,348 @@ mission_skill_config-30001809,화력 감소치:28%//c이동속도 상승치:5.7/
 mission_skill_config-10001810,신비로운 복숭아
 mission_skill_config-20001810,주위 2칸 이내 선택한 거점에 복숭아를 배치한다. 복숭아는 2턴 간 존재하며//c 적 또는 아군과 접촉 시 사라진다. 복숭아와 접촉한 적 제대는 다음 전투에서 화력이 30% 감소한다//c 지속시간 5초.//n아군 제대가 복숭아와 접촉할 경우 다음 전투에서 전체 이동속도가 6 상승한다//c 지속시간 10초.
 mission_skill_config-30001810,화력 감소치:30%//c이동속도 상승치:6//c가속 지속시간:10초
+mission_skill_config-19130101,지정 포격
+mission_skill_config-29130101,해안 포탑으로 지정 거점을 포격한다.//n아군 제대가 해당 위치에서 휘말리지 않도록 주의할 것.
+mission_skill_config-39130101,
+mission_skill_config-19130102,지정 포격
+mission_skill_config-29130102,해안 포탑으로 지정 거점을 포격한다.//n아군 제대가 해당 위치에서 휘말리지 않도록 주의할 것.
+mission_skill_config-39130102,
+mission_skill_config-19130103,지정 포격
+mission_skill_config-29130103,해안 포탑으로 지정 거점을 포격한다.//n아군 제대가 해당 위치에서 휘말리지 않도록 주의할 것.
+mission_skill_config-39130103,
+mission_skill_config-19130104,지정 포격
+mission_skill_config-29130104,해안 포탑으로 지정 거점을 포격한다.//n아군 제대가 해당 위치에서 휘말리지 않도록 주의할 것.
+mission_skill_config-39130104,
+mission_skill_config-19130105,지정 포격
+mission_skill_config-29130105,해안 포탑으로 지정 거점을 포격한다.//n아군 제대가 해당 위치에서 휘말리지 않도록 주의할 것.
+mission_skill_config-39130105,
+mission_skill_config-19130106,지정 포격
+mission_skill_config-29130106,해안 포탑으로 지정 거점을 포격한다.//n아군 제대가 해당 위치에서 휘말리지 않도록 주의할 것.
+mission_skill_config-39130106,
+mission_skill_config-19130107,【标记】轰击友方梯队
+mission_skill_config-29130107,
+mission_skill_config-39130107,
+mission_skill_config-19130108,【标记】轰击友方梯队
+mission_skill_config-29130108,
+mission_skill_config-39130108,
+mission_skill_config-19130109,【标记】轰击友方梯队
+mission_skill_config-29130109,
+mission_skill_config-39130109,
+mission_skill_config-19130110,【标记】轰击友方梯队
+mission_skill_config-29130110,
+mission_skill_config-39130110,
+mission_skill_config-19130111,【标记】轰击友方梯队
+mission_skill_config-29130111,
+mission_skill_config-39130111,
+mission_skill_config-19130112,【标记】轰击友方梯队
+mission_skill_config-29130112,
+mission_skill_config-39130112,
+mission_skill_config-19130113,【标记】歇菜
+mission_skill_config-29130113,
+mission_skill_config-39130113,
+mission_skill_config-19130114,지정 포격
+mission_skill_config-29130114,해안 포탑으로 지정 거점을 포격한다.//n아군 제대가 해당 위치에서 휘말리지 않도록 주의할 것.
+mission_skill_config-39130114,
+mission_skill_config-19130115,지정 포격
+mission_skill_config-29130115,해안 포탑으로 지정 거점을 포격한다.//n아군 제대가 해당 위치에서 휘말리지 않도록 주의할 것.
+mission_skill_config-39130115,
+mission_skill_config-19130116,【标记】护盾发生器描述
+mission_skill_config-29130116,"나는 지원을 멈추지 않는다//c 내가 멈추지 않는 이상 희생은 늘어나지 않는다."//n전투 중 주기적으로 아군에게 보호막을 생성합니다.
+mission_skill_config-39130116,
+mission_skill_config-19130117,【标记】护盾效果
+mission_skill_config-29130117,
+mission_skill_config-39130117,
+mission_skill_config-19130201,지정 포격
+mission_skill_config-29130201,해안 포탑으로 지정 거점을 포격한다.//n아군 제대가 해당 위치에서 휘말리지 않도록 주의할 것.
+mission_skill_config-39130201,
+mission_skill_config-19130202,【标记】轰击友方梯队
+mission_skill_config-29130202,
+mission_skill_config-39130202,
+mission_skill_config-19130301,BOOOOOM
+mission_skill_config-29130301,
+mission_skill_config-39130301,
+mission_skill_config-19130302,BOOOOOM
+mission_skill_config-29130302,
+mission_skill_config-39130302,
+mission_skill_config-19130303,BOOOOOM
+mission_skill_config-29130303,
+mission_skill_config-39130303,
+mission_skill_config-19130304,BOOOOOM
+mission_skill_config-29130304,
+mission_skill_config-39130304,
+mission_skill_config-19130305,BOOOOOM
+mission_skill_config-29130305,
+mission_skill_config-39130305,
+mission_skill_config-19130306,BOOOOOM
+mission_skill_config-29130306,
+mission_skill_config-39130306,
+mission_skill_config-19130307,BOOOOOM
+mission_skill_config-29130307,
+mission_skill_config-39130307,
+mission_skill_config-19130308,BOOOOOM
+mission_skill_config-29130308,
+mission_skill_config-39130308,
+mission_skill_config-19130309,【标记】消除携带EMP手雷buff
+mission_skill_config-29130309,
+mission_skill_config-39130309,
+mission_skill_config-19130401,【标记】有人站立时释放标记(去除原有标记
+mission_skill_config-29130401,
+mission_skill_config-39130401,
+mission_skill_config-19130402,【标记】有人站立时释放标记(去除原有标记
+mission_skill_config-29130402,
+mission_skill_config-39130402,
+mission_skill_config-19130501,【标记】开局带雷标记
+mission_skill_config-29130501,
+mission_skill_config-39130501,
+mission_skill_config-19130502,【标记】新梯队带雷标记SS
+mission_skill_config-29130502,
+mission_skill_config-39130502,
+mission_skill_config-19130503,폭파 예약
+mission_skill_config-29130503,골리앗을 설치해//c 다음 아군턴 개시 시 폭파한다.※중복 설치 불가. 오폭을 피해 대피할 것.
+mission_skill_config-39130503,
+mission_skill_config-19130504,폭파 예약
+mission_skill_config-29130504,골리앗을 설치해//c 다음 아군턴 개시 시 폭파한다.※중복 설치 불가. 오폭을 피해 대피할 것.
+mission_skill_config-39130504,
+mission_skill_config-19130505,폭파 예약
+mission_skill_config-29130505,골리앗을 설치해//c 다음 아군턴 개시 시 폭파한다.※중복 설치 불가. 오폭을 피해 대피할 것.
+mission_skill_config-39130505,
+mission_skill_config-19130506,폭파 예약
+mission_skill_config-29130506,골리앗을 설치해//c 다음 아군턴 개시 시 폭파한다.※중복 설치 불가. 오폭을 피해 대피할 것.
+mission_skill_config-39130506,
+mission_skill_config-19130507,폭파 예약
+mission_skill_config-29130507,골리앗을 설치해//c 다음 아군턴 개시 시 폭파한다.※중복 설치 불가. 오폭을 피해 대피할 것.
+mission_skill_config-39130507,
+mission_skill_config-19130508,
+mission_skill_config-29130508,
+mission_skill_config-39130508,
+mission_skill_config-19130509,
+mission_skill_config-29130509,
+mission_skill_config-39130509,
+mission_skill_config-19130510,
+mission_skill_config-29130510,
+mission_skill_config-39130510,
+mission_skill_config-19130511,
+mission_skill_config-29130511,
+mission_skill_config-39130511,
+mission_skill_config-19130512,
+mission_skill_config-29130512,
+mission_skill_config-39130512,
+mission_skill_config-19130601,문 열기(차단문 I)
+mission_skill_config-29130601,차단문 I을 연다.
+mission_skill_config-39130601,
+mission_skill_config-19130602,문 닫기(차단문 I)
+mission_skill_config-29130602,차단문 I을 닫는다.
+mission_skill_config-39130602,
+mission_skill_config-19130603,문 열기(차단문 II)
+mission_skill_config-29130603,차단문 II를 연다.
+mission_skill_config-39130603,
+mission_skill_config-19130604,문 닫기(차단문 II)
+mission_skill_config-29130604,차단문 II를 닫는다.
+mission_skill_config-39130604,
+mission_skill_config-19130605,문 열기(차단문 III)
+mission_skill_config-29130605,차단문 III을 연다.
+mission_skill_config-39130605,
+mission_skill_config-19130606,문 닫기(차단문 III)
+mission_skill_config-29130606,차단문 III을 닫는다.
+mission_skill_config-39130606,
+mission_skill_config-19130607,【标记】제어콘솔 설명문
+mission_skill_config-29130607,낡은 모델의 제어콘솔//c 구시대의 OS로 조작성이 엉망이지만//c 다른 시설에 지시를 내릴 수 있다.
+mission_skill_config-39130607,
+mission_skill_config-19130608,【标记】第一回合
+mission_skill_config-29130608,
+mission_skill_config-39130608,
+mission_skill_config-19130609,【标记】第二回合_浸水1
+mission_skill_config-29130609,
+mission_skill_config-39130609,
+mission_skill_config-19130610,【标记】回合2_确定浸水1
+mission_skill_config-29130610,
+mission_skill_config-39130610,
+mission_skill_config-19130611,【标记】第三回合_浸水2
+mission_skill_config-29130611,
+mission_skill_config-39130611,
+mission_skill_config-19130612,【标记】回合3_确定浸水2
+mission_skill_config-29130612,
+mission_skill_config-39130612,
+mission_skill_config-19130613,【标记】第4回合_情况判定_仅门1关/仅门2关/仅门3关/仅门3开/全开_失败_破坏设施
+mission_skill_config-29130613,
+mission_skill_config-39130613,
+mission_skill_config-19130614,【标记】第4回合_情况判定_仅门1开
+mission_skill_config-29130614,
+mission_skill_config-39130614,
+mission_skill_config-19130615,【标记】第4回合_情况判定_仅门2开/全关
+mission_skill_config-29130615,
+mission_skill_config-39130615,
+mission_skill_config-19130616,【标记】控制台操作冷却1回合
+mission_skill_config-29130616,
+mission_skill_config-39130616,
+mission_skill_config-19130617,【标记】处决
+mission_skill_config-29130617,
+mission_skill_config-39130617,
+mission_skill_config-19130618,【标记】情况处理_失败_破坏设施
+mission_skill_config-29130618,
+mission_skill_config-39130618,
+mission_skill_config-19130619,【标记】第4回合_情况处理_仅门1开
+mission_skill_config-29130619,
+mission_skill_config-39130619,
+mission_skill_config-19130620,【标记】第4回合_情况处理_仅门2开/全关
+mission_skill_config-29130620,
+mission_skill_config-39130620,
+mission_skill_config-19130621,【标记】取消设施，杀死人质(ally)
+mission_skill_config-29130621,
+mission_skill_config-39130621,
+mission_skill_config-19130622,【标记】永续浸水
+mission_skill_config-29130622,
+mission_skill_config-39130622,
+mission_skill_config-19130623,【标记】第四回合判定
+mission_skill_config-29130623,
+mission_skill_config-39130623,
+mission_skill_config-19130624,【标记】第5回合_情况判定_仅门2关/仅门3关/仅门3开_失败_破坏设施
+mission_skill_config-29130624,
+mission_skill_config-39130624,
+mission_skill_config-19130625,【标记】第5回合_情况判定_仅门1开
+mission_skill_config-29130625,
+mission_skill_config-39130625,
+mission_skill_config-19130626,【标记】第5回合_情况判定_全关
+mission_skill_config-29130626,
+mission_skill_config-39130626,
+mission_skill_config-19130627,【标记】第5回合_情况处理_仅门1开/全关
+mission_skill_config-29130627,
+mission_skill_config-39130627,
+mission_skill_config-19130628,【标记】【特情】第5回合_情况判定_全关/仅门2开
+mission_skill_config-29130628,
+mission_skill_config-39130628,
+mission_skill_config-19130629,【标记】【特情】第5回合_情况处理_全关/仅门2开
+mission_skill_config-29130629,
+mission_skill_config-39130629,
+mission_skill_config-19130630,【标记】第五回合判定
+mission_skill_config-29130630,
+mission_skill_config-39130630,
+mission_skill_config-19130631,【标记】第六回合判定
+mission_skill_config-29130631,
+mission_skill_config-39130631,
+mission_skill_config-19130632,【标记】【留左水】第6回合_情况判定_全关/仅门3开
+mission_skill_config-29130632,
+mission_skill_config-39130632,
+mission_skill_config-19130633,【标记】【全清】第6回合_情况判定_【共情】仅门1开/【特情】全关/【特情】仅门2开
+mission_skill_config-29130633,
+mission_skill_config-39130633,
+mission_skill_config-19130634,【标记】【上两边留水】第6回合_情况判定_仅门2开_失败_不破坏设施
+mission_skill_config-29130634,
+mission_skill_config-39130634,
+mission_skill_config-19130635,【标记】【留左水】全关/仅门3开_处理
+mission_skill_config-29130635,
+mission_skill_config-39130635,
+mission_skill_config-19130636,【标记】【全清留门前】仅门1开_处理
+mission_skill_config-29130636,
+mission_skill_config-39130636,
+mission_skill_config-19130637,【标记】【全清】仅门2开_处理
+mission_skill_config-29130637,
+mission_skill_config-39130637,
+mission_skill_config-19130638,【标记】【验证】发动验证
+mission_skill_config-29130638,
+mission_skill_config-39130638,
+mission_skill_config-19130639,【标记】处决
+mission_skill_config-29130639,
+mission_skill_config-39130639,
+mission_skill_config-19130640,【标记】存活标记
+mission_skill_config-29130640,
+mission_skill_config-39130640,
+mission_skill_config-19130901,BOOOOOM
+mission_skill_config-29130901,
+mission_skill_config-39130901,
+mission_skill_config-19130902,BOOOOOM
+mission_skill_config-29130902,
+mission_skill_config-39130902,
+mission_skill_config-19130903,BOOOOOM
+mission_skill_config-29130903,
+mission_skill_config-39130903,
+mission_skill_config-19130904,BOOOOOM
+mission_skill_config-29130904,
+mission_skill_config-39130904,
+mission_skill_config-19130905,BOOOOOM
+mission_skill_config-29130905,
+mission_skill_config-39130905,
+mission_skill_config-19130906,BOOOOOM
+mission_skill_config-29130906,
+mission_skill_config-39130906,
+mission_skill_config-19130907,BOOOOOM
+mission_skill_config-29130907,
+mission_skill_config-39130907,
+mission_skill_config-19130908,BOOOOOM
+mission_skill_config-29130908,
+mission_skill_config-39130908,
+mission_skill_config-19130909,BOOOOOM
+mission_skill_config-29130909,
+mission_skill_config-39130909,
+mission_skill_config-19130910,BOOOOOM
+mission_skill_config-29130910,
+mission_skill_config-39130910,
+mission_skill_config-19130911,BOOOOOM
+mission_skill_config-29130911,
+mission_skill_config-39130911,
+mission_skill_config-19130912,BOOOOOM
+mission_skill_config-29130912,
+mission_skill_config-39130912,
+mission_skill_config-19130913,BOOOOOM
+mission_skill_config-29130913,
+mission_skill_config-39130913,
+mission_skill_config-19130914,BOOOOOM
+mission_skill_config-29130914,
+mission_skill_config-39130914,
+mission_skill_config-19130915,BOOOOOM
+mission_skill_config-29130915,
+mission_skill_config-39130915,
+mission_skill_config-19130916,BOOOOOM
+mission_skill_config-29130916,
+mission_skill_config-39130916,
+mission_skill_config-19130917,BOOOOOM
+mission_skill_config-29130917,
+mission_skill_config-39130917,
+mission_skill_config-19130918,BOOOOOM
+mission_skill_config-29130918,
+mission_skill_config-39130918,
+mission_skill_config-19130919,【标记】增加炸弹数量
+mission_skill_config-29130919,
+mission_skill_config-39130919,
+mission_skill_config-19130920,부탁해//c 골리앗!
+mission_skill_config-29130920,나의 앞길을 열어줘!
+mission_skill_config-39130920,
+mission_skill_config-19130921,부탁해//c 골리앗!
+mission_skill_config-29130921,나의 앞길을 열어줘!
+mission_skill_config-39130921,
+mission_skill_config-19130922,부탁해//c 골리앗!
+mission_skill_config-29130922,나의 앞길을 열어줘!
+mission_skill_config-39130922,
+mission_skill_config-19130923,부탁해//c 골리앗!
+mission_skill_config-29130923,나의 앞길을 열어줘!
+mission_skill_config-39130923,
+mission_skill_config-13000701,철벽 증원
+mission_skill_config-23000701,아무 아군 제대를 선택하여 발동한다. 선택한 제대는 전투 개시 시 디너게이트 1그룹의 증원을 받게 된다. 1그룹은 5편제 디너게이트 2기를 포함하며//c 체력 총합: 120//c 화력: 35//c 공속: 50//c 명중: 50//c 회피: 70.
+mission_skill_config-33000701,체력 총합:120//c 화력:35
+mission_skill_config-13000702,철벽 증원
+mission_skill_config-23000702,아무 아군 제대를 선택하여 발동한다. 선택한 제대는 전투 개시 시 디너게이트 1그룹의 증원을 받게 된다. 1그룹은 5편제 디너게이트 2기를 포함하며//c 체력 총합: 140//c 화력: 40//c 공속: 50//c 명중: 50//c 회피: 70.
+mission_skill_config-33000702,체력 총합:140//c 화력:40
+mission_skill_config-13000703,철벽 증원
+mission_skill_config-23000703,아무 아군 제대를 선택하여 발동한다. 선택한 제대는 전투 개시 시 디너게이트 1그룹의 증원을 받게 된다. 1그룹은 5편제 디너게이트 2기를 포함하며//c 체력 총합: 160//c 화력: 45//c 공속: 50//c 명중: 50//c 회피: 70.
+mission_skill_config-33000703,체력 총합:160//c 화력:45
+mission_skill_config-13000704,철벽 증원
+mission_skill_config-23000704,아무 아군 제대를 선택하여 발동한다. 선택한 제대는 전투 개시 시 디너게이트 1그룹의 증원을 받게 된다. 1그룹은 5편제 디너게이트 2기를 포함하며//c 체력 총합: 180//c 화력: 50//c 공속: 50//c 명중: 50//c 회피: 70.
+mission_skill_config-33000704,체력 총합:180//c 화력:50
+mission_skill_config-13000705,철벽 증원
+mission_skill_config-23000705,아무 아군 제대를 선택하여 발동한다. 선택한 제대는 전투 개시 시 디너게이트 1그룹의 증원을 받게 된다. 1그룹은 5편제 디너게이트 2기를 포함하며//c 체력 총합: 200//c 화력: 55//c 공속: 50//c 명중: 50//c 회피: 70.
+mission_skill_config-33000705,체력 총합:200//c 화력:55
+mission_skill_config-13000706,철벽 증원
+mission_skill_config-23000706,아무 아군 제대를 선택하여 발동한다. 선택한 제대는 전투 개시 시 디너게이트 1그룹의 증원을 받게 된다. 1그룹은 5편제 디너게이트 2기를 포함하며//c 체력 총합: 220//c 화력: 60//c 공속: 50//c 명중: 50//c 회피: 70.
+mission_skill_config-33000706,체력 총합:220//c 화력:60
+mission_skill_config-13000707,철벽 증원
+mission_skill_config-23000707,아무 아군 제대를 선택하여 발동한다. 선택한 제대는 전투 개시 시 디너게이트 1그룹의 증원을 받게 된다. 1그룹은 5편제 디너게이트 2기를 포함하며//c 체력 총합: 240//c 화력: 65//c 공속: 50//c 명중: 50//c 회피: 70.
+mission_skill_config-33000707,체력 총합:240//c 화력:65
+mission_skill_config-13000708,철벽 증원
+mission_skill_config-23000708,아무 아군 제대를 선택하여 발동한다. 선택한 제대는 전투 개시 시 디너게이트 1그룹의 증원을 받게 된다. 1그룹은 5편제 디너게이트 2기를 포함하며//c 체력 총합: 260//c 화력: 70//c 공속: 50//c 명중: 50//c 회피: 70.
+mission_skill_config-33000708,체력 총합:260//c 화력:70
+mission_skill_config-13000709,철벽 증원
+mission_skill_config-23000709,아무 아군 제대를 선택하여 발동한다. 선택한 제대는 전투 개시 시 디너게이트 1그룹의 증원을 받게 된다. 1그룹은 5편제 디너게이트 2기를 포함하며//c 체력 총합: 280//c 화력: 75//c 공속: 50//c 명중: 50//c 회피: 70.
+mission_skill_config-33000709,체력 총합:280//c 화력:75
+mission_skill_config-13000710,철벽 증원
+mission_skill_config-23000710,아무 아군 제대를 선택하여 발동한다. 선택한 제대는 전투 개시 시 디너게이트 1그룹의 증원을 받게 된다. 1그룹은 5편제 디너게이트 2기를 포함하며//c 체력 총합: 300//c 화력: 80//c 공속: 50//c 명중: 50//c 회피: 70.
+mission_skill_config-33000710,체력 총합:300//c 화력:80

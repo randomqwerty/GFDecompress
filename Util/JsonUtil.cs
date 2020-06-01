@@ -98,10 +98,46 @@ namespace GFDecompress
                     Console.WriteLine("error");
                 }
                 Encoding utf8 = new UTF8Encoding(false);
-                File.WriteAllText($"results\\text\\{item.Name.Split('.')[0]}.json", json.ToString(),utf8);
+                if (!File.Exists($"results\\text\\{_location}"))
+                    Directory.CreateDirectory($"results\\text\\{_location}");
+
+                File.WriteAllText($"results\\text\\{_location}\\{item.Name.Split('.')[0]}.json", json.ToString(),utf8);
             }
         }
+
+        public static void getDialogueText(string _location) {
+            string data;
+            JObject json = new JObject();
+
+            StreamReader file = new StreamReader($"Extra\\{_location}\\NewCharacterVoice.txt");
+            try {
+                while ((data = file.ReadLine()) != null) {
+                    // [0] : codename, [1] : DialogueType, [2]: text
+                    string[] line = data.Split('|');
+
+                    //if (line[1].StartsWith("DIALOGUE") || line[1] == "GAIN" || line[1] == "Introduce" || line[1] == "SOULCONTRACT")
+                    line[1] = line[1].ToLower();
+
+                    if (!json.ContainsKey(line[0])) {
+                        json.Add(line[0], new JObject());
+                    }
+
+                    if (json[line[0]].ToObject<JObject>().ContainsKey(line[1]))
+                        continue;
+                    ((JObject)json[line[0]]).Add(line[1], new JArray() {line[2]});
+                }  
+            } 
+            catch (Exception e){
+                Console.WriteLine(e);
+            }
+
+            if (!File.Exists($"results\\Extra"))
+                Directory.CreateDirectory($"results\\Extra");
+
+            if (!File.Exists($"results\\Extra\\{_location}"))
+                Directory.CreateDirectory($"results\\Extra\\{_location}");
+
+            File.WriteAllText($"results\\Extra\\{_location}\\NewCharacterVoice.json", json.ToString());
+        }
     }
-
-
 }

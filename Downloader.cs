@@ -11,6 +11,8 @@ using System.Security.Cryptography;
 using System.IO.Compression;
 using System.Dynamic;
 using System.Text.RegularExpressions;
+using System.Diagnostics;
+using System.Runtime.InteropServices;
 
 namespace GFDecompress
 {
@@ -39,7 +41,7 @@ namespace GFDecompress
             JObject obj = JObject.Parse(readerpost.ReadToEnd());
             dataVersion = obj["data_version"].ToString();
             clientVersion = obj["client_version"].ToString();
-            minversion = Math.Round(double.Parse(clientVersion) / 10);
+            minversion = Math.Round(double.Parse(clientVersion) / 100) * 10;
             abVersion = obj["ab_version"].ToString();
 
             Console.WriteLine("검색된 데이터 버전: " + dataVersion);
@@ -70,7 +72,7 @@ namespace GFDecompress
                 WebClient client = new WebClient();
                 client.DownloadFile(getStcUrl(), "./stc/stc.zip");
                 Console.WriteLine("다운로드 성공");
-                Console.WriteLine("압축해제 실행...");
+                Console.WriteLine("압축해제 중...");
                 ZipFile.ExtractToDirectory("./stc/stc.zip","./stc");
                 Console.WriteLine("압축해제 성공");
                 Console.WriteLine("압축파일 삭제...");
@@ -101,6 +103,49 @@ namespace GFDecompress
 
             WebClient client = new WebClient();
             client.DownloadFile(getAssetUrl(filename), $"Assets_raw\\{location}\\{filename}");
+
+            StreamReader output = null;
+            StreamReader error = null;
+
+            Python.run("Scripts\\deserializer.py", $"Assets_raw\\{location}\\{filename}", ref output, ref error);
+
+            Console.WriteLine("textes.ab 다운받는 중...");
+
+
+            string[] textes = new string[2];
+            int i = 0;
+            while (true) {
+                string str = output.ReadLine();
+                if (str == null)
+                    break;
+                textes[i] = str;
+                i++;
+            }
+            string url = textes[0] + textes[1] + ".dat";
+
+            Console.WriteLine(url);
+            client.DownloadFile(url, $"Assets_raw\\{location}\\textes.zip");
+
+            Console.WriteLine("압축해제 중...");
+            try
+            {
+                ZipFile.ExtractToDirectory($"Assets_raw\\{location}\\textes.zip", $"Assets_raw\\{location}");
+            }
+            catch {
+                File.Delete($"Assets_raw\\{location}\\asset_textes.ab");
+                ZipFile.ExtractToDirectory($"Assets_raw\\{location}\\textes.zip", $"Assets_raw\\{location}");
+            }
+            
+            Console.WriteLine("압축파일 삭제");
+            File.Delete($"Assets_raw\\{location}\\textes.zip");
+
+            //Console.WriteLine("에셋 추출 중...");
+            //ProcessStartInfo extractor = new ProcessStartInfo("Scripts\\extractexe\\extract.exe", $@"Assets_raw\\{location}\\asset_textes.ab");
+            //Process extract = Process.Start(extractor);
+            //extract.WaitForExit();
+
+            //Python.run("Scripts\\extractpy\\abunpack.py", $"-0 Asset\\{location} Assets_raw\\{location}\\asset_textes.ab", ref output, ref error);
+            //Console.WriteLine(error.ReadToEnd());
             
         }
 
@@ -120,16 +165,16 @@ namespace GFDecompress
             return (long)timeSpan.TotalSeconds;
         }
 
-        public string getGameHost(string _location, int chanel = 1001) {//채널코드 한섭만 적용됨, 나중에 패킷파싱으로 다른서버 알아내야함
+        public string getGameHost(string _location) {
             switch (_location) {
                 case "kr":
-                    return "http://gf-game.girlfrontline.co.kr/index.php/" + chanel.ToString() + "/";
+                    return "http://gf-game.girlfrontline.co.kr/index.php/1001/";
                 case "jp":
-                    return "http://gfjp-game.sunborngame.com/index.php/"+ chanel.ToString() + "/";
+                    return "http://gfjp-game.sunborngame.com/index.php/1001/";
                 case "en":
-                    return "http://gf-game.sunborngame.com/index.php/" + chanel.ToString() + "/";
+                    return "http://gf-game.sunborngame.com/index.php/1001/";
                 default:
-                    return "http://s1.gw.gf.ppgame.com/index.php/" + chanel.ToString() + "/";
+                    return "http://gfcn-game.gw.merge.sunborngame.com/index.php/1000/";
             }
         }
 
@@ -139,11 +184,11 @@ namespace GFDecompress
                 case "kr":
                     return "http://gfkrcdn.imtxwy.com/";
                 case "jp":
-                    return "https://s3-ap-northeast-1.amazonaws.com/gf1-jpfile-server/";
+                    return "https://gfjp-cdn.sunborngame.com/";
                 case "en":
-                    return "http://dkn3dfwjnmzcj.cloudfront.net/";
+                    return "https://gfus-cdn.sunborngame.com/";
                 default:
-                    return "http://oss-rescnf.gf.ppgame.com/";
+                    return "http://gf-cn.cdn.sunborngame.com/";
             }
         }
 
@@ -152,11 +197,13 @@ namespace GFDecompress
                 case "kr":
                     return "http://sn-list.girlfrontline.co.kr/";
                 case "jp":
-                    return "https://s3-ap-northeast-1.amazonaws.com/gf1-jpfile-server/";
+                    //return "https://s3-ap-northeast-1.amazonaws.com/gf1-jpfile-server/";
+                    return "https://d2p0tz30gps08r.cloudfront.net/";
                 case "en":
-                    return "http://gf-transit.sunborngame.com/";
+                    //return "http://gf-transit.sunborngame.com/";
+                    return "http://dkn3dfwjnmzcj.cloudfront.net/";
                 default:
-                    return "http://oss-rescnf.gf.ppgame.com/cn_mica/";
+                    return "http://gf-cn.cdn.sunborngame.com/";
             }
         }
     }
