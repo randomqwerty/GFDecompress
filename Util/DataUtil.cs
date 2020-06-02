@@ -556,6 +556,12 @@ namespace GFDecompress
                         else
                             skill["cooldownType"] = "turn";
 
+                        JObject tmpSkill = new JObject();
+                        tmpSkill.Add("level", element.ToObject<JObject>()["level"].ToObject<int>());
+                        tmpSkill.Add("cooldown", element.ToObject<JObject>()["cd_time"].ToObject<int>());
+                        datapool.Add(tmpSkill);
+                        skill["dataPool"] = datapool;
+
                         skill["consumption"] = element.ToObject<JObject>()["consumption"].ToObject<int>();
                     }
                 }
@@ -628,7 +634,7 @@ namespace GFDecompress
         public string category;
         public string type;
         public string company;
-        public JArray fitguns = new JArray();
+        public JArray fitGuns = new JArray();
         public double exclusiveRate;
         public int maxLevel;
         public int buildTime;
@@ -645,7 +651,7 @@ namespace GFDecompress
                 "rate",
                 "critical_harm_rate",
                 "critical_percent",
-                "amor_piercing",
+                "armor_piercing",
                 "armor",
                 "shield",
                 "damage_amplify",
@@ -665,15 +671,15 @@ namespace GFDecompress
             try
             {
                 if (_obj["fit_guns"].ToString().Equals(""))
-                    fitguns = null;
+                    fitGuns = null;
                 string[] strFitgun = _obj["fit_guns"].ToString().Split(',');
                 foreach (string str in strFitgun)
                 {
-                    fitguns.Add(int.Parse(str));
+                    fitGuns.Add(int.Parse(str));
                 }
             }
             catch {
-                fitguns = null;
+                fitGuns = null;
             }
 
             exclusiveRate = _obj["exclusive_rate"].ToObject<double>();
@@ -698,7 +704,7 @@ namespace GFDecompress
                                 stat.Add("upgrade", int.Parse(bonus.Split(':')[1]));
                             }
                         }
-                    stats.Add(statName, stat);
+                    stats.Add(getStatKey(statName), stat);
                 }
             }
             catch { }
@@ -706,6 +712,27 @@ namespace GFDecompress
             powerup.Add("ammo", _obj["powerup_ammo"]);
             powerup.Add("mre", _obj["powerup_mre"]);
             powerup.Add("part", _obj["powerup_part"]);
+        }
+
+        public string getStatKey(string _str) {
+            switch (_str) {
+                case "critical_harm_rate":
+                    return "criticalHarmRate";
+                case "critical_percent":
+                    return "criticalPercent";
+                case "armor_piercing":
+                    return "armorPiercing";
+                case "damage_amplify":
+                    return "damageAmplify";
+                case "damage_reduction":
+                    return "damageReduction";
+                case "night_view_percent":
+                    return "nightview";
+                case "bullet_number_up":
+                    return "bullet";
+                default:
+                    return _str;
+            }
         }
 
         public override string ToString()

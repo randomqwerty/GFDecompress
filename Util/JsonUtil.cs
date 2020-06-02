@@ -32,6 +32,8 @@ namespace GFDecompress
             JArray json = new JArray();
 
             foreach (var value in _arr) {
+                if (value["id"].ToString() == value["code"].ToString() || value["id"].ToObject<int>()  == 97 || value["id"].ToObject<int>() == 98)
+                    continue;
                 EquipData data = new EquipData(value.ToObject<JObject>());
                 json.Add(JObject.Parse(data.ToString()));
             }
@@ -60,6 +62,8 @@ namespace GFDecompress
             foreach (var value in fairyData["fairy_info"].ToObject<JArray>())
             {
                 FairyData data = new FairyData(value.ToObject<JObject>(), skills, fairySkinData);
+                if (data.category == "dummy")
+                    continue;
                 json.Add(JObject.Parse(data.ToString()));
             }
             File.WriteAllText("results\\fairy.json", json.ToString());
