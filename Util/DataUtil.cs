@@ -249,6 +249,7 @@ namespace GFDecompress
                 {"mempiece",0}
             }
         };
+        public string tag;
 
         //생성자
         public GunData(JObject _gunList, JArray _skinList, JArray _skillList) {
@@ -453,6 +454,12 @@ namespace GFDecompress
             } catch {
                 mindupdate = null;
             }
+
+            //소속 태그
+            if (_gunList["tag"].ToString() == "")
+                tag = "team_griffin";
+            else
+                tag = _gunList["tag"].ToString();
         }
 
         public override string ToString()
@@ -565,6 +572,11 @@ namespace GFDecompress
                         skill["consumption"] = element.ToObject<JObject>()["consumption"].ToObject<int>();
                     }
                 }
+
+                if (_fairyList["id"].ToObject<int>() == 15)
+                    skill["id"] = "*13";
+                if (_fairyList["id"].ToObject<int>() == 16)
+                    skill["id"] = "*14";
 
 
                 /*foreach (JToken element in _skillLIst)

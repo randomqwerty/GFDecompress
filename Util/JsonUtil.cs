@@ -95,7 +95,7 @@ namespace GFDecompress
                         str = data.Split(',');
                         if (json.ContainsKey(str[0]))
                             continue;
-                        json.Add(str[0], str[1].Replace("//c",","));
+                        json.Add(str[0], str[1].Replace("//c",",").Replace("//n","\n"));
                     }
                 }
                 catch {

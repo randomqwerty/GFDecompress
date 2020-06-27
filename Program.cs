@@ -186,7 +186,7 @@ namespace GFDecompress
 
             Console.WriteLine("\n====한섭 데이터 다운====");
             Downloader kr = new Downloader();
-            kr.downloadStc(); //stc는 한섭기준으로 받음, 중섭용으로 받고싶으면 해당 클래스의 메소드를 사용하면 됨
+            //kr.downloadStc(); //stc는 한섭기준으로 받음, 중섭용으로 받고싶으면 해당 클래스의 메소드를 사용하면 됨
             kr.downloadAsset();
 
             Console.WriteLine("\n====글섭 데이터 다운====");
@@ -199,6 +199,7 @@ namespace GFDecompress
 
             Console.WriteLine("\n====중섭 데이터 다운====");
             Downloader ch = new Downloader("ch");
+            ch.downloadStc();
             ch.downloadAsset();
 
             #region NLog Configuration
