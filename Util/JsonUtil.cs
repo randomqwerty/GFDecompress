@@ -32,6 +32,8 @@ namespace GFDecompress
             JArray json = new JArray();
 
             foreach (var value in _arr) {
+                if (value["id"].ToString() == value["code"].ToString() || value["id"].ToObject<int>()  == 97 || value["id"].ToObject<int>() == 98)
+                    continue;
                 EquipData data = new EquipData(value.ToObject<JObject>());
                 json.Add(JObject.Parse(data.ToString()));
             }
@@ -49,8 +51,8 @@ namespace GFDecompress
 
             try
             {
-                fairyData = JObject.Parse(System.IO.File.ReadAllText("output_catchdata\\fairy_info.json"));
-                fairySkinData = JObject.Parse(System.IO.File.ReadAllText("output_catchdata\\fairy_skin_info.json"));
+                fairyData = JObject.Parse(System.IO.File.ReadAllText("output\\catchdata\\fairy_info.json"));
+                fairySkinData = JObject.Parse(System.IO.File.ReadAllText("output\\catchdata\\fairy_skin_info.json"));
             }
             catch{
                 Console.WriteLine("ERROR: 파일이 존재하지 않음");
@@ -60,6 +62,8 @@ namespace GFDecompress
             foreach (var value in fairyData["fairy_info"].ToObject<JArray>())
             {
                 FairyData data = new FairyData(value.ToObject<JObject>(), skills, fairySkinData);
+                if (data.category == "dummy")
+                    continue;
                 json.Add(JObject.Parse(data.ToString()));
             }
             File.WriteAllText("results\\fairy.json", json.ToString());
@@ -84,17 +88,60 @@ namespace GFDecompress
                 {
                     while ((data = file.ReadLine()) != null)
                     {
+                        if (data == "\n")
+                            continue;
+
                         string[] str = { "", "" };
                         str = data.Split(',');
-                        json.Add(str[0], str[1]);
+                        if (json.ContainsKey(str[0]))
+                            continue;
+                        json.Add(str[0], str[1].Replace("//c",",").Replace("//n","\n"));
                     }
                 }
-                catch { }
+                catch {
+                    Console.WriteLine("error");
+                }
                 Encoding utf8 = new UTF8Encoding(false);
-                File.WriteAllText($"results\\text\\{item.Name.Split('.')[0]}.json", json.ToString(),utf8);
+                if (!File.Exists($"results\\text\\{_location}"))
+                    Directory.CreateDirectory($"results\\text\\{_location}");
+
+                File.WriteAllText($"results\\text\\{_location}\\{item.Name.Split('.')[0]}.json", json.ToString(),utf8);
             }
         }
+
+        public static void getDialogueText(string _location) {
+            string data;
+            JObject json = new JObject();
+
+            StreamReader file = new StreamReader($"Extra\\{_location}\\NewCharacterVoice.txt");
+            try {
+                while ((data = file.ReadLine()) != null) {
+                    // [0] : codename, [1] : DialogueType, [2]: text
+                    string[] line = data.Split('|');
+
+                    //if (line[1].StartsWith("DIALOGUE") || line[1] == "GAIN" || line[1] == "Introduce" || line[1] == "SOULCONTRACT")
+                    line[1] = line[1].ToLower();
+
+                    if (!json.ContainsKey(line[0])) {
+                        json.Add(line[0], new JObject());
+                    }
+
+                    if (json[line[0]].ToObject<JObject>().ContainsKey(line[1]))
+                        continue;
+                    ((JObject)json[line[0]]).Add(line[1], new JArray() {line[2]});
+                }  
+            } 
+            catch (Exception e){
+                Console.WriteLine(e);
+            }
+
+            if (!File.Exists($"results\\Extra"))
+                Directory.CreateDirectory($"results\\Extra");
+
+            if (!File.Exists($"results\\Extra\\{_location}"))
+                Directory.CreateDirectory($"results\\Extra\\{_location}");
+
+            File.WriteAllText($"results\\Extra\\{_location}\\NewCharacterVoice.json", json.ToString());
+        }
     }
-
-
 }

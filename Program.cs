@@ -184,8 +184,23 @@ namespace GFDecompress
             Stopwatch swh = new Stopwatch();
             swh.Start();
 
-            StcDownloader dl = new StcDownloader();
-            dl.downloadStc();
+            Console.WriteLine("\n====한섭 데이터 다운====");
+            Downloader kr = new Downloader();
+            //kr.downloadStc(); //stc는 한섭기준으로 받음, 중섭용으로 받고싶으면 해당 클래스의 메소드를 사용하면 됨
+            kr.downloadAsset();
+
+            Console.WriteLine("\n====글섭 데이터 다운====");
+            Downloader en = new Downloader("en");
+            en.downloadAsset();
+
+            Console.WriteLine("\n====일섭 데이터 다운====");
+            Downloader jp = new Downloader("jp");
+            jp.downloadAsset();
+
+            Console.WriteLine("\n====중섭 데이터 다운====");
+            Downloader ch = new Downloader("ch");
+            ch.downloadStc();
+            ch.downloadAsset();
 
             #region NLog Configuration
             var config = new LoggingConfiguration();
@@ -395,8 +410,21 @@ namespace GFDecompress
                 JsonUtil.getEquipJson(EquipList);
 
                 //textAsset2json
+                Console.WriteLine("\n==한섭 데이터 변환==");
                 JsonUtil.getTextAsset("kr");
+                JsonUtil.getDialogueText("kr");
 
+                Console.WriteLine("\n==글섭 데이터 변환==");
+                JsonUtil.getTextAsset("en");
+                JsonUtil.getDialogueText("en");
+
+                Console.WriteLine("\n==일섭 데이터 변환==");
+                JsonUtil.getTextAsset("jp");
+                JsonUtil.getDialogueText("jp");
+
+                Console.WriteLine("\n==중섭 데이터 변환==");
+                JsonUtil.getTextAsset("ch");
+                JsonUtil.getDialogueText("ch");
 
                 // 폴더 열기
                 //Process.Start(Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location) + "\\output_stc");
