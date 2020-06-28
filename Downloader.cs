@@ -122,6 +122,12 @@ namespace GFDecompress
                 i++;
             }
             string url = textes[0] + textes[1] + ".dat";
+            
+            if(url == ".dat")
+            {
+                Console.WriteLine("deserializer.py가 존재하지 않습니다. 파일이 존재하는지 다시 한번 확인해주세요.");
+                Environment.Exit(1);
+            }
 
             Console.WriteLine(url);
             client.DownloadFile(url, $"Assets_raw\\{location}\\textes.zip");
