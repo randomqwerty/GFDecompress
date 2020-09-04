@@ -1,6 +1,7 @@
 ﻿id
 type
 name
+__unknown0
 code
 maxlife
 pow
@@ -26,3 +27,9 @@ passive_skill
 effect_ratio
 unable_buff_type
 voice
+__unknown1
+__unknown2
+__unknown3
+__unknown4
+__unknown5
+__unknown6

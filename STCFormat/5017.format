@@ -27,6 +27,7 @@ hurt_id
 hurt_cd
 buff_id
 buff_cd
+__unknown0
 is_single_hurt
 is_form_play
 creation_type

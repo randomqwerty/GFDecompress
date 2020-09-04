@@ -20,6 +20,8 @@ expect_turn
 boss_team_id
 turn_duration
 costbp
+__unknown0
+__unknown1
 coin_ap
 turn_limit
 limit_gun_pool
@@ -62,3 +64,17 @@ draw_code
 reset_drop_key_once
 close_mission_control
 limit_squad
+__unknown2
+__unknown3
+__unknown4
+__unknown5
+__unknown6
+__unknown7
+__unknown8
+__unknown9
+mission_fairy_tip
+__unknown10
+mission_squad_tip
+__unknown11
+__unknown12
+__unknown13
