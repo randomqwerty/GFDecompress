@@ -21,6 +21,8 @@ skin_action
 skin_name
 buff_id_target
 buff_id_self
+buff_type_target
+buff_type_self
 buff_delay
 description
 lvup_description
@@ -54,3 +56,4 @@ public byte is_mindupdate
 public byte is_manual
 is_cdr
 skill_lv_call
+special_buff_trigger

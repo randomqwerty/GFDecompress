@@ -20,6 +20,8 @@ expect_turn
 boss_team_id
 turn_duration
 costbp
+getcoin
+getcoin_parameter
 coin_ap
 turn_limit
 limit_gun_pool
@@ -62,3 +64,18 @@ draw_code
 reset_drop_key_once
 close_mission_control
 limit_squad
+open_mission_items
+drop_mission_item
+mapped_mission_id
+branch_next_mission_id
+win_type
+medal_type_silver
+drop_item_count
+difficulty_recommend
+difficulty_recommend_addendum
+limit_sangvis
+mission_tip
+win_step
+event_score
+score_prize
+drop_key_info

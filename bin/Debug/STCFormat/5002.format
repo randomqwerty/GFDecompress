@@ -17,3 +17,8 @@ map_route
 map_code
 hostage_info
 building_id
+forbid_specialspot
+map_num
+package
+auto_teleport
+spot_effect

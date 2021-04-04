@@ -71,11 +71,11 @@ namespace GFDecompress
 
             int code = reader.ReadUShort();         // 코드 (예: 5005)
             reader.ReadUShort();                    // ??
-            log.Debug("file: {0}, code: {1}", stcFile, code);
+            //log.Debug("file: {0}, code: {1}", stcFile, code);
 
             int row = reader.ReadUShort();
             int col = reader.ReadByte();
-            log.Debug("row: {0} | col: {1}", row, col);
+            //log.Debug("row: {0} | col: {1}", row, col);
 
             if (row > 0 && col > 0)
             {
@@ -106,7 +106,7 @@ namespace GFDecompress
                             break;
                     }
                 }
-                log.Debug("column_info >> {0}", string.Join("|", colTypes));
+                //log.Debug("column_info >> {0}", string.Join("|", colTypes));
 
                 // 실제 정보가 있는 오프셋으로 이동
                 if (startOffset <= 0)
@@ -114,7 +114,7 @@ namespace GFDecompress
                     // 오프셋 찾기
                     reader.ReadInt();               // ??
                     startOffset = reader.ReadInt(); // 오프셋
-                    log.Debug("start_offset >> {0}", startOffset);
+                    //log.Debug("start_offset >> {0}", startOffset);
                 }
                 reader._offset = startOffset;
 
@@ -123,7 +123,7 @@ namespace GFDecompress
                 if (File.Exists(@"STCFormat\" + Path.GetFileNameWithoutExtension(stcFile) + ".format"))
                     colNames = File.ReadAllLines(@"STCFormat\" + Path.GetFileNameWithoutExtension(stcFile) + ".format").ToList();
                 else
-                    log.Warn("Format not exists >> {0}", @"STCFormat\" + Path.GetFileNameWithoutExtension(stcFile) + ".format");
+                    log.Warn("Format file does not exist >> {0}", @"STCFormat\" + Path.GetFileNameWithoutExtension(stcFile) + ".format");
 
                 try
                 {
@@ -184,20 +184,20 @@ namespace GFDecompress
             Stopwatch swh = new Stopwatch();
             swh.Start();
 
-            Console.WriteLine("\n====한섭 데이터 다운====");
+            Console.WriteLine("\n====KR Data download====");
             Downloader kr = new Downloader();
             //kr.downloadStc(); //stc는 한섭기준으로 받음, 중섭용으로 받고싶으면 해당 클래스의 메소드를 사용하면 됨
             kr.downloadAsset();
 
-            Console.WriteLine("\n====글섭 데이터 다운====");
+            Console.WriteLine("\n====EN Data download====");
             Downloader en = new Downloader("en");
             en.downloadAsset();
 
-            Console.WriteLine("\n====일섭 데이터 다운====");
+            Console.WriteLine("\n====JP Data download====");
             Downloader jp = new Downloader("jp");
             jp.downloadAsset();
 
-            Console.WriteLine("\n====중섭 데이터 다운====");
+            Console.WriteLine("\n====CN Data download====");
             Downloader ch = new Downloader("ch");
             ch.downloadStc();
             ch.downloadAsset();
@@ -227,6 +227,8 @@ namespace GFDecompress
                 if (!Directory.Exists("output\\catchdata"))
                     Directory.CreateDirectory("output\\catchdata");
                 File.WriteAllText("output\\catchdata\\catchdata.txt", output);
+
+                log.Info("\n Exporting dat file contents");
 
                 // 정보별 추출
                 string[] lines = output.Split('\n').Select(p => p.Trim()).ToArray();
@@ -274,7 +276,6 @@ namespace GFDecompress
                     { "5003.stc", "enemy_in_team" },                // 적 제대 멤버
                     { "5004.stc", "gun_in_ally" },                  // 아군 제대 멤버
                     { "5005.stc", "gun" },                          // 인형
-
                     { "5006.stc", "squad" },                        // 화력소대
                     { "5007.stc", "squad_advanced_bonus" },         // 화력소대 승진
                     { "5008.stc", "squad_chip" },                   // 화력소대 칩셋
@@ -283,7 +284,7 @@ namespace GFDecompress
                     { "5011.stc", "squad_grid" },                   // 화력소대 칩셋 모양
                     { "5012.stc", "squad_data_daily" },             // 화력소대 정보임무
                     { "5013.stc", "squad_exp" },                    // 화력소대 경험치
-
+                    { "5014.stc", "live2d" },
                     { "5015.stc", "building" },                     // 건물
                     { "5016.stc", "mission" },                      // 전역
                     { "5017.stc", "battle_creation" },
@@ -305,48 +306,48 @@ namespace GFDecompress
                     { "5033.stc", "carnival_task_type" },
                     { "5034.stc", "bingo_task_type" },
                     { "5035.stc", "enemy_team" },
-                    { "5036.stc", "" },
-                    { "5037.stc", "" },
+                    { "5036.stc", "battle_formula" },
+                    { "5037.stc", "live2d_motions" },
                     { "5038.stc", "equip" },                        // 장비
-                    { "5039.stc", "" },                             // 자율작전?
+                    { "5039.stc", "auto_mission" },                             // 자율작전?
                     { "5040.stc", "theater" },
                     { "5041.stc", "theater_area" },
                     { "5042.stc", "theater_construction" },
                     { "5043.stc", "theater_event" },
-                    { "5044.stc", "" },
-                    { "5045.stc", "" },
+                    { "5044.stc", "story_util" },
+                    { "5045.stc", "trigger_index" },
                     { "5046.stc", "mission_skill_config" },
-                    { "5047.stc", "" },
+                    { "5047.stc", "mission_mapped" },
                     { "5048.stc", "skin" },                         // 스킨
-                    { "5049.stc", "" },
-                    { "5050.stc", "" },
+                    { "5049.stc", "extra_spine" },
+                    { "5050.stc", "explore_script" },
                     { "5051.stc", "explore_affair_client" },
                     { "5052.stc", "explore_area" },
-                    { "5053.stc", "" },
-                    { "5054.stc", "" },
-                    { "5055.stc", "" },
-                    { "5056.stc", "" },
+                    { "5053.stc", "explore_destination" },
+                    { "5054.stc", "explore_item" },
+                    { "5055.stc", "explore_mall" },
+                    { "5056.stc", "explore_time_type" },
                     { "5057.stc", "theater_effect" },
-                    { "5058.stc", "" },
+                    { "5058.stc", "battle_action_config" },
                     { "5059.stc", "theater_selection" },
                     { "5060.stc", "explore_affair_server" },
-                    { "5061.stc", "" },
+                    { "5061.stc", "ally_team" },
                     { "5062.stc", "theater_incident" },
-                    { "5063.stc", "" },
-                    { "5064.stc", "" },
-                    { "5065.stc", "" },
-                    { "5066.stc", "" },
+                    { "5063.stc", "manual_ui" },
+                    { "5064.stc", "dorm_ai" },
+                    { "5065.stc", "furniture_interact_point" },
+                    { "5066.stc", "theater_reward" },
                     { "5067.stc", "mission_buff_config" },
                     { "5068.stc", "recommend_formula" },
                     { "5069.stc", "achivement" },
-                    { "5070.stc", "" },
-                    { "5071.stc", "" },
-                    { "5072.stc", "" },
+                    { "5070.stc", "friend_cosmetic" },
+                    { "5071.stc", "furniture" },
+                    { "5072.stc", "furniture_interact_point" },
                     { "5073.stc", "mission_win_type_config" },
-                    { "5074.stc", "" },
-                    { "5075.stc", "" },
-                    { "5076.stc", "" },
-                    { "5077.stc", "" },
+                    //{ "5074.stc", "" },
+                    { "5075.stc", "tutorial_guide" },
+                    { "5076.stc", "tutorial_manual" },
+                    { "5077.stc", "guild_flag" },
                     { "5078.stc", "guild_level" },
                     { "5079.stc", "prize" },
                     { "5080.stc", "mall" },
@@ -354,12 +355,13 @@ namespace GFDecompress
                     { "5082.stc", "emoji" },
                     { "5083.stc", "commander_uniform" },
                     { "5084.stc", "function_skill_config" },
-                    { "5085.stc", "" },
-                    { "5086.stc", "" },
+                    { "5085.stc", "commander_color" },
+                    { "5086.stc", "draw_event_info" },
                     { "5087.stc", "gift" },
-                    { "5088.stc", "" },
-                    { "5089.stc", "" },
-                    { "5090.stc", "" },
+                    { "5088.stc", "unit_character" },
+                    { "5089.stc", "team_ai" },
+                    { "5090.stc", "enemy_illustration" },
+                    { "5091.stc", "fetter_skill" },
                     { "5092.stc", "enemy_illustration_skill" },
                     /*
                      * 혼합세력 능력치/수복 관련자료 링크
@@ -371,15 +373,68 @@ namespace GFDecompress
                     { "5095.stc", "sangvis_advance" },              // 혼합세력 분석(편확)
                     { "5096.stc", "sangvis_resolution" },           // 혼합세력 개발(강화)
                     { "5097.stc", "sangvis_type" },                 // 혼합세력 종류
-                    { "5098.stc", "" },
+                    { "5098.stc", "sangvis_chip_skill" },
                     { "5099.stc", "sangvis_gasha" },
-                    { "5100.stc", "" },
+                    { "5100.stc", "sangvis_gasha_reward" },
                     { "5101.stc", "sangvis_logo" },
                     { "5102.stc", "sangvis_char_voice" },
                     { "5103.stc", "sangvis_character_type" },
-                    { "5104.stc", "" },
-                    { "5105.stc", "" }
+                    { "5104.stc", "sangvis_exchange_mall" },
+                    { "5105.stc", "sangvis_exp" },
+                    { "5106.stc", "mission_win_step_control" },
+                    { "5107.stc", "sangvis_in_ally" },
+                    { "5108.stc", "mail_content" },
+                    { "5109.stc", "auto_formation" },
+                    { "5110.stc", "fetter" },
+                    { "5111.stc", "fetter_story" },
+                    { "5112.stc", "fetter_bounty" },
+                    { "5113.stc", "organization" },
+                    { "5114.stc", "organization_bounty" },
+                    { "5115.stc", "fairy" },
+                    { "5116.stc", "mission_targettrain" },
+                    { "5117.stc", "targettrain_battlesetting" },
+                    { "5118.stc", "targettrain_enemy" },
+                    { "5119.stc", "equip_group" },
+                    { "5120.stc", "mission_echo_info" },
+                    { "5121.stc", "rank" },
+                    //{ "5122.stc", "" },
+                    { "5123.stc", "event_prize_level" },
+                    { "5124.stc", "bondage_lines" },
+                    { "5125.stc", "gun_charavoice" },
+                    { "5126.stc", "guild_emoji" },
+                    { "5127.stc", "guild_emoji_group" },
+                    { "5128.stc", "chat_fix_phrases" },
+                    { "5129.stc", "chat_channel" },
+                    { "5130.stc", "item_access" },
+                    { "5131.stc", "npc_charavoice" },
+                    { "5132.stc", "npc" },
+                    { "5133.stc", "skin_class" },
+                    { "5134.stc", "chess_gun_type" },
+                    { "5135.stc", "chess_camp_type" },
+                    { "5136.stc", "mall_classification" },
+                    { "5137.stc", "point_mall" },
+                    { "5138.stc", "chess_buff" },
+                    { "5139.stc", "chess_chip" },
+                    { "5140.stc", "chess_chip_target_select" },
+                    { "5141.stc", "chess_creation_perform" },
+                    { "5142.stc", "chess_enemy" },
+                    { "5143.stc", "chess_skill" },
+                    { "5144.stc", "chess_skill_trigger" },
+                    { "5145.stc", "chess_spot" },
+                    { "5146.stc", "chess_game_config" },
+                    //{ "5147.stc", "" },
+                    { "5148.stc", "chess_model" },
+                    { "5149.stc", "chess_mission" },
+                    { "5150.stc", "mission_entrance_package" },
+                    { "5151.stc", "chess_creation_logic" },
+                    { "5152.stc", "chess_scorelevel" },
+                    { "5153.stc", "chess_random_enemy" },
+                    { "5154.stc", "chess_random_spot" },
+                    { "5155.stc", "chess_select_frame" },
+                    { "5156.stc", "rouge_sk" }
                 };
+
+                log.Info("\n Parsing stc files");
 
                 foreach (KeyValuePair<string, string> stcFile in stcFiles)
                 {
@@ -387,9 +442,11 @@ namespace GFDecompress
 
                     JArray jArr = ParseStc(stcFile.Key);
                     string outputName = stcFile.Value;
+                    string stcJSON = stcFile.Key.Replace(".stc", ".json");
                     if (string.IsNullOrEmpty(outputName))
                         outputName = Path.GetFileNameWithoutExtension(stcFile.Key);
                     File.WriteAllText("output\\stc\\" + outputName + ".json", jArr.ToString());
+                    File.Delete("output\\stc\\" + stcJSON);
                 }
 
                 // 변환 작업에 필요한 정보
@@ -403,28 +460,31 @@ namespace GFDecompress
                 if (!Directory.Exists("results"))
                     Directory.CreateDirectory("results");
                 //doll.json 생성
+                log.Info("\n Creating doll JSON");
                 JsonUtil.getDollJson(GunList, SkinList, BattleSkillConfigList);
                 //fairy.json 생성
+                log.Info("\n Creating fairy JSON");
                 JsonUtil.getFairyJson(BattleSkillConfigList, MissionSkillConfigList);
                 //equip.json 생성
+                log.Info("\n Creating equip JSON");
                 JsonUtil.getEquipJson(EquipList);
 
                 //textAsset2json
-                Console.WriteLine("\n==한섭 데이터 변환==");
-                JsonUtil.getTextAsset("kr");
-                JsonUtil.getDialogueText("kr");
+                //Console.WriteLine("\n==한섭 데이터 변환==");
+                //JsonUtil.getTextAsset("kr");
+                //JsonUtil.getDialogueText("kr");
 
-                Console.WriteLine("\n==글섭 데이터 변환==");
-                JsonUtil.getTextAsset("en");
-                JsonUtil.getDialogueText("en");
+                //Console.WriteLine("\n==글섭 데이터 변환==");
+                //JsonUtil.getTextAsset("en");
+                //JsonUtil.getDialogueText("en");
 
-                Console.WriteLine("\n==일섭 데이터 변환==");
-                JsonUtil.getTextAsset("jp");
-                JsonUtil.getDialogueText("jp");
+                //Console.WriteLine("\n==일섭 데이터 변환==");
+                //JsonUtil.getTextAsset("jp");
+                //JsonUtil.getDialogueText("jp");
 
-                Console.WriteLine("\n==중섭 데이터 변환==");
-                JsonUtil.getTextAsset("ch");
-                JsonUtil.getDialogueText("ch");
+                //Console.WriteLine("\n==중섭 데이터 변환==");
+                //JsonUtil.getTextAsset("ch");
+                //JsonUtil.getDialogueText("ch");
 
                 // 폴더 열기
                 //Process.Start(Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location) + "\\output_stc");
@@ -434,8 +494,9 @@ namespace GFDecompress
                 log.Error(ex);
             }
             swh.Stop();
-            Console.WriteLine("소요시간: " + swh.Elapsed.ToString());
+            Console.WriteLine("Completed in: " + swh.Elapsed.ToString());
             //Process.Start(Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location));
+            Console.ReadKey();
         }
     }
 }

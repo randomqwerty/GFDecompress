@@ -262,7 +262,7 @@ namespace GFDecompress
             //제조시간
             buildTime = _gunList["develop_duration"].ToObject<int>();
 
-            Console.WriteLine(id.ToString() + "번 인형데이터 변환 중...");
+            Console.WriteLine("Creating doll data for id " + id.ToString());
 
             //스킨정보
             foreach (JToken element in _skinList) {
@@ -456,10 +456,11 @@ namespace GFDecompress
             }
 
             //소속 태그
-            if (_gunList["tag"].ToString() == "")
+         
+            /*if (_gunList["tag"].ToString() == "")
                 tag = "team_griffin";
             else
-                tag = _gunList["tag"].ToString();
+                tag = _gunList["tag"].ToString();*/
         }
 
         public override string ToString()
@@ -515,7 +516,7 @@ namespace GFDecompress
 
             id = _fairyList["id"].ToObject<int>();
             category = TypeData.getFairyCatetory(_fairyList["category"].ToObject<int>());
-            Console.WriteLine(id.ToString() + "번 요정데이터 변환 중...");
+            Console.WriteLine("Creating fairy data for id " + id.ToString());
             //스탯
             try
             {
@@ -599,7 +600,7 @@ namespace GFDecompress
                 }*/
             }
             catch {
-                Console.WriteLine(id.ToString() + "번 요정 스킬 누락");
+                Console.WriteLine("Missing fairy skill id" + id.ToString());
             }
 
             grow = _fairyList["grow"].ToObject<int>();
@@ -679,7 +680,7 @@ namespace GFDecompress
             type = TypeData.getEquipType(_obj["type"].ToObject<int>());
             company = _obj["company"].ToString();
 
-            Console.WriteLine(id.ToString() + "번 장비데이터 변환 중");
+            Console.WriteLine("Creating equip data for id " + id.ToString());
             try
             {
                 if (_obj["fit_guns"].ToString().Equals(""))

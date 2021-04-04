@@ -642,8 +642,8 @@
       "upgrade_coin": "800",
       "upgrade_time": "86400",
       "upgrade_condition": "10110",
-      "parameter_1": "0,250,600,600|40201,150,600,600|40202,200,600,600|40203,200,600,600|40204,100,600,600|40205,600,600,600|40206,100,600,600|2003,100,600,600|2018,100,600,600",
-      "parameter_2": "0,2201,2202,2203,2204,2205,3049,2206,3024",
+      "parameter_1": "0,250,600,600|40201,150,600,600|40202,200,600,600|40203,200,600,600|40204,100,600,600|40205,600,600,600|40206,100,600,600|2003,100,600,600|2018,100,600,600|2042,100,600,600",
+      "parameter_2": "0,2201,2202,2203,2204,2205,3049,2206,3024,3053",
       "parameter_3": "0"
     },
     {
@@ -1181,6 +1181,23 @@
       "furniture_id": "40008",
       "update_furniture_id": "40008",
       "furniture_postion": "26,11",
+      "establish_type": "0",
+      "establish_lv": "1",
+      "upgrade_coin": "0",
+      "upgrade_time": "0",
+      "upgrade_condition": "0",
+      "parameter_1": "",
+      "parameter_2": "",
+      "parameter_3": ""
+    },
+    {
+      "establish_id": "20011",
+      "establish_name": "furniture_establish-10020011",
+      "room_id": "2",
+      "description": "furniture_establish-20020011",
+      "furniture_id": "40008",
+      "update_furniture_id": "40008",
+      "furniture_postion": "2,2",
       "establish_type": "0",
       "establish_lv": "1",
       "upgrade_coin": "0",
@@ -2309,6 +2326,23 @@
       "upgrade_time": "86400",
       "upgrade_condition": "20110",
       "parameter_1": "80",
+      "parameter_2": "0",
+      "parameter_3": "0"
+    },
+    {
+      "establish_id": "20700",
+      "establish_name": "furniture_establish-10020700",
+      "room_id": "2",
+      "description": "furniture_establish-20020700",
+      "furniture_id": "42070",
+      "update_furniture_id": "42070",
+      "furniture_postion": "3,8",
+      "establish_type": "207",
+      "establish_lv": "0",
+      "upgrade_coin": "0",
+      "upgrade_time": "0",
+      "upgrade_condition": "0",
+      "parameter_1": "0",
       "parameter_2": "0",
       "parameter_3": "0"
     },
@@ -4535,7 +4569,7 @@
       "upgrade_coin": "5",
       "upgrade_time": "60",
       "upgrade_condition": "0",
-      "parameter_1": "180",
+      "parameter_1": "210",
       "parameter_2": "",
       "parameter_3": ""
     },
@@ -4552,7 +4586,7 @@
       "upgrade_coin": "50",
       "upgrade_time": "300",
       "upgrade_condition": "0",
-      "parameter_1": "260",
+      "parameter_1": "320",
       "parameter_2": "",
       "parameter_3": ""
     },
@@ -4569,7 +4603,7 @@
       "upgrade_coin": "100",
       "upgrade_time": "1800",
       "upgrade_condition": "0",
-      "parameter_1": "340",
+      "parameter_1": "430",
       "parameter_2": "",
       "parameter_3": ""
     },
@@ -4586,7 +4620,7 @@
       "upgrade_coin": "150",
       "upgrade_time": "3600",
       "upgrade_condition": "0",
-      "parameter_1": "420",
+      "parameter_1": "540",
       "parameter_2": "",
       "parameter_3": ""
     },
@@ -4603,7 +4637,7 @@
       "upgrade_coin": "200",
       "upgrade_time": "7200",
       "upgrade_condition": "0",
-      "parameter_1": "500",
+      "parameter_1": "650",
       "parameter_2": "",
       "parameter_3": ""
     },
@@ -4620,7 +4654,7 @@
       "upgrade_coin": "250",
       "upgrade_time": "14400",
       "upgrade_condition": "0",
-      "parameter_1": "600",
+      "parameter_1": "760",
       "parameter_2": "",
       "parameter_3": ""
     },
@@ -4637,7 +4671,7 @@
       "upgrade_coin": "350",
       "upgrade_time": "28800",
       "upgrade_condition": "0",
-      "parameter_1": "700",
+      "parameter_1": "870",
       "parameter_2": "",
       "parameter_3": ""
     },
@@ -4654,7 +4688,7 @@
       "upgrade_coin": "450",
       "upgrade_time": "43200",
       "upgrade_condition": "0",
-      "parameter_1": "800",
+      "parameter_1": "980",
       "parameter_2": "",
       "parameter_3": ""
     },
@@ -4671,7 +4705,7 @@
       "upgrade_coin": "600",
       "upgrade_time": "64800",
       "upgrade_condition": "0",
-      "parameter_1": "900",
+      "parameter_1": "1090",
       "parameter_2": "",
       "parameter_3": ""
     },
@@ -4688,7 +4722,7 @@
       "upgrade_coin": "800",
       "upgrade_time": "86400",
       "upgrade_condition": "0",
-      "parameter_1": "1000",
+      "parameter_1": "1200",
       "parameter_2": "",
       "parameter_3": ""
     },

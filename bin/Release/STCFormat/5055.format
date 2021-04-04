@@ -1,0 +1,9 @@
+﻿id
+type
+prize_id
+cost
+quota
+clear_cycle
+function_control_id
+start_time
+end_time

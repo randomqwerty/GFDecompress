@@ -51,5 +51,6 @@ obtain_ids
 rank_display
 prize_id
 mindupdate_consume
-__1
-__2
+explore_tag
+tag
+org_id

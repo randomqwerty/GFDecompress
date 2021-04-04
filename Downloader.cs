@@ -44,7 +44,7 @@ namespace GFDecompress
             minversion = Math.Round(double.Parse(clientVersion) / 100) * 10;
             abVersion = obj["ab_version"].ToString();
 
-            Console.WriteLine("검색된 데이터 버전: " + dataVersion);
+            Console.WriteLine("Retrived data version: " + dataVersion);
 
         }
         //stc 다운
@@ -57,8 +57,7 @@ namespace GFDecompress
                 Directory.Delete("stc", true);
             Directory.CreateDirectory("stc");
 
-            Console.WriteLine("최신 데이터 다운로드 중...");
-            Console.WriteLine("Url: " + url);
+            Console.WriteLine("\n Downloading latest stc data from " + url);
 
             foreach (var item in new DirectoryInfo("stc").GetFiles())
             {
@@ -71,13 +70,13 @@ namespace GFDecompress
             {
                 WebClient client = new WebClient();
                 client.DownloadFile(getStcUrl(), "./stc/stc.zip");
-                Console.WriteLine("다운로드 성공");
-                Console.WriteLine("압축해제 중...");
+                Console.WriteLine("Downloaded successfullly");
+                Console.WriteLine("Decompressing");
                 ZipFile.ExtractToDirectory("./stc/stc.zip","./stc");
-                Console.WriteLine("압축해제 성공");
-                Console.WriteLine("압축파일 삭제...");
+                Console.WriteLine("Decompression succesful");
+                Console.WriteLine("Deleting compressed file");
                 File.Delete("./stc/stc.zip");
-                Console.WriteLine("완료!");
+                Console.WriteLine("Deleted succesfully" + Environment.NewLine);
             }
             catch (Exception e){
                 Console.WriteLine(e);
@@ -109,7 +108,7 @@ namespace GFDecompress
 
             Python.run("Scripts\\deserializer.py", $"Assets_raw\\{location}\\{filename}", ref output, ref error);
 
-            Console.WriteLine("textes.ab 다운받는 중...");
+            Console.WriteLine("Downloading textes.ab");
 
 
             string[] textes = new string[2];
@@ -125,14 +124,14 @@ namespace GFDecompress
             
             if(url == ".dat")
             {
-                Console.WriteLine("deserializer.py가 존재하지 않습니다. 파일이 존재하는지 다시 한번 확인해주세요.");
+                Console.WriteLine("deserializer.py does not exist. Please redownload from this GitHub.");
                 Environment.Exit(1);
             }
 
             Console.WriteLine(url);
             client.DownloadFile(url, $"Assets_raw\\{location}\\textes.zip");
 
-            Console.WriteLine("압축해제 중...");
+            Console.WriteLine("Decompressing");
             try
             {
                 ZipFile.ExtractToDirectory($"Assets_raw\\{location}\\textes.zip", $"Assets_raw\\{location}");
@@ -142,7 +141,7 @@ namespace GFDecompress
                 ZipFile.ExtractToDirectory($"Assets_raw\\{location}\\textes.zip", $"Assets_raw\\{location}");
             }
             
-            Console.WriteLine("압축파일 삭제");
+            Console.WriteLine("Deleting compressed file");
             File.Delete($"Assets_raw\\{location}\\textes.zip");
 
             //Console.WriteLine("에셋 추출 중...");

@@ -32,3 +32,5 @@ subsidiary_mission_skill
 is_manual
 allyteam_summoner
 ap_cost
+consumption_item
+drop_item

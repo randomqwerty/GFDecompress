@@ -1,26 +1,26 @@
 [
   {
-    "__0": 101,
-    "__1": "theater_selection-10000101",
-    "__2": "theater_selection-20000101",
-    "__3": "10",
-    "__4": 47,
-    "__5": 30
+    "id": 101,
+    "name": "theater_selection-10000101",
+    "description": "theater_selection-20000101",
+    "scout_material_number": "10",
+    "scout_material": 47,
+    "scount_pt": 30
   },
   {
-    "__0": 102,
-    "__1": "theater_selection-10000102",
-    "__2": "theater_selection-20000102",
-    "__3": "10",
-    "__4": 47,
-    "__5": 40
+    "id": 102,
+    "name": "theater_selection-10000102",
+    "description": "theater_selection-20000102",
+    "scout_material_number": "10",
+    "scout_material": 47,
+    "scount_pt": 40
   },
   {
-    "__0": 103,
-    "__1": "theater_selection-10000103",
-    "__2": "theater_selection-20000103",
-    "__3": "10",
-    "__4": 47,
-    "__5": 50
+    "id": 103,
+    "name": "theater_selection-10000103",
+    "description": "theater_selection-20000103",
+    "scout_material_number": "10",
+    "scout_material": 47,
+    "scount_pt": 50
   }
 ]

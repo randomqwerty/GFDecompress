@@ -16,3 +16,9 @@ resolution_crit_dmg
 resolution_speed
 resolution_effect
 effect_grid_effect
+ap_add
+cost_reduce
+skill1
+skill2
+skill3
+skill_advance

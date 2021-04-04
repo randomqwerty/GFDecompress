@@ -25,3 +25,6 @@ defbreak_rate
 extra_defbreak
 hit_type
 is_ricochet
+is_shield
+fix_damage
+ui_control

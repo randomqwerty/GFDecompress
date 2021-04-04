@@ -55,7 +55,7 @@ namespace GFDecompress
                 fairySkinData = JObject.Parse(System.IO.File.ReadAllText("output\\catchdata\\fairy_skin_info.json"));
             }
             catch{
-                Console.WriteLine("ERROR: 파일이 존재하지 않음");
+                Console.WriteLine("ERROR: File does not exist");
                 return;
             }
 
@@ -81,7 +81,7 @@ namespace GFDecompress
             foreach (var item in new DirectoryInfo(dir).GetFiles()) {
                 if (item.Name == "desktop.ini")
                     continue;
-                Console.WriteLine(item.Name + "변환 중");
+                Console.WriteLine("Converting " + item.Name);
                 JObject json = new JObject();
                 StreamReader file = new StreamReader(dir + "\\" + item.Name);
                 try

@@ -26,6 +26,7 @@ effect_param_2
 hurt_id
 hurt_cd
 buff_id
+buff_type
 buff_cd
 is_single_hurt
 is_form_play

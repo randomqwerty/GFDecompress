@@ -1,6 +1,7 @@
 ﻿id
 type
 name
+enemy_info
 code
 maxlife
 pow
@@ -25,4 +26,11 @@ normal_attack
 passive_skill
 effect_ratio
 unable_buff_type
+able_buff_id
 voice
+deployment_scale
+recommend_description
+hit_point
+offset
+lifebar_offset
+enemy_illustration_id

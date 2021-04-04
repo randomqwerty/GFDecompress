@@ -1,37 +1,37 @@
 [
   {
-    "__0": 0,
-    "__1": "sangvis_character_type-10000000",
-    "__2": "sangvis_character_type-20000000"
+    "id": 0,
+    "name": "sangvis_character_type-10000000",
+    "description": "sangvis_character_type-20000000"
   },
   {
-    "__0": 1,
-    "__1": "sangvis_character_type-10000001",
-    "__2": "sangvis_character_type-20000001"
+    "id": 1,
+    "name": "sangvis_character_type-10000001",
+    "description": "sangvis_character_type-20000001"
   },
   {
-    "__0": 2,
-    "__1": "sangvis_character_type-10000002",
-    "__2": "sangvis_character_type-20000002"
+    "id": 2,
+    "name": "sangvis_character_type-10000002",
+    "description": "sangvis_character_type-20000002"
   },
   {
-    "__0": 3,
-    "__1": "sangvis_character_type-10000003",
-    "__2": "sangvis_character_type-20000003"
+    "id": 3,
+    "name": "sangvis_character_type-10000003",
+    "description": "sangvis_character_type-20000003"
   },
   {
-    "__0": 4,
-    "__1": "sangvis_character_type-10000004",
-    "__2": "sangvis_character_type-20000004"
+    "id": 4,
+    "name": "sangvis_character_type-10000004",
+    "description": "sangvis_character_type-20000004"
   },
   {
-    "__0": 5,
-    "__1": "sangvis_character_type-10000005",
-    "__2": "sangvis_character_type-20000005"
+    "id": 5,
+    "name": "sangvis_character_type-10000005",
+    "description": "sangvis_character_type-20000005"
   },
   {
-    "__0": 6,
-    "__1": "sangvis_character_type-10000006",
-    "__2": "sangvis_character_type-20000006"
+    "id": 6,
+    "name": "sangvis_character_type-10000006",
+    "description": "sangvis_character_type-20000006"
   }
 ]

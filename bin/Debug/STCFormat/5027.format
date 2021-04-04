@@ -22,6 +22,8 @@ level
 special_attack
 normal_attack
 passive_skill
+dynamic_passive_skill
+unable_buff_id
 unable_buff_type
 scale
 start_offset
@@ -29,3 +31,5 @@ camp
 is_stay
 is_hp_showed
 is_damage_showed
+is_damage_source
+is_sangvis

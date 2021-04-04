@@ -13,7 +13,7 @@
     "effect_process_star": 0,
     "effect_process_end": 0,
     "effect_process_duration": 0,
-    "__13": "0"
+    "defender_value": "0"
   },
   {
     "id": 2,
@@ -29,7 +29,7 @@
     "effect_process_star": 0,
     "effect_process_end": 0,
     "effect_process_duration": 4,
-    "__13": "0"
+    "defender_value": "0"
   },
   {
     "id": 8,
@@ -45,7 +45,7 @@
     "effect_process_star": 0,
     "effect_process_end": 0,
     "effect_process_duration": 0,
-    "__13": "0"
+    "defender_value": "0"
   },
   {
     "id": 1002,
@@ -61,7 +61,7 @@
     "effect_process_star": 0,
     "effect_process_end": 0,
     "effect_process_duration": 0,
-    "__13": "0"
+    "defender_value": "0"
   },
   {
     "id": 900003,
@@ -77,7 +77,7 @@
     "effect_process_star": 0,
     "effect_process_end": 0,
     "effect_process_duration": 0,
-    "__13": "0"
+    "defender_value": "0"
   },
   {
     "id": 900007,
@@ -93,7 +93,7 @@
     "effect_process_star": 0,
     "effect_process_end": 0,
     "effect_process_duration": 0,
-    "__13": "0"
+    "defender_value": "0"
   },
   {
     "id": 1000004,
@@ -109,7 +109,7 @@
     "effect_process_star": 0,
     "effect_process_end": 0,
     "effect_process_duration": 0,
-    "__13": "0"
+    "defender_value": "0"
   },
   {
     "id": 1000005,
@@ -125,7 +125,7 @@
     "effect_process_star": 0,
     "effect_process_end": 0,
     "effect_process_duration": 0,
-    "__13": "0"
+    "defender_value": "0"
   },
   {
     "id": 1000006,
@@ -141,7 +141,7 @@
     "effect_process_star": 0,
     "effect_process_end": 0,
     "effect_process_duration": 0,
-    "__13": "0"
+    "defender_value": "0"
   },
   {
     "id": 1000010,
@@ -157,7 +157,7 @@
     "effect_process_star": 0,
     "effect_process_end": 0,
     "effect_process_duration": 0,
-    "__13": "99999"
+    "defender_value": "99999"
   },
   {
     "id": 1000028,
@@ -173,7 +173,7 @@
     "effect_process_star": 0,
     "effect_process_end": 0,
     "effect_process_duration": 0,
-    "__13": "0"
+    "defender_value": "0"
   },
   {
     "id": 1000048,
@@ -189,7 +189,7 @@
     "effect_process_star": 0,
     "effect_process_end": 0,
     "effect_process_duration": 0,
-    "__13": "0"
+    "defender_value": "0"
   },
   {
     "id": 1000049,
@@ -205,7 +205,7 @@
     "effect_process_star": 0,
     "effect_process_end": 0,
     "effect_process_duration": 0,
-    "__13": "99599"
+    "defender_value": "99599"
   },
   {
     "id": 1000050,
@@ -221,7 +221,7 @@
     "effect_process_star": 0,
     "effect_process_end": 0,
     "effect_process_duration": 0,
-    "__13": "0"
+    "defender_value": "0"
   },
   {
     "id": 1000051,
@@ -237,7 +237,7 @@
     "effect_process_star": 0,
     "effect_process_end": 0,
     "effect_process_duration": 0,
-    "__13": "0"
+    "defender_value": "0"
   },
   {
     "id": 1000052,
@@ -253,7 +253,7 @@
     "effect_process_star": 0,
     "effect_process_end": 0,
     "effect_process_duration": 0,
-    "__13": "0"
+    "defender_value": "0"
   },
   {
     "id": 1000055,
@@ -269,7 +269,7 @@
     "effect_process_star": 0,
     "effect_process_end": 0,
     "effect_process_duration": 0,
-    "__13": "5000"
+    "defender_value": "5000"
   },
   {
     "id": 1000064,
@@ -285,7 +285,231 @@
     "effect_process_star": 0,
     "effect_process_end": 0,
     "effect_process_duration": 0,
-    "__13": "99999"
+    "defender_value": "99999"
+  },
+  {
+    "id": 6430001,
+    "name": "mission_hurt_config-16430001",
+    "target_type": 2,
+    "type": 2,
+    "is_number": 1,
+    "life_type": 1,
+    "value": "20",
+    "hostage_value": 0,
+    "is_armor": 0,
+    "effect_birth": 0,
+    "effect_process_star": 0,
+    "effect_process_end": 0,
+    "effect_process_duration": 0,
+    "defender_value": "0"
+  },
+  {
+    "id": 6430002,
+    "name": "mission_hurt_config-16430002",
+    "target_type": 2,
+    "type": 1,
+    "is_number": 1,
+    "life_type": 2,
+    "value": "3",
+    "hostage_value": 0,
+    "is_armor": 0,
+    "effect_birth": 0,
+    "effect_process_star": 0,
+    "effect_process_end": 0,
+    "effect_process_duration": 0,
+    "defender_value": "0"
+  },
+  {
+    "id": 6430003,
+    "name": "mission_hurt_config-16430003",
+    "target_type": 2,
+    "type": 2,
+    "is_number": 1,
+    "life_type": 1,
+    "value": "10",
+    "hostage_value": 0,
+    "is_armor": 0,
+    "effect_birth": 1000030,
+    "effect_process_star": 0,
+    "effect_process_end": 0,
+    "effect_process_duration": 0,
+    "defender_value": "0"
+  },
+  {
+    "id": 6430004,
+    "name": "mission_hurt_config-16430004",
+    "target_type": 2,
+    "type": 2,
+    "is_number": 1,
+    "life_type": 1,
+    "value": "50",
+    "hostage_value": 0,
+    "is_armor": 0,
+    "effect_birth": 0,
+    "effect_process_star": 0,
+    "effect_process_end": 0,
+    "effect_process_duration": 0,
+    "defender_value": "0"
+  },
+  {
+    "id": 6430005,
+    "name": "mission_hurt_config-16430005",
+    "target_type": 2,
+    "type": 2,
+    "is_number": 1,
+    "life_type": 1,
+    "value": "8",
+    "hostage_value": 0,
+    "is_armor": 0,
+    "effect_birth": 0,
+    "effect_process_star": 0,
+    "effect_process_end": 0,
+    "effect_process_duration": 0,
+    "defender_value": "0"
+  },
+  {
+    "id": 6430006,
+    "name": "mission_hurt_config-16430006",
+    "target_type": 2,
+    "type": 1,
+    "is_number": 1,
+    "life_type": 2,
+    "value": "2",
+    "hostage_value": 0,
+    "is_armor": 0,
+    "effect_birth": 0,
+    "effect_process_star": 0,
+    "effect_process_end": 0,
+    "effect_process_duration": 0,
+    "defender_value": "0"
+  },
+  {
+    "id": 6430007,
+    "name": "mission_hurt_config-16430007",
+    "target_type": 2,
+    "type": 2,
+    "is_number": 1,
+    "life_type": 1,
+    "value": "5",
+    "hostage_value": 0,
+    "is_armor": 0,
+    "effect_birth": 1000030,
+    "effect_process_star": 0,
+    "effect_process_end": 0,
+    "effect_process_duration": 0,
+    "defender_value": "0"
+  },
+  {
+    "id": 6430008,
+    "name": "mission_hurt_config-16430008",
+    "target_type": 2,
+    "type": 2,
+    "is_number": 1,
+    "life_type": 1,
+    "value": "30",
+    "hostage_value": 0,
+    "is_armor": 0,
+    "effect_birth": 0,
+    "effect_process_star": 0,
+    "effect_process_end": 0,
+    "effect_process_duration": 0,
+    "defender_value": "0"
+  },
+  {
+    "id": 6430009,
+    "name": "mission_hurt_config-16430009",
+    "target_type": 2,
+    "type": 2,
+    "is_number": 1,
+    "life_type": 2,
+    "value": "500",
+    "hostage_value": 0,
+    "is_armor": 0,
+    "effect_birth": 0,
+    "effect_process_star": 0,
+    "effect_process_end": 0,
+    "effect_process_duration": 0,
+    "defender_value": "0"
+  },
+  {
+    "id": 6430010,
+    "name": "mission_hurt_config-16430010",
+    "target_type": 2,
+    "type": 2,
+    "is_number": 1,
+    "life_type": 2,
+    "value": "5",
+    "hostage_value": 0,
+    "is_armor": 0,
+    "effect_birth": 0,
+    "effect_process_star": 0,
+    "effect_process_end": 0,
+    "effect_process_duration": 0,
+    "defender_value": "0"
+  },
+  {
+    "id": 6440001,
+    "name": "mission_hurt_config-16440001",
+    "target_type": 2,
+    "type": 2,
+    "is_number": 1,
+    "life_type": 2,
+    "value": "51",
+    "hostage_value": 0,
+    "is_armor": 0,
+    "effect_birth": 0,
+    "effect_process_star": 0,
+    "effect_process_end": 0,
+    "effect_process_duration": 0,
+    "defender_value": "0"
+  },
+  {
+    "id": 6440002,
+    "name": "mission_hurt_config-16440002",
+    "target_type": 2,
+    "type": 2,
+    "is_number": 1,
+    "life_type": 2,
+    "value": "101",
+    "hostage_value": 0,
+    "is_armor": 0,
+    "effect_birth": 0,
+    "effect_process_star": 0,
+    "effect_process_end": 1000052,
+    "effect_process_duration": 1000053,
+    "defender_value": "0"
+  },
+  {
+    "id": 6440003,
+    "name": "mission_hurt_config-16440003",
+    "target_type": 2,
+    "type": 2,
+    "is_number": 1,
+    "life_type": 2,
+    "value": "101",
+    "hostage_value": 0,
+    "is_armor": 0,
+    "effect_birth": 0,
+    "effect_process_star": 0,
+    "effect_process_end": 0,
+    "effect_process_duration": 0,
+    "defender_value": "0"
+  },
+  {
+    "id": 6440004,
+    "name": "mission_hurt_config-16440004",
+    "target_type": 2,
+    "type": 2,
+    "is_number": 1,
+    "life_type": 2,
+    "value": "0",
+    "hostage_value": 0,
+    "is_armor": 0,
+    "effect_birth": 0,
+    "effect_process_star": 0,
+    "effect_process_end": 0,
+    "effect_process_duration": 0,
+    "defender_value": "99999"
   },
   {
     "id": 8120701,
@@ -301,7 +525,7 @@
     "effect_process_star": 0,
     "effect_process_end": 0,
     "effect_process_duration": 0,
-    "__13": "8599"
+    "defender_value": "8599"
   },
   {
     "id": 9130610,
@@ -317,7 +541,7 @@
     "effect_process_star": 0,
     "effect_process_end": 0,
     "effect_process_duration": 0,
-    "__13": "0"
+    "defender_value": "0"
   },
   {
     "id": 9334951,
@@ -333,7 +557,7 @@
     "effect_process_star": 0,
     "effect_process_end": 0,
     "effect_process_duration": 0,
-    "__13": "0"
+    "defender_value": "0"
   },
   {
     "id": 9337202,
@@ -349,7 +573,7 @@
     "effect_process_star": 0,
     "effect_process_end": 0,
     "effect_process_duration": 0,
-    "__13": "0"
+    "defender_value": "0"
   },
   {
     "id": 9362003,
@@ -365,7 +589,7 @@
     "effect_process_star": 0,
     "effect_process_end": 0,
     "effect_process_duration": 0,
-    "__13": "0"
+    "defender_value": "0"
   },
   {
     "id": 9362015,
@@ -381,7 +605,7 @@
     "effect_process_star": 0,
     "effect_process_end": 0,
     "effect_process_duration": 0,
-    "__13": "0"
+    "defender_value": "0"
   },
   {
     "id": 9362024,
@@ -397,6 +621,6 @@
     "effect_process_star": 0,
     "effect_process_end": 0,
     "effect_process_duration": 0,
-    "__13": "0"
+    "defender_value": "0"
   }
 ]

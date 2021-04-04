@@ -31,15 +31,15 @@ mre_add_withnumber
 ratio_hp
 ratio_pow
 ratio_rate
-ratio_speed
 ratio_hit
 ratio_dodge
 ratio_armor
 armor_piercing
 crit
 crit_dmg
-special
 eat_ratio
+ratio_speed
+special
 attack_range_type
 assist_attack_range
 ratio_range
@@ -57,3 +57,4 @@ display_enemy_team
 picture_offset
 picture_scale
 dorm_scale
+org_id
