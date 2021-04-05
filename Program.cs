@@ -181,26 +181,55 @@ namespace GFDecompress
 
         static void Main(string[] args)
         {
+
+            bool validRegion = false;
+            string region = null;
+
+            while (!validRegion)
+            {
+                Console.WriteLine("Enter one of the following regions to download data for: kr, en, jp, ch");
+                region = Console.ReadLine();
+
+                if (new[] { "kr", "en", "jp", "ch" }.Contains(region))
+                {
+                    validRegion = true;
+                }
+                else 
+                {
+                    Console.WriteLine("Invalid region, please try again.");
+                }
+            }
+
             Stopwatch swh = new Stopwatch();
             swh.Start();
 
-            Console.WriteLine("\n====KR Data download====");
-            Downloader kr = new Downloader();
-            //kr.downloadStc(); //stc는 한섭기준으로 받음, 중섭용으로 받고싶으면 해당 클래스의 메소드를 사용하면 됨
-            kr.downloadAsset();
-
-            Console.WriteLine("\n====EN Data download====");
-            Downloader en = new Downloader("en");
-            en.downloadAsset();
-
-            Console.WriteLine("\n====JP Data download====");
-            Downloader jp = new Downloader("jp");
-            jp.downloadAsset();
-
-            Console.WriteLine("\n====CN Data download====");
-            Downloader ch = new Downloader("ch");
-            ch.downloadStc();
-            ch.downloadAsset();
+            switch (region)
+            {
+                case "kr":
+                    Console.WriteLine("\n====KR Data download====");
+                    Downloader kr = new Downloader("kr");
+                    kr.downloadStc();
+                    kr.downloadAsset();
+                    break;
+                case "en":
+                    Console.WriteLine("\n====EN Data download====");
+                    Downloader en = new Downloader("en");
+                    en.downloadStc();
+                    en.downloadAsset();
+                    break;
+                case "jp":
+                    Console.WriteLine("\n====JP Data download====");
+                    Downloader jp = new Downloader("jp");
+                    jp.downloadStc();
+                    jp.downloadAsset();
+                    break;
+                case "ch":
+                    Console.WriteLine("\n====CN Data download====");
+                    Downloader ch = new Downloader("ch");
+                    ch.downloadStc();
+                    ch.downloadAsset();
+                    break;
+            }
 
             #region NLog Configuration
             var config = new LoggingConfiguration();
@@ -224,9 +253,9 @@ namespace GFDecompress
                 string output = DatFileDecompress(data, key);
 
                 // 폴더 생성
-                if (!Directory.Exists("output\\catchdata"))
-                    Directory.CreateDirectory("output\\catchdata");
-                File.WriteAllText("output\\catchdata\\catchdata.txt", output);
+                if (!Directory.Exists("output\\" + region + "\\catchdata"))
+                    Directory.CreateDirectory("output\\" + region + "\\catchdata");
+                File.WriteAllText("output\\" + region + "\\catchdata\\catchdata.txt", output);
 
                 log.Info("\n Exporting dat file contents");
 
@@ -242,7 +271,7 @@ namespace GFDecompress
                         string jKey = json.Properties().Select(p => p.Name).FirstOrDefault();
 
                         log.Debug(".dat export >> " + jKey);
-                        File.WriteAllText("output\\catchdata\\" + jKey + ".json", json.ToString());
+                        File.WriteAllText("output\\" + region + "\\catchdata\\" + jKey + ".json", json.ToString());
                     }
                     catch (Exception ex)
                     {
@@ -262,8 +291,8 @@ namespace GFDecompress
             try
             {
                 // 폴더 생성
-                if (!Directory.Exists("output\\stc"))
-                    Directory.CreateDirectory("output\\stc");
+                if (!Directory.Exists("output\\" + region + "\\stc"))
+                    Directory.CreateDirectory("output\\" + region + "\\stc");
 
                 // .stc 파일 목록
                 // [input_file_name, output_file_name]
@@ -438,24 +467,32 @@ namespace GFDecompress
 
                 foreach (KeyValuePair<string, string> stcFile in stcFiles)
                 {
-                    log.Info(".stc parse >> file: {0} | type: {1}", stcFile.Key, stcFile.Value);
+                    if(File.Exists("stc\\" + stcFile.Key))
+                    {
+                        log.Info(".stc parse >> file: {0} | type: {1}", stcFile.Key, stcFile.Value);
 
-                    JArray jArr = ParseStc(stcFile.Key);
-                    string outputName = stcFile.Value;
-                    string stcJSON = stcFile.Key.Replace(".stc", ".json");
-                    if (string.IsNullOrEmpty(outputName))
-                        outputName = Path.GetFileNameWithoutExtension(stcFile.Key);
-                    File.WriteAllText("output\\stc\\" + outputName + ".json", jArr.ToString());
-                    File.Delete("output\\stc\\" + stcJSON);
+                        JArray jArr = ParseStc(stcFile.Key);
+                        string outputName = stcFile.Value;
+                        string stcJSON = stcFile.Key.Replace(".stc", ".json");
+                        if (string.IsNullOrEmpty(outputName))
+                            outputName = Path.GetFileNameWithoutExtension(stcFile.Key);
+                        File.WriteAllText("output\\" + region + "\\stc\\" + outputName + ".json", jArr.ToString());
+                        File.Delete("output\\" + region + "\\stc\\" + stcJSON);
+                    }
+                    else
+                    {
+                        log.Info(stcFile.Key + " does not exist. Moving to next file.");
+                    }
                 }
 
                 // 변환 작업에 필요한 정보
-                JArray GunList = JArray.Parse(File.ReadAllText("output\\stc\\gun.json"));
-                JArray SkinList = JArray.Parse(File.ReadAllText("output\\stc\\skin.json"));
-                JArray BattleSkillConfigList = JArray.Parse(File.ReadAllText("output\\stc\\battle_skill_config.json"));
-                JArray MissionSkillConfigList = JArray.Parse(File.ReadAllText("output\\stc\\mission_skill_config.json"));
-                JArray EquipList = JArray.Parse(File.ReadAllText("output\\stc\\equip.json"));
+                JArray GunList = JArray.Parse(File.ReadAllText("output\\" + region + "\\stc\\gun.json"));
+                JArray SkinList = JArray.Parse(File.ReadAllText("output\\" + region + "\\stc\\skin.json"));
+                JArray BattleSkillConfigList = JArray.Parse(File.ReadAllText("output\\" + region + "\\stc\\battle_skill_config.json"));
+                JArray MissionSkillConfigList = JArray.Parse(File.ReadAllText("output\\" + region + "\\stc\\mission_skill_config.json"));
+                JArray EquipList = JArray.Parse(File.ReadAllText("output\\" + region + "\\stc\\equip.json"));
 
+                /* 
                 //폴더생성
                 if (!Directory.Exists("results"))
                     Directory.CreateDirectory("results");
@@ -464,7 +501,7 @@ namespace GFDecompress
                 JsonUtil.getDollJson(GunList, SkinList, BattleSkillConfigList);
                 //fairy.json 생성
                 log.Info("\n Creating fairy JSON");
-                JsonUtil.getFairyJson(BattleSkillConfigList, MissionSkillConfigList);
+                JsonUtil.getFairyJson(BattleSkillConfigList, MissionSkillConfigList, region);
                 //equip.json 생성
                 log.Info("\n Creating equip JSON");
                 JsonUtil.getEquipJson(EquipList);
@@ -488,6 +525,7 @@ namespace GFDecompress
 
                 // 폴더 열기
                 //Process.Start(Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location) + "\\output_stc");
+                */
             }
             catch (Exception ex)
             {

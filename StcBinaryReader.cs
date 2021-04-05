@@ -25,12 +25,13 @@ namespace GFDecompress
 
         public byte ReadByte()
         {
+            _offset = Math.Min(_offset, Buffer.ByteLength(_buf) - 1);
             byte output = _buf[_offset];
             log.Trace("offset: {0} | byte: {1}", _offset, output);
-
+            
             _offset += 1;
-
-            return output;
+            
+            return output;        
         }
 
         public int ReadShort()

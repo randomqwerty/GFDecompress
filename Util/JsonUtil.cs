@@ -40,7 +40,7 @@ namespace GFDecompress
             File.WriteAllText("results\\equip.json", json.ToString());
         }
 
-        public static void getFairyJson(JArray _skillList, JArray _subSkillList) {
+        public static void getFairyJson(JArray _skillList, JArray _subSkillList, string region) {
             JArray json = new JArray();
             JObject fairyData;
             JObject fairySkinData;
@@ -51,8 +51,8 @@ namespace GFDecompress
 
             try
             {
-                fairyData = JObject.Parse(System.IO.File.ReadAllText("output\\catchdata\\fairy_info.json"));
-                fairySkinData = JObject.Parse(System.IO.File.ReadAllText("output\\catchdata\\fairy_skin_info.json"));
+                fairyData = JObject.Parse(System.IO.File.ReadAllText("output\\" + region + "\\stc\\fairy.json"));
+                fairySkinData = JObject.Parse(System.IO.File.ReadAllText("output\\" + region + "\\catchdata\\fairy_skin_info.json"));
             }
             catch{
                 Console.WriteLine("ERROR: File does not exist");
