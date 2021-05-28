@@ -19,9 +19,9 @@ namespace GFDecompress
             
             while (!File.Exists(pyPath))
             {
-                Console.WriteLine("Python executable was not found, please enter the full file path below.");
-                Console.WriteLine("For example (single slashes): C:\\Users\\randomqwerty\\AppData\\Local\\Programs\\Python\\Python38\\python.exe");
-                pyPath = Console.ReadLine();
+                Console.WriteLine("Python executable was not found, please enter the verssion number without periods below.");
+                Console.WriteLine("For example, v3.8 = 38, v3.9 = 39");
+                pyPath = $@"{envVar}\\Programs\\Python\\Python" + Console.ReadLine() +"\\python.exe";
             }
 
             start.FileName = pyPath;

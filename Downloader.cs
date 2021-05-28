@@ -104,14 +104,18 @@ namespace GFDecompress
             client.DownloadFile(getAssetUrl(filename), $"Assets_raw\\{location}\\{filename}");
 
             StreamReader output = null;
+            StreamReader output2 = null;
             StreamReader error = null;
+            StreamReader error2 = null;
 
             Python.run("Scripts\\deserializer.py", $"Assets_raw\\{location}\\{filename}", ref output, ref error);
+            Python.run("Scripts\\deserializer2.py", $"Assets_raw\\{location}\\{filename}", ref output2, ref error2);
 
-            Console.WriteLine("Downloading textes.ab");
-
+            Console.WriteLine("Downloading textes.ab and texttable.ab");
 
             string[] textes = new string[2];
+            string[] texttable = new string[2];
+
             int i = 0;
             while (true) {
                 string str = output.ReadLine();
@@ -120,29 +124,57 @@ namespace GFDecompress
                 textes[i] = str;
                 i++;
             }
+
+            int j = 0;
+            while (true)
+            {
+                string str2 = output2.ReadLine();
+                if (str2 == null)
+                    break;
+                texttable[j] = str2;
+                j++;
+            }
+
             string url = textes[0] + textes[1] + ".dat";
+            string url2 = texttable[0] + texttable[1] + ".dat";
             
             if(url == ".dat")
             {
-                Console.WriteLine("deserializer.py does not exist. Please redownload from this GitHub.");
+                Console.WriteLine("Error with deserializer.py, make sure it exists (redownload from this GitHub) and make sure Python with unitypack is installed.");
+                Console.ReadKey();
+                Environment.Exit(1);
+            }
+
+            if (url2 == ".dat")
+            {
+                Console.WriteLine("Error with deserializer2.py, make sure it exists (redownload from this GitHub) and make sure Python with unitypack is installed.");
+                Console.ReadKey();
                 Environment.Exit(1);
             }
 
             Console.WriteLine(url);
             client.DownloadFile(url, $"Assets_raw\\{location}\\textes.zip");
 
+            Console.WriteLine(url2);
+            client.DownloadFile(url2, $"Assets_raw\\{location}\\texttable.zip");
+
+
             Console.WriteLine("Decompressing");
             try
             {
                 ZipFile.ExtractToDirectory($"Assets_raw\\{location}\\textes.zip", $"Assets_raw\\{location}");
+                ZipFile.ExtractToDirectory($"Assets_raw\\{location}\\texttable.zip", $"Assets_raw\\{location}");
             }
             catch {
                 File.Delete($"Assets_raw\\{location}\\asset_textes.ab");
                 ZipFile.ExtractToDirectory($"Assets_raw\\{location}\\textes.zip", $"Assets_raw\\{location}");
+                File.Delete($"Assets_raw\\{location}\\asset_texttable.ab");
+                ZipFile.ExtractToDirectory($"Assets_raw\\{location}\\texttable.zip", $"Assets_raw\\{location}");
             }
             
             Console.WriteLine("Deleting compressed file");
             File.Delete($"Assets_raw\\{location}\\textes.zip");
+            File.Delete($"Assets_raw\\{location}\\texttable.zip");
 
             //Console.WriteLine("에셋 추출 중...");
             //ProcessStartInfo extractor = new ProcessStartInfo("Scripts\\extractexe\\extract.exe", $@"Assets_raw\\{location}\\asset_textes.ab");
@@ -151,7 +183,19 @@ namespace GFDecompress
 
             //Python.run("Scripts\\extractpy\\abunpack.py", $"-0 Asset\\{location} Assets_raw\\{location}\\asset_textes.ab", ref output, ref error);
             //Console.WriteLine(error.ReadToEnd());
-            
+
+            /* TO FIGURE OUT AT SOME OTHER POINT
+            Console.WriteLine("Obtaining text output");
+            var proc1 = System.Diagnostics.Process.Start($"ResourceExtract\\girlsfrontline-resources-extract.exe", $"Assets_raw\\{location}\\asset_textes.ab");
+            proc1.Close();
+            File.Move($"ResourceExtract\\text", $"output\\{location}\\text");
+            File.Delete($"ResourceExtract\\text");
+
+            var proc2 = System.Diagnostics.Process.Start($"ResourceExtract\\girlsfrontline-resources-extract.exe", $"Assets_raw\\{location}\\asset_texttable.ab");
+            proc2.Close();
+            File.Move($"ResourceExtract\\text", $"output\\{location}\\text");
+            File.Delete($"ResourceExtract\\text");
+            */
         }
 
         public string getStcUrl() {
