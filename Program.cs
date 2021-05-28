@@ -492,6 +492,32 @@ namespace GFDecompress
                 JArray MissionSkillConfigList = JArray.Parse(File.ReadAllText("output\\" + region + "\\stc\\mission_skill_config.json"));
                 JArray EquipList = JArray.Parse(File.ReadAllText("output\\" + region + "\\stc\\equip.json"));
 
+                Console.WriteLine("Obtaining text output");
+                string exeFolder = System.AppDomain.CurrentDomain.BaseDirectory;
+                string Path1 = exeFolder + "Assets_raw\\" + region + "\\asset_textes.ab";
+                string Path2 = exeFolder + "Assets_raw\\" + region + "\\asset_texttable.ab";
+                string Path3 = exeFolder + "Assets_raw\\" + region + "\\asset_textavg.ab";
+
+                Process process = new Process();
+                // Configure the process using the StartInfo properties.
+                process.StartInfo.FileName = $"ResourceExtract\\girlsfrontline-resources-extract.exe";
+                process.StartInfo.Arguments = Path1 + " " + Path2 + " " + Path3;
+                process.StartInfo.WindowStyle = ProcessWindowStyle.Maximized;
+                process.Start();
+                process.WaitForExit();// Waits here for the process to exit.
+
+                try
+                {
+                    Directory.Move($"ResourceExtract\\text", "output\\" + region + "\\text");
+                }
+                catch
+                {
+                    Directory.Delete("output\\" + region + "\\text", true);
+                    Directory.Move($"ResourceExtract\\text", "output\\" + region + "\\text");
+                }
+
+
+
                 /* 
                 //폴더생성
                 if (!Directory.Exists("results"))

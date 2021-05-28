@@ -105,16 +105,20 @@ namespace GFDecompress
 
             StreamReader output = null;
             StreamReader output2 = null;
+            StreamReader output3 = null;
             StreamReader error = null;
             StreamReader error2 = null;
+            StreamReader error3 = null;
 
             Python.run("Scripts\\deserializer.py", $"Assets_raw\\{location}\\{filename}", ref output, ref error);
             Python.run("Scripts\\deserializer2.py", $"Assets_raw\\{location}\\{filename}", ref output2, ref error2);
+            Python.run("Scripts\\deserializer3.py", $"Assets_raw\\{location}\\{filename}", ref output3, ref error3);
 
-            Console.WriteLine("Downloading textes.ab and texttable.ab");
+            Console.WriteLine("Downloading textes.ab, texttable.ab, avgtext.ab");
 
             string[] textes = new string[2];
             string[] texttable = new string[2];
+            string[] avgtext = new string[2];
 
             int i = 0;
             while (true) {
@@ -135,10 +139,21 @@ namespace GFDecompress
                 j++;
             }
 
+            int k = 0;
+            while (true)
+            {
+                string str3 = output3.ReadLine();
+                if (str3 == null)
+                    break;
+                avgtext[k] = str3;
+                k++;
+            }
+
             string url = textes[0] + textes[1] + ".dat";
             string url2 = texttable[0] + texttable[1] + ".dat";
-            
-            if(url == ".dat")
+            string url3 = avgtext[0] + avgtext[1] + ".dat";
+
+            if (url == ".dat")
             {
                 Console.WriteLine("Error with deserializer.py, make sure it exists (redownload from this GitHub) and make sure Python with unitypack is installed.");
                 Console.ReadKey();
@@ -152,11 +167,21 @@ namespace GFDecompress
                 Environment.Exit(1);
             }
 
+            if (url3 == ".dat")
+            {
+                Console.WriteLine("Error with deserializer3.py, make sure it exists (redownload from this GitHub) and make sure Python with unitypack is installed.");
+                Console.ReadKey();
+                Environment.Exit(1);
+            }
+
             Console.WriteLine(url);
             client.DownloadFile(url, $"Assets_raw\\{location}\\textes.zip");
 
             Console.WriteLine(url2);
             client.DownloadFile(url2, $"Assets_raw\\{location}\\texttable.zip");
+
+            Console.WriteLine(url3);
+            client.DownloadFile(url3, $"Assets_raw\\{location}\\avgtext.zip");
 
 
             Console.WriteLine("Decompressing");
@@ -164,17 +189,21 @@ namespace GFDecompress
             {
                 ZipFile.ExtractToDirectory($"Assets_raw\\{location}\\textes.zip", $"Assets_raw\\{location}");
                 ZipFile.ExtractToDirectory($"Assets_raw\\{location}\\texttable.zip", $"Assets_raw\\{location}");
+                ZipFile.ExtractToDirectory($"Assets_raw\\{location}\\avgtext.zip", $"Assets_raw\\{location}");
             }
             catch {
                 File.Delete($"Assets_raw\\{location}\\asset_textes.ab");
                 ZipFile.ExtractToDirectory($"Assets_raw\\{location}\\textes.zip", $"Assets_raw\\{location}");
                 File.Delete($"Assets_raw\\{location}\\asset_texttable.ab");
                 ZipFile.ExtractToDirectory($"Assets_raw\\{location}\\texttable.zip", $"Assets_raw\\{location}");
+                File.Delete($"Assets_raw\\{location}\\asset_textavg.ab");
+                ZipFile.ExtractToDirectory($"Assets_raw\\{location}\\avgtext.zip", $"Assets_raw\\{location}");
             }
             
             Console.WriteLine("Deleting compressed file");
             File.Delete($"Assets_raw\\{location}\\textes.zip");
             File.Delete($"Assets_raw\\{location}\\texttable.zip");
+            File.Delete($"Assets_raw\\{location}\\avgtext.zip");
 
             //Console.WriteLine("에셋 추출 중...");
             //ProcessStartInfo extractor = new ProcessStartInfo("Scripts\\extractexe\\extract.exe", $@"Assets_raw\\{location}\\asset_textes.ab");
@@ -183,19 +212,6 @@ namespace GFDecompress
 
             //Python.run("Scripts\\extractpy\\abunpack.py", $"-0 Asset\\{location} Assets_raw\\{location}\\asset_textes.ab", ref output, ref error);
             //Console.WriteLine(error.ReadToEnd());
-
-            /* TO FIGURE OUT AT SOME OTHER POINT
-            Console.WriteLine("Obtaining text output");
-            var proc1 = System.Diagnostics.Process.Start($"ResourceExtract\\girlsfrontline-resources-extract.exe", $"Assets_raw\\{location}\\asset_textes.ab");
-            proc1.Close();
-            File.Move($"ResourceExtract\\text", $"output\\{location}\\text");
-            File.Delete($"ResourceExtract\\text");
-
-            var proc2 = System.Diagnostics.Process.Start($"ResourceExtract\\girlsfrontline-resources-extract.exe", $"Assets_raw\\{location}\\asset_texttable.ab");
-            proc2.Close();
-            File.Move($"ResourceExtract\\text", $"output\\{location}\\text");
-            File.Delete($"ResourceExtract\\text");
-            */
         }
 
         public string getStcUrl() {

@@ -429,3 +429,11 @@ C:\Users\danny\Downloads\GFDecompress\bin\Debug\ResourceExtract\config.ini
 C:\Users\danny\Downloads\GFDecompress\bin\Debug\ResourceExtract\config_dir.json
 C:\Users\danny\Downloads\GFDecompress\bin\Debug\ResourceExtract\data\doll.json
 C:\Users\danny\Downloads\GFDecompress\bin\Debug\ResourceExtract\data\rename.json
+C:\Users\danny\Documents\GitHub\GFDecompress\bin\Debug\ResourceExtract\girlsfrontline-resources-extract.exe
+C:\Users\danny\Documents\GitHub\GFDecompress\bin\Debug\ResourceExtract\README.txt
+C:\Users\danny\Documents\GitHub\GFDecompress\bin\Debug\Scripts\deserializer2.py
+C:\Users\danny\Documents\GitHub\GFDecompress\bin\Debug\Scripts\deserializer3.py
+C:\Users\danny\Documents\GitHub\GFDecompress\bin\Debug\ResourceExtract\config.ini
+C:\Users\danny\Documents\GitHub\GFDecompress\bin\Debug\ResourceExtract\config_dir.json
+C:\Users\danny\Documents\GitHub\GFDecompress\bin\Debug\ResourceExtract\data\doll.json
+C:\Users\danny\Documents\GitHub\GFDecompress\bin\Debug\ResourceExtract\data\rename.json

@@ -44,6 +44,14 @@
     "assets/resources/dabao/textdata/forbidwords": "text/textdata/forbidwords",
     "assets/resources/dabao/textdata/language": "text/textdata/language",
     "assets/resources/dabao/tipstxt": "text/tipstxt",
+    "assets/resources/dabao/avgtxt/anniversary": "text/avgtxt/anniversary",
+    "assets/resources/dabao/avgtxt/fetter/1": "text/avgtxt/fetter/1",
+    "assets/resources/dabao/avgtxt/fetter/2": "text/avgtxt/fetter/2",
+    "assets/resources/dabao/avgtxt/fetter/3": "text/avgtxt/fetter/3",
+    "assets/resources/dabao/avgtxt/fetter/4": "text/avgtxt/fetter/4",
+    "assets/resources/dabao/avgtxt/theater": "text/avgtxt/theater",
+    "assets/resources/dabao/avgtxt/tutorials": "text/avgtxt/tutorials",
+    "assets/resources/dabao/avgtxt/va11": "text/avgtxt/va11",	
     "assets/resources/dabao/pics/squads": "res/squad"
   },
   "_etc": {
