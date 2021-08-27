@@ -506,6 +506,32 @@ namespace GFDecompress
                 process.Start();
                 process.WaitForExit();// Waits here for the process to exit.
 
+                /* decrypt lua files
+                 *
+                 * Girls' Frontline .lua patch files are simply XOR-encrypted.
+                 *
+                 * BUT the software used to extract text assets does some 𝒻𝓊𝓃𝓀𝓎 business.
+                 * Text files are either exported as .bytes or as .txt.
+                 * Files exported as .txt have extra bytes that appear out of thin air,
+                 * other asset bundle extractors (e.g. AssetStudio) do not have this issue.
+                 * In particular, 0D (CR) is replaced with 0D0A (CRLF, Windows-style).
+                 *
+                 * We have to revert this "feature" before XOR-decrypting (not for .bytes files).
+                 */
+                var luaFiles = Directory.GetFiles("ResourceExtract\\text\\luapatch", "*.*", SearchOption.AllDirectories);
+                var luaKey = Encoding.UTF8.GetBytes("lvbb3zfc3faa8mq1rx0r0gl61b4338fa");
+                foreach (var luaFile in luaFiles)
+                {
+                    var luaBytes = File.ReadAllBytes(luaFile);
+
+                    var decryptedBytes = Enumerable.Range(0, luaBytes.Length)
+                                                   .Where(byteIndex => luaFile.EndsWith(".bytes") || luaBytes.Length - 1 <= byteIndex || 0xD != luaBytes[byteIndex] || 0xA != luaBytes[byteIndex + 1])
+                                                   .Select((byteIndex, i) => (byte) (luaBytes[byteIndex] ^ luaKey[i % 32]))
+                                                   .ToArray();
+
+                    File.WriteAllBytes(luaFile, decryptedBytes);
+                }
+
                 try
                 {
                     Directory.Move($"ResourceExtract\\text", "output\\" + region + "\\text");
