@@ -1,0 +1,12 @@
+﻿id
+name
+chess_spotids
+rotation
+camera_height_range
+camera_angle_h
+camera_angle_l
+random_enemy_pool
+map_limit
+map_id
+global_limit
+global_pos

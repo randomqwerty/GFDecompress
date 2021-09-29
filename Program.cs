@@ -61,7 +61,7 @@ namespace GFDecompress
         /// <param name="stcFile">stc 파일명</param>
         /// <param name="startOffset">시작 오프셋 (강제 설정)</param>
         /// <returns></returns>
-        public static JArray ParseStc(string stcFile, int startOffset = 0)
+        public static JArray ParseStc(string stcFile, string clientVersion, int startOffset = 0)
         {
             JArray output = new JArray();
 
@@ -120,10 +120,10 @@ namespace GFDecompress
 
                 // 컬럼명 가져오기
                 List<string> colNames = null;
-                if (File.Exists(@"STCFormat\" + Path.GetFileNameWithoutExtension(stcFile) + ".format"))
-                    colNames = File.ReadAllLines(@"STCFormat\" + Path.GetFileNameWithoutExtension(stcFile) + ".format").ToList();
+                if (File.Exists(@"STCFormat\" + clientVersion + "\\" + Path.GetFileNameWithoutExtension(stcFile) + ".format"))
+                    colNames = File.ReadAllLines(@"STCFormat\" + clientVersion + "\\" + Path.GetFileNameWithoutExtension(stcFile) + ".format").ToList();
                 else
-                    log.Warn("Format file does not exist >> {0}", @"STCFormat\" + Path.GetFileNameWithoutExtension(stcFile) + ".format");
+                    log.Warn("Format file does not exist >> {0}", @"STCFormat\" + clientVersion + "\\" + Path.GetFileNameWithoutExtension(stcFile) + ".format");
 
                 try
                 {
@@ -194,7 +194,7 @@ namespace GFDecompress
                 {
                     validRegion = true;
                 }
-                else 
+                else
                 {
                     Console.WriteLine("Invalid region, please try again.");
                 }
@@ -203,6 +203,7 @@ namespace GFDecompress
             Stopwatch swh = new Stopwatch();
             swh.Start();
 
+            var clientVersion = "";
             switch (region)
             {
                 case "kr":
@@ -210,24 +211,28 @@ namespace GFDecompress
                     Downloader kr = new Downloader("kr");
                     kr.downloadStc();
                     kr.downloadAsset();
+                    clientVersion = "2080";
                     break;
                 case "en":
                     Console.WriteLine("\n====EN Data download====");
                     Downloader en = new Downloader("en");
                     en.downloadStc();
                     en.downloadAsset();
+                    clientVersion = "2070";
                     break;
                 case "jp":
                     Console.WriteLine("\n====JP Data download====");
                     Downloader jp = new Downloader("jp");
                     jp.downloadStc();
                     jp.downloadAsset();
+                    clientVersion = "2070";
                     break;
                 case "ch":
                     Console.WriteLine("\n====CN Data download====");
                     Downloader ch = new Downloader("ch");
                     ch.downloadStc();
                     ch.downloadAsset();
+                    clientVersion = "2080";
                     break;
             }
 
@@ -451,7 +456,7 @@ namespace GFDecompress
                     { "5144.stc", "chess_skill_trigger" },
                     { "5145.stc", "chess_spot" },
                     { "5146.stc", "chess_game_config" },
-                    //{ "5147.stc", "" },
+                    { "5147.stc", "chess_map" },
                     { "5148.stc", "chess_model" },
                     { "5149.stc", "chess_mission" },
                     { "5150.stc", "mission_entrance_package" },
@@ -460,7 +465,16 @@ namespace GFDecompress
                     { "5153.stc", "chess_random_enemy" },
                     { "5154.stc", "chess_random_spot" },
                     { "5155.stc", "chess_select_frame" },
-                    { "5156.stc", "rouge_sk" }
+                    { "5156.stc", "rouge_sk" },
+                    { "5157.stc", "chess_seasonevent" },
+                    { "5158.stc", "fight_success_condition" },
+                    { "5159.stc", "chess_choice_stage" },
+                    { "5160.stc", "equip_type" },
+                    { "5161.stc", "equip_category" },
+                    { "5162.stc", "fight_environment_skill" },
+                    { "5163.stc", "fight_type" },
+                    { "5164.stc", "chess_voice" },
+                    { "5165.stc", "squad_in_ally" }
                 };
 
                 log.Info("\n Parsing stc files");
@@ -471,7 +485,7 @@ namespace GFDecompress
                     {
                         log.Info(".stc parse >> file: {0} | type: {1}", stcFile.Key, stcFile.Value);
 
-                        JArray jArr = ParseStc(stcFile.Key);
+                        JArray jArr = ParseStc(stcFile.Key, clientVersion);
                         string outputName = stcFile.Value;
                         string stcJSON = stcFile.Key.Replace(".stc", ".json");
                         if (string.IsNullOrEmpty(outputName))
@@ -544,7 +558,7 @@ namespace GFDecompress
 
 
 
-                /* 
+                /*
                 //폴더생성
                 if (!Directory.Exists("results"))
                     Directory.CreateDirectory("results");
