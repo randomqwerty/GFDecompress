@@ -53,7 +53,7 @@
     "assets/resources/dabao/avgtxt/fetter/3": "text/avgtxt/fetter/3",
 	"assets/resources/dabao/avgtxt/fetter/4": "text/avgtxt/fetter/4",
 	"assets/resources/textdata": "text/textdata",
-	"assets/resources/forbidwords": "text/forbidwords",
+	"assets/resources/textdata/forbidwords": "text/textdata/forbidwords",
     "assets/resources/textdata/language": "text/textdata/language",
     "assets/resources/dabao/luapatch/collaboration/dropkickdevil": "text/luapatch/collaboration/dropkickdevil",
     "assets/resources/dabao/luapatch/2072": "text/luapatch/2072",
