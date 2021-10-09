@@ -1,0 +1,13 @@
+﻿id
+name
+code
+description
+max_tier
+type
+duration_type
+duration
+parameter
+trigger_creation_id
+creation_id
+available_gun_type
+ui_control

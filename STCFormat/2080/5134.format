@@ -1,0 +1,13 @@
+﻿id
+name
+power
+range
+hp
+ap
+attack_times
+armor
+armor_piercing
+gun_type_skill
+attack_angle
+passive_skill
+ai_passive_skill
