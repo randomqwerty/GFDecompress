@@ -304,25 +304,25 @@ namespace GFDecompress
                 // ※ 항목 추가 시 STCFormat\\*.format 파일에 컬럼 목록 추가할 것!
                 Dictionary<string, string> stcFiles = new Dictionary<string, string>()
                 {
-                    { "5000.stc", "item" },                         // 아이템
-                    { "5001.stc", "battle_skill_config" },          // 전투 스킬
-                    { "5002.stc", "spot" },                         // 거점
-                    { "5003.stc", "enemy_in_team" },                // 적 제대 멤버
-                    { "5004.stc", "gun_in_ally" },                  // 아군 제대 멤버
-                    { "5005.stc", "gun" },                          // 인형
-                    { "5006.stc", "squad" },                        // 화력소대
-                    { "5007.stc", "squad_advanced_bonus" },         // 화력소대 승진
-                    { "5008.stc", "squad_chip" },                   // 화력소대 칩셋
-                    { "5009.stc", "squad_cpu" },                    // 화력소대 회로?
-                    { "5010.stc", "squad_color" },                  // 화력소대 칩셋 색상
-                    { "5011.stc", "squad_grid" },                   // 화력소대 칩셋 모양
-                    { "5012.stc", "squad_data_daily" },             // 화력소대 정보임무
-                    { "5013.stc", "squad_exp" },                    // 화력소대 경험치
+                    { "5000.stc", "item" },
+                    { "5001.stc", "battle_skill_config" },
+                    { "5002.stc", "spot" },
+                    { "5003.stc", "enemy_in_team" },
+                    { "5004.stc", "gun_in_ally" },
+                    { "5005.stc", "gun" },
+                    { "5006.stc", "squad" },
+                    { "5007.stc", "squad_advanced_bonus" },
+                    { "5008.stc", "squad_chip" },
+                    { "5009.stc", "squad_cpu" },
+                    { "5010.stc", "squad_color" },
+                    { "5011.stc", "squad_grid" },
+                    { "5012.stc", "squad_data_daily" },
+                    { "5013.stc", "squad_exp" },
                     { "5014.stc", "live2d" },
-                    { "5015.stc", "building" },                     // 건물
-                    { "5016.stc", "mission" },                      // 전역
+                    { "5015.stc", "building" },
+                    { "5016.stc", "mission" },
                     { "5017.stc", "battle_creation" },
-                    { "5018.stc", "squad_chip_exp" },               // 화력소대 칩셋 경험치
+                    { "5018.stc", "squad_chip_exp" },
                     { "5019.stc", "squad_cpu_completion" },
                     { "5020.stc", "squad_rank" },
                     { "5021.stc", "squad_standard_attribution" },
@@ -342,8 +342,8 @@ namespace GFDecompress
                     { "5035.stc", "enemy_team" },
                     { "5036.stc", "battle_formula" },
                     { "5037.stc", "live2d_motions" },
-                    { "5038.stc", "equip" },                        // 장비
-                    { "5039.stc", "auto_mission" },                             // 자율작전?
+                    { "5038.stc", "equip" },
+                    { "5039.stc", "auto_mission" },
                     { "5040.stc", "theater" },
                     { "5041.stc", "theater_area" },
                     { "5042.stc", "theater_construction" },
@@ -352,7 +352,7 @@ namespace GFDecompress
                     { "5045.stc", "trigger_index" },
                     { "5046.stc", "mission_skill_config" },
                     { "5047.stc", "mission_mapped" },
-                    { "5048.stc", "skin" },                         // 스킨
+                    { "5048.stc", "skin" },
                     { "5049.stc", "extra_spine" },
                     { "5050.stc", "explore_script" },
                     { "5051.stc", "explore_affair_client" },
@@ -369,16 +369,15 @@ namespace GFDecompress
                     { "5062.stc", "theater_incident" },
                     { "5063.stc", "manual_ui" },
                     { "5064.stc", "dorm_ai" },
-                    { "5065.stc", "furniture_interact_point" },
+                    { "5065.stc", "dorm_action" },
                     { "5066.stc", "theater_reward" },
                     { "5067.stc", "mission_buff_config" },
-                    { "5068.stc", "recommend_formula" },
-                    { "5069.stc", "achivement" },
+                    { "5068.stc", "recommended_formula" },
+                    { "5069.stc", "achievement" },
                     { "5070.stc", "friend_cosmetic" },
                     { "5071.stc", "furniture" },
                     { "5072.stc", "furniture_interact_point" },
                     { "5073.stc", "mission_win_type_config" },
-                    //{ "5074.stc", "" },
                     { "5075.stc", "tutorial_guide" },
                     { "5076.stc", "tutorial_manual" },
                     { "5077.stc", "guild_flag" },
@@ -386,32 +385,27 @@ namespace GFDecompress
                     { "5079.stc", "prize" },
                     { "5080.stc", "mall" },
                     { "5081.stc", "commander_class" },
-                    { "5082.stc", "emoji" },
+                    { "5082.stc", "commander_emoji" },
                     { "5083.stc", "commander_uniform" },
                     { "5084.stc", "function_skill_config" },
                     { "5085.stc", "commander_color" },
-                    { "5086.stc", "draw_event_info" },
-                    { "5087.stc", "gift" },
+                    { "5086.stc", "draw_event" },
+                    { "5087.stc", "gift_item" },
                     { "5088.stc", "unit_character" },
                     { "5089.stc", "team_ai" },
                     { "5090.stc", "enemy_illustration" },
                     { "5091.stc", "fetter_skill" },
                     { "5092.stc", "enemy_illustration_skill" },
-                    /*
-                     * 혼합세력 능력치/수복 관련자료 링크
-                     * 계산식, 엑셀시트
-                     * https://bbs.nga.cn/read.php?tid=20891117
-                     */
-                    { "5093.stc", "sangvis_chip" },                 // 혼합세력 칩셋
-                    { "5094.stc", "sangvis" },                      // 혼합세력
-                    { "5095.stc", "sangvis_advance" },              // 혼합세력 분석(편확)
-                    { "5096.stc", "sangvis_resolution" },           // 혼합세력 개발(강화)
-                    { "5097.stc", "sangvis_type" },                 // 혼합세력 종류
+                    { "5093.stc", "sangvis_chip" },
+                    { "5094.stc", "sangvis" },
+                    { "5095.stc", "sangvis_advance" },
+                    { "5096.stc", "sangvis_resolution" },
+                    { "5097.stc", "sangvis_type" },
                     { "5098.stc", "sangvis_chip_skill" },
                     { "5099.stc", "sangvis_gasha" },
                     { "5100.stc", "sangvis_gasha_reward" },
-                    { "5101.stc", "sangvis_logo" },
-                    { "5102.stc", "sangvis_char_voice" },
+                    { "5101.stc", "sangvis_sign" },
+                    { "5102.stc", "sangvis_charavoice" },
                     { "5103.stc", "sangvis_character_type" },
                     { "5104.stc", "sangvis_exchange_mall" },
                     { "5105.stc", "sangvis_exp" },
@@ -426,12 +420,12 @@ namespace GFDecompress
                     { "5114.stc", "organization_bounty" },
                     { "5115.stc", "fairy" },
                     { "5116.stc", "mission_targettrain" },
-                    { "5117.stc", "targettrain_battlesetting" },
-                    { "5118.stc", "targettrain_enemy" },
+                    { "5117.stc", "mission_targettrain_battlesetting" },
+                    { "5118.stc", "mission_targettrain_enemy" },
                     { "5119.stc", "equip_group" },
                     { "5120.stc", "mission_echo_info" },
                     { "5121.stc", "rank" },
-                    //{ "5122.stc", "" },
+                    { "5122.stc", "mission_draw_bonus" },
                     { "5123.stc", "event_prize_level" },
                     { "5124.stc", "bondage_lines" },
                     { "5125.stc", "gun_charavoice" },
@@ -464,7 +458,7 @@ namespace GFDecompress
                     { "5152.stc", "chess_scorelevel" },
                     { "5153.stc", "chess_random_enemy" },
                     { "5154.stc", "chess_random_spot" },
-                    { "5155.stc", "chess_select_frame" },
+                    { "5155.stc", "chess_selectframe" },
                     { "5156.stc", "rouge_sk" },
                     { "5157.stc", "chess_seasonevent" },
                     { "5158.stc", "fight_success_condition" },
@@ -511,6 +505,9 @@ namespace GFDecompress
                 string Path1 = exeFolder + "Assets_raw\\" + region + "\\asset_textes.ab";
                 string Path2 = exeFolder + "Assets_raw\\" + region + "\\asset_texttable.ab";
                 string Path3 = exeFolder + "Assets_raw\\" + region + "\\asset_textavg.ab";
+
+                if (!Directory.Exists("ResourceExtract\\text"))
+                    Directory.CreateDirectory("ResourceExtract\\text");
 
                 Process process = new Process();
                 // Configure the process using the StartInfo properties.
