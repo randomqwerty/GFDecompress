@@ -211,7 +211,7 @@ namespace GFDecompress
                     Downloader kr = new Downloader("kr");
                     kr.downloadStc();
                     kr.downloadAsset();
-                    clientVersion = "2080";
+                    clientVersion = "2090";
                     break;
                 case "en":
                     Console.WriteLine("\n====EN Data download====");
@@ -232,7 +232,7 @@ namespace GFDecompress
                     Downloader ch = new Downloader("ch");
                     ch.downloadStc();
                     ch.downloadAsset();
-                    clientVersion = "2080";
+                    clientVersion = "2090";
                     break;
             }
 
@@ -378,6 +378,7 @@ namespace GFDecompress
                     { "5071.stc", "furniture" },
                     { "5072.stc", "furniture_interact_point" },
                     { "5073.stc", "mission_win_type_config" },
+                    { "5074.stc", "mission_event" },
                     { "5075.stc", "tutorial_guide" },
                     { "5076.stc", "tutorial_manual" },
                     { "5077.stc", "guild_flag" },
@@ -468,7 +469,21 @@ namespace GFDecompress
                     { "5162.stc", "fight_environment_skill" },
                     { "5163.stc", "fight_type" },
                     { "5164.stc", "chess_voice" },
-                    { "5165.stc", "squad_in_ally" }
+                    { "5165.stc", "squad_in_ally" },
+                    { "5166.stc", "mission_effect_config" },
+                    { "5167.stc", "career_quest" },
+                    { "5168.stc", "career_quest_group" },
+                    { "5169.stc", "career_quest_grade" },
+                    { "5170.stc", "fairy_talent" },
+                    { "5171.stc", "fairy_talent_type" },
+                    { "5172.stc", "furniture_classes" },
+                    { "5173.stc", "fight_environment_config" },
+                    { "5174.stc", "commander_ranking_scores" },
+                    { "5175.stc", "commander_ranking_types" },
+                    { "5176.stc", "battle_skill_type_config" },
+                    { "5177.stc", "medal" },
+                    { "5178.stc", "event_rank" },
+                    { "5179.stc", "chess_gasha_reward" }
                 };
 
                 log.Info("\n Parsing stc files");

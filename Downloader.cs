@@ -149,25 +149,25 @@ namespace GFDecompress
                 k++;
             }
 
-            string url = textes[0] + textes[1] + ".dat";
-            string url2 = texttable[0] + texttable[1] + ".dat";
-            string url3 = avgtext[0] + avgtext[1] + ".dat";
+            string url = textes[0] + textes[1] + ".ab";
+            string url2 = texttable[0] + texttable[1] + ".ab";
+            string url3 = avgtext[0] + avgtext[1] + ".ab";
 
-            if (url == ".dat")
+            if (url == ".ab")
             {
                 Console.WriteLine("Error with deserializer.py, make sure it exists (redownload from this GitHub) and make sure Python with unitypack is installed.");
                 Console.ReadKey();
                 Environment.Exit(1);
             }
 
-            if (url2 == ".dat")
+            if (url2 == ".ab")
             {
                 Console.WriteLine("Error with deserializer2.py, make sure it exists (redownload from this GitHub) and make sure Python with unitypack is installed.");
                 Console.ReadKey();
                 Environment.Exit(1);
             }
 
-            if (url3 == ".dat")
+            if (url3 == ".ab")
             {
                 Console.WriteLine("Error with deserializer3.py, make sure it exists (redownload from this GitHub) and make sure Python with unitypack is installed.");
                 Console.ReadKey();
@@ -175,35 +175,13 @@ namespace GFDecompress
             }
 
             Console.WriteLine(url);
-            client.DownloadFile(url, $"Assets_raw\\{location}\\textes.zip");
+            client.DownloadFile(url, $"Assets_raw\\{location}\\asset_textes.ab");
 
             Console.WriteLine(url2);
-            client.DownloadFile(url2, $"Assets_raw\\{location}\\texttable.zip");
+            client.DownloadFile(url2, $"Assets_raw\\{location}\\asset_texttable.ab");
 
             Console.WriteLine(url3);
-            client.DownloadFile(url3, $"Assets_raw\\{location}\\avgtext.zip");
-
-
-            Console.WriteLine("Decompressing");
-            try
-            {
-                ZipFile.ExtractToDirectory($"Assets_raw\\{location}\\textes.zip", $"Assets_raw\\{location}");
-                ZipFile.ExtractToDirectory($"Assets_raw\\{location}\\texttable.zip", $"Assets_raw\\{location}");
-                ZipFile.ExtractToDirectory($"Assets_raw\\{location}\\avgtext.zip", $"Assets_raw\\{location}");
-            }
-            catch {
-                File.Delete($"Assets_raw\\{location}\\asset_textes.ab");
-                ZipFile.ExtractToDirectory($"Assets_raw\\{location}\\textes.zip", $"Assets_raw\\{location}");
-                File.Delete($"Assets_raw\\{location}\\asset_texttable.ab");
-                ZipFile.ExtractToDirectory($"Assets_raw\\{location}\\texttable.zip", $"Assets_raw\\{location}");
-                File.Delete($"Assets_raw\\{location}\\asset_textavg.ab");
-                ZipFile.ExtractToDirectory($"Assets_raw\\{location}\\avgtext.zip", $"Assets_raw\\{location}");
-            }
-            
-            Console.WriteLine("Deleting compressed file");
-            File.Delete($"Assets_raw\\{location}\\textes.zip");
-            File.Delete($"Assets_raw\\{location}\\texttable.zip");
-            File.Delete($"Assets_raw\\{location}\\avgtext.zip");
+            client.DownloadFile(url3, $"Assets_raw\\{location}\\asset_textavg.ab");
 
             //Console.WriteLine("에셋 추출 중...");
             //ProcessStartInfo extractor = new ProcessStartInfo("Scripts\\extractexe\\extract.exe", $@"Assets_raw\\{location}\\asset_textes.ab");
