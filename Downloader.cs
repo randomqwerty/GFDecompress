@@ -243,8 +243,7 @@ namespace GFDecompress
                     //return "https://s3-ap-northeast-1.amazonaws.com/gf1-jpfile-server/";
                     return "https://d2p0tz30gps08r.cloudfront.net/";
                 case "en":
-                    //return "http://gf-transit.sunborngame.com/";
-                    return "http://dkn3dfwjnmzcj.cloudfront.net/";
+                    return "http://gfus-cdn.sunborngame.com/";
                 default:
                     return "http://gf-cn.cdn.sunborngame.com/";
             }
