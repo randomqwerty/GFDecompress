@@ -240,8 +240,7 @@ namespace GFDecompress
                 case "kr":
                     return "http://sn-list.girlfrontline.co.kr/";
                 case "jp":
-                    //return "https://s3-ap-northeast-1.amazonaws.com/gf1-jpfile-server/";
-                    return "https://d2p0tz30gps08r.cloudfront.net/";
+					return "https://gfjp-cdn.sunborngame.com/";
                 case "en":
                     return "http://gfus-cdn.sunborngame.com/";
                 default:
