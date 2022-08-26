@@ -1,0 +1,12 @@
+id
+name
+des
+power
+recommend_power
+enemy_team_id
+log_fitter_id
+log_fitter_name
+code
+fight_type
+type_coef
+fight_environment_group
