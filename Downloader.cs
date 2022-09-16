@@ -44,6 +44,10 @@ namespace GFDecompress
             minversion = Math.Round(double.Parse(clientVersion) / 100) * 10;
             abVersion = obj["ab_version"].ToString();
 
+			if (clientVersion == "29999") {
+				minversion = 3010;
+			}
+
             Console.WriteLine("Retrived data version: " + dataVersion);
 
         }
