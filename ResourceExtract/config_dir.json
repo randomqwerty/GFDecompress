@@ -68,6 +68,7 @@
     "assets/resources/dabao/avgtxt/tutorials": "text/avgtxt/tutorials",
     "assets/resources/dabao/avgtxt/va11": "text/avgtxt/va11",
 	"assets/resources/dabao/avgtxt/va11avg": "text/avgtxt/va11avg",
+	"assets/resources/dabao/profilesconfig/autobattle": "text/profilesconfig/autobattle",
 	"assets/resources/dabao/luapatch/2090/slgminigame": "text/luapatch/2090/slgminigame",
     "assets/resources/dabao/pics/squads": "res/squad"
   },

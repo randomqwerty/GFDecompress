@@ -218,14 +218,14 @@ namespace GFDecompress
                     Downloader en = new Downloader("en");
                     en.downloadStc();
                     en.downloadAsset();
-                    clientVersion = "2090";
+                    clientVersion = "3010";
                     break;
                 case "jp":
                     Console.WriteLine("\n====JP Data download====");
                     Downloader jp = new Downloader("jp");
                     jp.downloadStc();
                     jp.downloadAsset();
-                    clientVersion = "2090";
+                    clientVersion = "3010";
                     break;
                 case "ch":
                     Console.WriteLine("\n====CN Data download====");
