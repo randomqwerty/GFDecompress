@@ -36,6 +36,7 @@
 	"assets/resources/dabao/luapatch/battle/2021summer": "text/luapatch/battle/2021summer",
 	"assets/resources/dabao/luapatch/battle/2090": "text/luapatch/battle/2090",
 	"assets/resources/dabao/luapatch/battle/3010": "text/luapatch/battle/3010",
+	"assets/resources/dabao/luapatch/battle/3020": "text/luapatch/battle/3020",
     "assets/resources/dabao/luapatch/collaboration/anniversary": "text/luapatch/collaboration/anniversary",
     "assets/resources/dabao/luapatch/collaboration/division": "text/luapatch/collaboration/division",
     "assets/resources/dabao/luapatch/collaboration/gunslingergirl": "text/luapatch/collaboration/gunslingergirl",
@@ -70,6 +71,7 @@
 	"assets/resources/dabao/avgtxt/va11avg": "text/avgtxt/va11avg",
 	"assets/resources/dabao/profilesconfig/autobattle": "text/profilesconfig/autobattle",
 	"assets/resources/dabao/luapatch/2090/slgminigame": "text/luapatch/2090/slgminigame",
+	"assets/resources/dabao/luapatch/collaboration/zlsr": "text/luapatch/collaboration/zlsr",
     "assets/resources/dabao/pics/squads": "res/squad"
   },
   "_etc": {

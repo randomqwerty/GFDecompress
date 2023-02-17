@@ -220,6 +220,8 @@ namespace GFDecompress
                     return "http://gfjp-game.sunborngame.com/index.php/1001/";
                 case "en":
                     return "http://gf-game.sunborngame.com/index.php/1001/";
+				case "tw":
+					return "http://sn-game.txwy.tw/index.php/1001/";
                 default:
                     return "http://gfcn-game.gw.merge.sunborngame.com/index.php/1000/";
             }
@@ -234,6 +236,8 @@ namespace GFDecompress
                     return "https://gfjp-cdn.sunborngame.com/";
                 case "en":
                     return "https://gfus-cdn.sunborngame.com/";
+				case "tw":
+					return "http://sncdn.imtxwy.com/";
                 default:
                     return "http://gf-cn.cdn.sunborngame.com/";
             }
@@ -247,6 +251,8 @@ namespace GFDecompress
 					return "https://gfjp-cdn.sunborngame.com/";
                 case "en":
                     return "http://gfus-cdn.sunborngame.com/";
+				case "tw":
+					return "http://sn-list.txwy.tw/";
                 default:
                     return "http://gf-cn.cdn.sunborngame.com/";
             }

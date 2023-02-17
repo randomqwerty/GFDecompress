@@ -187,10 +187,10 @@ namespace GFDecompress
 
             while (!validRegion)
             {
-                Console.WriteLine("Enter one of the following regions to download data for: kr, en, jp, ch");
+                Console.WriteLine("Enter one of the following regions to download data for: kr, en, jp, ch, tw");
                 region = Console.ReadLine();
 
-                if (new[] { "kr", "en", "jp", "ch" }.Contains(region))
+                if (new[] { "kr", "en", "jp", "ch", "tw" }.Contains(region))
                 {
                     validRegion = true;
                 }
@@ -232,6 +232,13 @@ namespace GFDecompress
                     Downloader ch = new Downloader("ch");
                     ch.downloadStc();
                     ch.downloadAsset();
+                    clientVersion = "3010";
+                    break;
+				case "tw":
+                    Console.WriteLine("\n====TW Data download====");
+                    Downloader tw = new Downloader("tw");
+                    tw.downloadStc();
+                    tw.downloadAsset();
                     clientVersion = "3010";
                     break;
             }
