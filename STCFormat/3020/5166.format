@@ -1,0 +1,16 @@
+id
+name
+code
+description
+priority
+duration
+delay
+size
+sound
+spine
+if_starting
+relative_position
+offset
+rotation_offset
+is_focus
+use_ease
