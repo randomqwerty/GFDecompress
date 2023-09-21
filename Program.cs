@@ -244,7 +244,7 @@ namespace GFDecompress
                     Downloader ch = new Downloader("ch");
                     ch.downloadStc();
                     ch.downloadAsset();
-                    clientVersion = "3020";
+                    clientVersion = "3030";
                     break;
 				case "tw":
                     Console.WriteLine("\n====TW Data download====");
@@ -537,7 +537,24 @@ namespace GFDecompress
                     { "5211.stc", "daily_event_option" },
                     { "5212.stc", "daily_mission_difficulty_group" },
                     { "5213.stc", "event_lottery" },
-                    { "5214.stc", "lottery" }
+                    { "5214.stc", "lottery" },
+                    { "5215.stc", "vehicle" },
+                    { "5216.stc", "vehicle_component_roll" },
+                    { "5217.stc", "vehicle_component_att_value" },
+                    { "5218.stc", "vehicle_component" },
+                    { "5219.stc", "vehicle_component_type" },
+                    { "5220.stc", "vehicle_crew" },
+                    { "5221.stc", "vehicle_tech_tree" },
+                    { "5222.stc", "vehicle_skin" },
+                    { "5223.stc", "vehicle_component_roll_type" },
+                    { "5224.stc", "vehicle_in_ally" },
+                    { "5225.stc", "vehicle_component_in_ally" },
+                    { "5226.stc", "vehicle_unlock_task" },
+                    { "5227.stc", "vehicle_component_group" },
+                    { "5228.stc", "vehicle_type" },
+                    { "5229.stc", "adjutant_skin" },
+                    { "5230.stc", "daily_map_route" },
+                    { "5231.stc", "daily_exmission_group" }
                 };
 
                 log.Info("\n Parsing stc files");
@@ -548,7 +565,7 @@ namespace GFDecompress
                     {
                         log.Info(".stc parse >> file: {0} | type: {1}", stcFile.Key, stcFile.Value);
 
-                        JArray jArr = ParseStc(stcFile.Key, clientVersion, 0, clientVersion == "3020");
+                        JArray jArr = ParseStc(stcFile.Key, clientVersion, 0, int.Parse(clientVersion) >= 3020);
                         string outputName = stcFile.Value;
                         string stcJSON = stcFile.Key.Replace(".stc", ".json");
                         if (string.IsNullOrEmpty(outputName))

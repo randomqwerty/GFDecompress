@@ -1,0 +1,11 @@
+id
+description
+buff_judge
+hurt_from
+available_gun_type
+hurt_type
+is_hurt_body
+hurt_formula_target
+hurt_judge
+watched_skill_type
+watched_skill_group_id

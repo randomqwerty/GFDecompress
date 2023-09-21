@@ -1,0 +1,16 @@
+id
+name
+pt_item_id
+gift_free
+gift_paytounlock
+gift_plus
+gift_extra
+start_time
+end_time
+skin_id
+paid_productid
+paid_productid_discount
+exp_mallid
+discount_itemid
+exhibit_bonus
+unlock_itemid
