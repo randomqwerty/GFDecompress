@@ -76,6 +76,7 @@
 	"assets/resources/dabao/profilesconfig/autobattle": "text/profilesconfig/autobattle",
 	"assets/resources/dabao/luapatch/2090/slgminigame": "text/luapatch/2090/slgminigame",
 	"assets/resources/dabao/luapatch/collaboration/zlsr": "text/luapatch/collaboration/zlsr",
+	"assets/resources/dabao/profilesconfig/guidedeployment": "text/profilesconfig/guidedeployment",
     "assets/resources/dabao/pics/squads": "res/squad"
   },
   "_etc": {
