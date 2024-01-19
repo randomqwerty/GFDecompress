@@ -72,23 +72,23 @@ mapped_mission_id
 branch_next_mission_id
 win_type
 medal_type_silver
-        "drop_item_count",
-        "difficulty_recommend",
-        "difficulty_recommend_addendum",
-        "limit_sangvis",
-        "mission_tip",
-        "win_step",
-        "event_score",
-        "score_prize",
-        "drop_key_info",
-        "lose_type",
-        "fight_environment_group",
-        "environment_transform_config",
-        "recommended_team_ids",
-        "restart_hide",
-        "auto_battle",
-        "daily_demand",
-        "limit_vehicle",
-        "limit_component_pool",
-        "guide_cdn",
-        "mission_intensify_item_config"
+drop_item_count
+difficulty_recommend
+difficulty_recommend_addendum
+limit_sangvis
+mission_tip
+win_step
+event_score
+score_prize
+drop_key_info
+lose_type
+fight_environment_group
+environment_transform_config
+recommended_team_ids
+restart_hide
+auto_battle
+daily_demand
+limit_vehicle
+limit_component_pool
+guide_cdn
+mission_intensify_item_config
