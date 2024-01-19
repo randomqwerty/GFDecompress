@@ -244,7 +244,7 @@ namespace GFDecompress
                     Downloader ch = new Downloader("ch");
                     ch.downloadStc();
                     ch.downloadAsset();
-                    clientVersion = "3030";
+                    clientVersion = "3040";
                     break;
 				case "tw":
                     Console.WriteLine("\n====TW Data download====");
@@ -554,7 +554,12 @@ namespace GFDecompress
                     { "5228.stc", "vehicle_type" },
                     { "5229.stc", "adjutant_skin" },
                     { "5230.stc", "daily_map_route" },
-                    { "5231.stc", "daily_exmission_group" }
+                    { "5231.stc", "daily_exmission_group" },
+                    { "5232.stc", "mission_intensify_item_config" },
+                    { "5233.stc", "normal_activity" },
+                    { "5234.stc", "carnival_task" },
+                    { "5235.stc", "simulation_battle_reward" },
+                    { "5236.stc", "vehicle_skin_class" }
                 };
 
                 log.Info("\n Parsing stc files");
@@ -591,6 +596,7 @@ namespace GFDecompress
                 string Path1 = exeFolder + "Assets_raw\\" + region + "\\asset_textes.ab";
                 string Path2 = exeFolder + "Assets_raw\\" + region + "\\asset_texttable.ab";
                 string Path3 = exeFolder + "Assets_raw\\" + region + "\\asset_textavg.ab";
+                string Path4 = exeFolder + "Assets_raw\\" + region + "\\asset_textlpatch.ab";
 
                 if (!Directory.Exists("ResourceExtract\\text"))
                     Directory.CreateDirectory("ResourceExtract\\text");
@@ -598,7 +604,14 @@ namespace GFDecompress
                 Process process = new Process();
                 // Configure the process using the StartInfo properties.
                 process.StartInfo.FileName = $"ResourceExtract\\girlsfrontline-resources-extract.exe";
-                process.StartInfo.Arguments = Path1 + " " + Path2 + " " + Path3;
+                if (File.Exists("Assets_raw\\" + region + "\\asset_textlpatch.ab"))
+                {
+                    process.StartInfo.Arguments = Path1 + " " + Path2 + " " + Path3 + " " + Path4;
+                }
+                else
+                {
+                    process.StartInfo.Arguments = Path1 + " " + Path2 + " " + Path3;
+                }
                 process.StartInfo.WindowStyle = ProcessWindowStyle.Maximized;
                 process.Start();
                 process.WaitForExit();// Waits here for the process to exit.

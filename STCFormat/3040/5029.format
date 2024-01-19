@@ -1,0 +1,14 @@
+id
+description
+target_type
+target_number
+target_priority
+select_order
+is_ascend_order
+is_ingore_range
+is_search_all
+list_ranking
+target_buff_id
+target_parameter
+buff_trigger_type
+is_buff_type

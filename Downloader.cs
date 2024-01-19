@@ -110,19 +110,23 @@ namespace GFDecompress
             StreamReader output = null;
             StreamReader output2 = null;
             StreamReader output3 = null;
+            StreamReader output4 = null;
             StreamReader error = null;
             StreamReader error2 = null;
             StreamReader error3 = null;
+            StreamReader error4 = null;
 
             Python.run("Scripts\\deserializer.py", $"Assets_raw\\{location}\\{filename}", ref output, ref error);
             Python.run("Scripts\\deserializer2.py", $"Assets_raw\\{location}\\{filename}", ref output2, ref error2);
             Python.run("Scripts\\deserializer3.py", $"Assets_raw\\{location}\\{filename}", ref output3, ref error3);
+            Python.run("Scripts\\deserializer4.py", $"Assets_raw\\{location}\\{filename}", ref output4, ref error4);
 
-            Console.WriteLine("Downloading textes.ab, texttable.ab, avgtext.ab");
+            Console.WriteLine("Downloading textes.ab, texttable.ab, avgtext.ab, textlpatch.ab");
 
             string[] textes = new string[2];
             string[] texttable = new string[2];
             string[] avgtext = new string[2];
+            string[] textlpatch = new string[2];
 
             int i = 0;
             while (true) {
@@ -153,9 +157,20 @@ namespace GFDecompress
                 k++;
             }
 
+            int l = 0;
+            while (true)
+            {
+                string str4 = output4.ReadLine();
+                if (str4 == null)
+                    break;
+                textlpatch[l] = str4;
+                l++;
+            }
+
             string url = textes[0] + textes[1] + ".ab";
             string url2 = texttable[0] + texttable[1] + ".ab";
             string url3 = avgtext[0] + avgtext[1] + ".ab";
+            string url4 = textlpatch[0] + textlpatch[1] + ".ab";
 
             if (url == ".ab")
             {
@@ -178,6 +193,13 @@ namespace GFDecompress
                 Environment.Exit(1);
             }
 
+            if (url4 == ".ab")
+            {
+                Console.WriteLine("Error with deserializer4.py, make sure it exists (redownload from this GitHub) and make sure Python with unitypack is installed.");
+                Console.ReadKey();
+                Environment.Exit(1);
+            }
+
             Console.WriteLine(url);
             client.DownloadFile(url, $"Assets_raw\\{location}\\asset_textes.ab");
 
@@ -186,6 +208,12 @@ namespace GFDecompress
 
             Console.WriteLine(url3);
             client.DownloadFile(url3, $"Assets_raw\\{location}\\asset_textavg.ab");
+
+            if (textlpatch[1] != null)
+            {
+                Console.WriteLine(url4);
+                client.DownloadFile(url4, $"Assets_raw\\{location}\\asset_textlpatch.ab");
+            }
 
             //Console.WriteLine("에셋 추출 중...");
             //ProcessStartInfo extractor = new ProcessStartInfo("Scripts\\extractexe\\extract.exe", $@"Assets_raw\\{location}\\asset_textes.ab");

@@ -1,0 +1,17 @@
+id
+name
+squad_id
+rank
+is_random
+assist_damage
+assist_def_break
+assist_hit
+assist_reload
+damage
+atk_speed
+hit
+def
+intensity_ratio
+grid_number
+unlock_chip_point
+color
