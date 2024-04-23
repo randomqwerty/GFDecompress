@@ -87,14 +87,22 @@ namespace GFDecompress
             }
         }
         //어셋  다운
-        public void downloadAsset() {
+        public void downloadAsset(string server) {
             string key = "kxwL8X2+fgM=";
             string iv = "M9lp+7j2Jdwqr+Yj1h+A";
 
             byte[] bkey = Convert.FromBase64String(key);
             byte[] biv = Convert.FromBase64String(iv);
+            string encryptedVersion = "";
 
-            string encryptedVersion = Crypto.GetDesEncryted($"{minversion}_{abVersion}_AndroidResConfigData", bkey, biv.Take(8).ToArray());
+            if (server == "en")
+            {
+                encryptedVersion = Crypto.GetDesEncryted($"{minversion}_{abVersion}_AndroidResConfigData2018", bkey, biv.Take(8).ToArray());
+            }
+            else
+            {
+                encryptedVersion = Crypto.GetDesEncryted($"{minversion}_{abVersion}_AndroidResConfigData", bkey, biv.Take(8).ToArray());
+            }
 
             string filename = Regex.Replace(encryptedVersion, @"[^a-zA-Z0-9]", "") + ".txt";
 

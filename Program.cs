@@ -222,35 +222,35 @@ namespace GFDecompress
                     Console.WriteLine("\n====KR Data download====");
                     Downloader kr = new Downloader("kr");
                     kr.downloadStc();
-                    kr.downloadAsset();
+                    kr.downloadAsset("kr");
                     clientVersion = "3040";
                     break;
                 case "en":
                     Console.WriteLine("\n====EN Data download====");
                     Downloader en = new Downloader("en");
                     en.downloadStc();
-                    en.downloadAsset();
+                    en.downloadAsset("en");
                     clientVersion = "3040";
                     break;
                 case "jp":
                     Console.WriteLine("\n====JP Data download====");
                     Downloader jp = new Downloader("jp");
                     jp.downloadStc();
-                    jp.downloadAsset();
+                    jp.downloadAsset("jp");
                     clientVersion = "3020";
                     break;
                 case "ch":
                     Console.WriteLine("\n====CN Data download====");
                     Downloader ch = new Downloader("ch");
                     ch.downloadStc();
-                    ch.downloadAsset();
+                    ch.downloadAsset("ch");
                     clientVersion = "3040";
                     break;
 				case "tw":
                     Console.WriteLine("\n====TW Data download====");
                     Downloader tw = new Downloader("tw");
                     tw.downloadStc();
-                    tw.downloadAsset();
+                    tw.downloadAsset("tw");
                     clientVersion = "3040";
                     break;
             }
