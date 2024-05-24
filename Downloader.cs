@@ -44,9 +44,14 @@ namespace GFDecompress
             minversion = Math.Round(double.Parse(clientVersion) / 100) * 10;
             abVersion = obj["ab_version"].ToString();
 
-			if (clientVersion == "29999") {
-				minversion = 3010;
-			}
+            if (clientVersion == "29999")
+            {
+                minversion = 3010;
+            }
+            else if (clientVersion == "30400" && new[] { "kr", "ch", "tw" }.Contains(_location))
+            {
+                minversion = 3050;
+            }
 
             Console.WriteLine("Retrived data version: " + dataVersion);
 
@@ -95,7 +100,7 @@ namespace GFDecompress
             byte[] biv = Convert.FromBase64String(iv);
             string encryptedVersion = "";
 
-            if (server == "en")
+            if (new[] { "en", "ch", "kr", "tw" }.Contains(server))
             {
                 encryptedVersion = Crypto.GetDesEncryted($"{minversion}_{abVersion}_AndroidResConfigData2018", bkey, biv.Take(8).ToArray());
             }

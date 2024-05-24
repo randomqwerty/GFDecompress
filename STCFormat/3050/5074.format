@@ -1,0 +1,11 @@
+id
+type
+mission_campaign
+draw_event_id
+start_time
+end_time
+init_mission_id
+function_control_id
+open_mission
+open_time
+mission_event_opentime_white_list
