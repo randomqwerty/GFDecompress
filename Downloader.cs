@@ -100,14 +100,7 @@ namespace GFDecompress
             byte[] biv = Convert.FromBase64String(iv);
             string encryptedVersion = "";
 
-            if (new[] { "en", "ch", "kr", "tw" }.Contains(server))
-            {
-                encryptedVersion = Crypto.GetDesEncryted($"{minversion}_{abVersion}_AndroidResConfigData2018", bkey, biv.Take(8).ToArray());
-            }
-            else
-            {
-                encryptedVersion = Crypto.GetDesEncryted($"{minversion}_{abVersion}_AndroidResConfigData", bkey, biv.Take(8).ToArray());
-            }
+            encryptedVersion = Crypto.GetDesEncryted($"{minversion}_{abVersion}_AndroidResConfigData2018", bkey, biv.Take(8).ToArray());
 
             string filename = Regex.Replace(encryptedVersion, @"[^a-zA-Z0-9]", "") + ".txt";
 
