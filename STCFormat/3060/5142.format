@@ -1,0 +1,15 @@
+id
+code
+name
+power
+range
+hp
+ap
+attack_times
+armor
+armor_piercing
+reward_chip_ids
+chip
+spine_direction
+attack_angle
+lifebar_offset

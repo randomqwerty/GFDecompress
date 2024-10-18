@@ -1,0 +1,16 @@
+id
+season_code
+light_color
+light_pos
+light_dir
+light_angle
+light_brightness
+shadow_angle
+bright_contrast_ratio
+dark_contrast_ratio
+light_tex_brightness
+dir_light_shadow_colorLock
+model_tex_color
+state_code
+model_name
+dir_light_shadow_colorUnLock

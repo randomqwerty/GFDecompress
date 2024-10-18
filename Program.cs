@@ -223,14 +223,14 @@ namespace GFDecompress
                     Downloader kr = new Downloader("kr");
                     kr.downloadStc();
                     kr.downloadAsset("kr");
-                    clientVersion = "3050";
+                    clientVersion = "3060";
                     break;
                 case "en":
                     Console.WriteLine("\n====EN Data download====");
                     Downloader en = new Downloader("en");
                     en.downloadStc();
                     en.downloadAsset("en");
-                    clientVersion = "3040";
+                    clientVersion = "3050";
                     break;
                 case "jp":
                     Console.WriteLine("\n====JP Data download====");
@@ -244,14 +244,14 @@ namespace GFDecompress
                     Downloader ch = new Downloader("ch");
                     ch.downloadStc();
                     ch.downloadAsset("ch");
-                    clientVersion = "3050";
+                    clientVersion = "3060";
                     break;
 				case "tw":
                     Console.WriteLine("\n====TW Data download====");
                     Downloader tw = new Downloader("tw");
                     tw.downloadStc();
                     tw.downloadAsset("tw");
-                    clientVersion = "3050";
+                    clientVersion = "3060";
                     break;
             }
 
@@ -400,15 +400,12 @@ namespace GFDecompress
                     { "5074.stc", "mission_event" },
                     { "5075.stc", "tutorial_guide" },
                     { "5076.stc", "tutorial_manual" },
-                    { "5077.stc", "guild_flag" },
-                    { "5078.stc", "guild_level" },
                     { "5079.stc", "prize" },
                     { "5080.stc", "mall" },
                     { "5081.stc", "commander_class" },
                     { "5082.stc", "commander_emoji" },
                     { "5083.stc", "commander_uniform" },
                     { "5084.stc", "function_skill_config" },
-                    { "5085.stc", "commander_color" },
                     { "5086.stc", "draw_event" },
                     { "5087.stc", "gift_item" },
                     { "5088.stc", "unit_character" },
@@ -559,7 +556,17 @@ namespace GFDecompress
                     { "5233.stc", "normal_activity" },
                     { "5234.stc", "carnival_task" },
                     { "5235.stc", "simulation_battle_reward" },
-                    { "5236.stc", "vehicle_skin_class" }
+                    { "5236.stc", "vehicle_skin_class" },
+                    { "5237.stc", "letter" },
+                    { "5238.stc", "list_to_do" },
+                    { "5239.stc", "breakout_drop" },
+                    { "5240.stc", "breakout_enemy" },
+                    { "5241.stc", "breakout_gun" },
+                    { "5242.stc", "breakout_item" },
+                    { "5243.stc", "breakout_phase" },
+                    { "5244.stc", "breakout_skill" },
+                    { "5245.stc", "breakout_trigger" },
+                    { "5246.stc", "breakout_talk" },
                 };
 
                 log.Info("\n Parsing stc files");
