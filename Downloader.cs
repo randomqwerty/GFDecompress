@@ -40,7 +40,16 @@ namespace GFDecompress
 
             JObject obj = JObject.Parse(readerpost.ReadToEnd());
             dataVersion = obj["data_version"].ToString();
-            clientVersion = obj["client_version"].ToString();
+
+            if (_location == "ch")
+            {
+                clientVersion = "30700";
+            }
+            else
+            {
+                clientVersion = obj["client_version"].ToString();
+            }
+
             minversion = Math.Round(double.Parse(clientVersion) / 100) * 10;
             abVersion = obj["ab_version"].ToString();
 
@@ -91,7 +100,14 @@ namespace GFDecompress
             byte[] biv = Convert.FromBase64String(iv);
             string encryptedVersion = "";
 
-            encryptedVersion = Crypto.GetDesEncryted($"{minversion}_{abVersion}_AndroidResConfigData2018", bkey, biv.Take(8).ToArray());
+            if (server == "ch")
+            {
+                encryptedVersion = Crypto.GetDesEncryted($"{minversion}_{abVersion}_PCResConfigData2018", bkey, biv.Take(8).ToArray());
+            }
+            else
+            {
+                encryptedVersion = Crypto.GetDesEncryted($"{minversion}_{abVersion}_AndroidResConfigData2018", bkey, biv.Take(8).ToArray());
+            }
 
             string filename = Regex.Replace(encryptedVersion, @"[^a-zA-Z0-9]", "") + ".txt";
 

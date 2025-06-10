@@ -244,7 +244,7 @@ namespace GFDecompress
                     Downloader ch = new Downloader("ch");
                     ch.downloadStc();
                     ch.downloadAsset("ch");
-                    clientVersion = "3060";
+                    clientVersion = "3070";
                     break;
 				case "tw":
                     Console.WriteLine("\n====TW Data download====");
