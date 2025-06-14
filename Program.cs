@@ -567,6 +567,8 @@ namespace GFDecompress
                     { "5244.stc", "breakout_skill" },
                     { "5245.stc", "breakout_trigger" },
                     { "5246.stc", "breakout_talk" },
+                    { "5247.stc", "exmall_classification" },
+                    { "5248.stc", "mission_skip" },
                 };
 
                 log.Info("\n Parsing stc files");
