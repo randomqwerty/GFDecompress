@@ -223,7 +223,7 @@ namespace GFDecompress
                     Downloader kr = new Downloader("kr");
                     kr.downloadStc();
                     kr.downloadAsset("kr");
-                    clientVersion = "3060";
+                    clientVersion = "3070";
                     break;
                 case "en":
                     Console.WriteLine("\n====EN Data download====");
@@ -251,7 +251,7 @@ namespace GFDecompress
                     Downloader tw = new Downloader("tw");
                     tw.downloadStc();
                     tw.downloadAsset("tw");
-                    clientVersion = "3060";
+                    clientVersion = "3070";
                     break;
             }
 
