@@ -50,7 +50,15 @@ namespace GFDecompress
                 clientVersion = obj["client_version"].ToString();
             }
 
-            minversion = Math.Round(double.Parse(clientVersion) / 100) * 10;
+            if (_location == "jp")
+            {
+                minversion = 3071;
+            }
+            else
+            {
+                minversion = Math.Round(double.Parse(clientVersion) / 100) * 10;
+            }
+            
             abVersion = obj["ab_version"].ToString();
 
             Console.WriteLine("Retrived data version: " + dataVersion);

@@ -237,7 +237,7 @@ namespace GFDecompress
                     Downloader jp = new Downloader("jp");
                     jp.downloadStc();
                     jp.downloadAsset("jp");
-                    clientVersion = "3060";
+                    clientVersion = "3070";
                     break;
                 case "ch":
                     Console.WriteLine("\n====CN Data download====");
