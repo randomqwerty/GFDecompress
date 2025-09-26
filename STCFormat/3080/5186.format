@@ -1,0 +1,11 @@
+id
+story_campaign_id
+name
+chapter
+type
+game_chronicle
+description
+is_hide
+tag
+order
+campaign_sub_name

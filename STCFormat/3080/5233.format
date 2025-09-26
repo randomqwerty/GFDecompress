@@ -1,0 +1,12 @@
+id
+campaign_id
+tag
+order
+name
+chapter_name
+bg_code
+bg_config
+desc
+scene_name
+event_prize_level
+rank_id

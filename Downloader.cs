@@ -41,14 +41,8 @@ namespace GFDecompress
             JObject obj = JObject.Parse(readerpost.ReadToEnd());
             dataVersion = obj["data_version"].ToString();
 
-            if (_location == "ch")
-            {
-                clientVersion = "30700";
-            }
-            else
-            {
-                clientVersion = obj["client_version"].ToString();
-            }
+
+            clientVersion = obj["client_version"].ToString();
 
             if (_location == "jp")
             {
