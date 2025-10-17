@@ -37,6 +37,7 @@
 	"assets/resources/dabao/luapatch/3060": "text/luapatch/3060",
 	"assets/resources/dabao/luapatch/3070": "text/luapatch/3070",
 	"assets/resources/dabao/luapatch/3071": "text/luapatch/3071",
+	"assets/resources/dabao/luapatch/3080": "text/luapatch/3080",
 	"assets/resources/dabao/luapatch/3010/language": "text/luapatch/3010/language",
     "assets/resources/dabao/luapatch/battle": "text/luapatch/battle",
     "assets/resources/dabao/luapatch/battle/2019winter": "text/luapatch/battle/2019winter",
@@ -49,6 +50,7 @@
 	"assets/resources/dabao/luapatch/battle/3020": "text/luapatch/battle/3030",
 	"assets/resources/dabao/luapatch/battle/3060": "text/luapatch/battle/3060",
 	"assets/resources/dabao/luapatch/battle/3070": "text/luapatch/battle/3070",
+	"assets/resources/dabao/luapatch/battle/3081": "text/luapatch/battle/3081",
 	"assets/resources/dabao/luapatch/bdscripts": "text/luapatch/bdscripts",
     "assets/resources/dabao/luapatch/collaboration/anniversary": "text/luapatch/collaboration/anniversary",
     "assets/resources/dabao/luapatch/collaboration/division": "text/luapatch/collaboration/division",
@@ -87,6 +89,7 @@
 	"assets/resources/dabao/luapatch/2090/slgminigame": "text/luapatch/2090/slgminigame",
 	"assets/resources/dabao/luapatch/collaboration/zlsr": "text/luapatch/collaboration/zlsr",
 	"assets/resources/dabao/profilesconfig/guidedeployment": "text/profilesconfig/guidedeployment",
+	"assets/resources/dabao/profilesconfig/guidecommon": "text/profilesconfig/guidecommon",
 	"assets/resources/dabao/config/vehicleconfig": "text/config/vehicleconfig",
     "assets/resources/dabao/pics/squads": "res/squad"
   },

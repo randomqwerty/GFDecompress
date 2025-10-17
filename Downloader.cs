@@ -48,6 +48,10 @@ namespace GFDecompress
             {
                 minversion = 3071;
             }
+            else if (_location == "ch")
+            {
+                minversion = 3081;
+            }
             else
             {
                 minversion = Math.Round(double.Parse(clientVersion) / 100) * 10;
