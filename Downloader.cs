@@ -44,7 +44,7 @@ namespace GFDecompress
 
             clientVersion = obj["client_version"].ToString();
 
-            if (_location == "jp" || _location == "en")
+            if (_location == "en")
             {
                 minversion = 3071;
             }
