@@ -230,7 +230,7 @@ namespace GFDecompress
                     Downloader en = new Downloader("en");
                     en.downloadStc();
                     en.downloadAsset("en");
-                    clientVersion = "3070";
+                    clientVersion = "3080";
                     break;
                 case "jp":
                     Console.WriteLine("\n====JP Data download====");
